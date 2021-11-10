@@ -53,3 +53,39 @@
 4. [Deployment](#deployment)
 
 5. [Credits](#credits)
+
+### User Stories <a name="user-stories"></a>
+
+* I want to be able to quickly view the products that the site is selling.
+
+* I want to be able to easily navigate throughout the site.
+
+* I want to be able to find out more information about the company and see if they have a social media presence.
+
+* I want to be able to contact the company.
+
+* I would like to be able to search for a specific item using the search bar.
+
+* I want to be able to search the site based on the different categories.
+
+* I want to be able to see all product details before I choose to buy the item
+
+* I want to be able to sort the items based on their price.
+
+* I want to be able to see products price and sizes if they have any.
+
+* I want to be able to add items to my shopping bag
+
+* I would like to be notified when I add items to bag or interact with the site functionality.
+
+* I want to be able to edit my shopping bag.
+
+* I want the checkout process to be quick and painless.
+
+* I want to be able to leave a review of certain products.
+
+* I want to receive confirmation of my order.
+
+* I want to be able to see previous order details.
+
+* I want my details tto be saved to my account for faster purchases in future.
