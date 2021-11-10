@@ -195,3 +195,23 @@ A mock-up of how the site will be laid out is available here via [Wire Frames]()
 Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database.
 
 Django allauth was used to set up user authentication and built in decorators allowed restricted access to certain features on the website.
+
+### Color Scheme
+
+![Canva](canva.com)
+
+The above color swatch shows a guideline for the color scheme of the site.
+
+Colors are brand colors that have been adopted for their strong visual contrast in an attempt to make all content as easily consumable and suitable for visually impared users as possible.
+* There are two main colors used throughout the project and they are listed below.
+    * #61988E - this is the orchid color used in the header and footer as well as border colors fonts etc.
+    * #211522- this is just your standard black that will be used as the 
+    * #c197D2 - this is the off-white color used in the modal, forms, all auth etc. I wanted to have a nice easy to read white color and this was my preferred choice.
+    
+
+### Typography
+
+[Google Fonts](https://fonts.google.com/quicksand) will be the main font for all content.  
+
+
+### Imagery
