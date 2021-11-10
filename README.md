@@ -215,3 +215,131 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 
 ### Imagery
+
+## Features
+
+### Existing Features
+
+1. Responsive to different screen sizes.
+2. Supported by Chrome, Opera, and Firefox browsers.
+3. Adapted for users with special accessibility requirements where possible.
+4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, favorites page, 404 error and 500 error page.
+
+        - Each page will have a navigation header
+        - Each page will have a footer
+        - Each page will have a favicon on the browser tab
+
+5. Each page will have a 'sticky' navbar
+
+        - High contrast between text and background.
+        - Text logo on the left, or removed on smaller screens
+        - A central search bar
+        - Menu options in the center or to the left on mobile
+        - The logo will route back to the home page
+        - Menu options will change to color on hover & envoke a pointer
+        - On mobile devices, the menu items will switch to a toggle button and slide down the page when button is clicked
+        - The mobile nav will not have 'on-hover' styling
+        - Anon users will see my account(signup/register), search bar, shopping cart total, all products, contact page, equipment and classes page 
+        - Registered users will see the above mentioned with an additional profile tab and log out option under the 'my account' nav item
+
+ 6. The home page will have:
+
+        - A hero image.
+        - Informative text
+
+7. The login/register page will have:
+
+        - A form requesting user information (name, username & password) and a submission button
+        - Toast messages displaying successfull/unsuccessfulsubmission of information
+
+8. The profile page will have: 
+
+        - An area displaying the users information
+        - An area displaying orders the user has purchased
+        - There will be an option to edit information
+        - Toast messages displaying successfull/unsuccessful update of information
+
+9. The all products page will have:
+
+        - A sort by category bar
+        - A section displaying existing products
+        - Each product will have an image, label and a link to review its details
+        - To an admin user there will be a link to edit/delete
+
+10. The product detail page will have:
+
+        - An image of the product
+        - Descriptive text
+        - Price
+        - favorite icon
+        - Quantity selector
+        - Add to cart button
+        - Go back button
+        - Edit/Delete link for the admin user only
+        - Toast messages displaying successfull/unsuccessful addition of products to the shopping bag
+
+11. The shopping bag page will have:
+
+        - Images and descriptions of products
+        - Option to edit quantity or remove products
+        - Grand total calculation
+        - Keep shopping button
+        - Continue to checkout button
+        - Toast messages displaying successfull/unsuccessful removal of products
+
+12. The check out page will have:
+
+        - A form requesting/prepopulating order details
+        - An order summary
+        - A stripe payment option
+        - A check box to save info to a profile
+        - A grand total
+        - Messages to convey successful or unsuccessful check out
+
+14. The favorites page will have:
+
+        - Has cards displaying favorited items that link to product detail view.
+        - Heart icons on the cards that allow removal.
+        - If emptry a navigation button to the all products page.
+        - Toast messages to convey successful or unsuccessful removal of items.
+
+15. The contact form page will have a form with fields for:
+
+        - Name
+        - Email
+        - Drop down menu for the subject title
+        - Text box
+        - Submission button
+        - Toast messages to convey successful or unsuccessful submission of the form.
+
+16. All users interactions will either be confirmed or notified of an error either via on screen messages, orders, contact forms and profile set up will be also confirmed via email.
+
+17. All products page and the cart page will have a scroll to top button.
+
+## Technology Used
+
+### Languages
+
+- HTML
+- CSS
+- Javascript
+- [Python](https://www.python.org/)
+
+### Frameworks
+
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+
+### Libraries
+
+- [Jquery](https://jquery.com/)
+- [Sweet Alert](https://sweetalert2.github.io/)
+- [Stripe Payments](https://stripe.com/)
+- [PopperJS](https://popper.js.org/)
+
+### Tools
+
+- [AWS](https://aws.amazon.com/s3/)
+- [Heroku](https://www.heroku.com)
+- [Git](https://git-scm.com/)
+- [Postgres](https://www.postgresql.org/)
