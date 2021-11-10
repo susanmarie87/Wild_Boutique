@@ -89,3 +89,15 @@
 * I want to be able to see previous order details.
 
 * I want my details tto be saved to my account for faster purchases in future.
+
+### Site Goals <a name="site-goals"></a>
+
+* I want to be able to add, edit and delete products, blog posts and the ability to delete comments from blog posts easily.
+
+* I want to be able to increase organic visitors to the site using SEO friendly blog posts.
+
+* I want an admin section of the site and to make administration tasks simpler.
+
+* I want customers to have a relaxed and trouble free time on the site.
+
+* I want the site to be fully mobile responsive.
