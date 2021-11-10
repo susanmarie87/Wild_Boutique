@@ -101,3 +101,23 @@
 * I want customers to have a relaxed and trouble free time on the site.
 
 * I want the site to be fully mobile responsive.
+
+## Scope <a name="scope></a>
+
+## Design
+
+### Scope and Structure
+
+**Scope**
+
+* Responsive Design 
+* Informative Landing Page
+* Sticky top Nav Bar & Mobile Nav Bar 
+* Relational database to store all uploaded data/content
+* CRUD functionality at varying levels for profiles and products
+* Authentication functionality
+* Profile page
+* Search functionality
+* Contact functionality
+*  list functionality
+* E-Commerce functionality
