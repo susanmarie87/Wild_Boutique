@@ -151,3 +151,47 @@ Delete features will trigger warning modals and require confirmation before the 
 Successful actions and unsuccessful actions will be flagged with django messages to the user.
 
 Authentication processes, placed orders and contact form submission will trigger emails sent to the users email address provided.
+
+### Wireframes
+A mock-up of how the site will be laid out is available here via [Wire Frames]().
+
+### Database Structure
+
+![Database Structure]()
+
+#### Data Models
+
+###### Product & Categories
+
+- The product model creates objects containing individual product information, such as name, description, price, image and sku. 
+- The unique ID is auto generated. 
+- The product objects will be used for the order model and favorites model.
+- The product model is lonked to the categories model which divides the products into subsections.
+
+##### User Profile & User
+
+- The User model is created by django All Auth on registration, it stores the name, email and password of a user.
+- The User Profile model creates and instance of the user information in the database, similar to above as an object. 
+- The User Profile is linked to the User model. 
+- The user Profile stores shipping and contact information.
+
+##### Order Model & Order Line Item
+
+- The order model is connected to the user profile, feeding in the shipping and contact information. 
+- The order model creates an instance of an order on the data base with billing information, date and time of placement and by whom. 
+- The order model is linked to the Order Line Item model which holds the product information for the order placed.
+- The Order Line Item model is linked to products.
+
+##### Favorites and favorited Items
+- The favorites creates a 'container' for users to store favorited products. 
+- The favorited items model creates instances of these favorite products in the container.
+- This model is linked to the user and to the poduct model.
+
+##### Contact
+- The contact model stores users queries in the backend for the admin user to view.
+
+### Security
+
+Sensitive data such as SECRET_KEYS were stored on heroku using config variables to prevent unwanted connections to the database.
+
+Django allauth was used to set up user authentication and built in decorators allowed restricted access to certain features on the website.
