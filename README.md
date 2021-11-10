@@ -121,3 +121,33 @@
 * Contact functionality
 *  list functionality
 * E-Commerce functionality
+
+**Skeleton Structure**
+
+This application will be made up of multiple pages derived or based around 6 data models, product, cart, checkout, user profile, contact form and favorites.
+
+The landing page will consist of a large hero image with a text introduction of the site's offering or purpose.
+
+Login, registration, add/edit products/profile and contact pages will all consist of forms with varying inputs dependant on the purpose of the form.
+
+The profile page will display user information derived from the form and past orders .
+
+The favorite products page will display favorited items with options to remove them or view the product in detail.
+
+The products page will display all products and can be sorted or filtered.
+
+The product detail page will display the image and details with an option to purchase, favorite or update/delete for the admin user.
+
+**Interaction Design**
+
+The nav bar items will highlight on hover.
+
+The user will be able to interact with the data on the application via the search bar, products will display below the search bar if found or a line of text with '0 products found' if not found. They can also filter and sort categories using a sort selector drop down.
+
+All forms will validate and change colour/display messages to notify the user of errors.
+
+Delete features will trigger warning modals and require confirmation before the action runs.
+
+Successful actions and unsuccessful actions will be flagged with django messages to the user.
+
+Authentication processes, placed orders and contact form submission will trigger emails sent to the users email address provided.
