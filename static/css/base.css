@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Rouge Script';
 }
 
 /* from Bulma */
@@ -56,13 +56,47 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+i.fas.fa-user.fa-lg::before {
+    color: white;
+}
+
+i.fas.fa-shopping-bag.fa-lg::before {
+    color: white;
+}
+
+p.my-0 {
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index:
+        -1;
+}
+
+button.navbar-toggler-light.collapsed {
+    color: white;
+}
+
+nav.navbar.navbar-expand=lg.navbar-light.w-100{
+    color: white;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -78,4 +112,16 @@ body {
     .header-container {
         padding-top: 164px;
     }
+}
+
+span.navbar-toggler-icon {
+    color: white;
+}
+
+button.navbar-toggler {
+    color: white;
+}
+
+nav.navbar.navbar-expand {
+    color: white;
 }
