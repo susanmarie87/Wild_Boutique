@@ -7,20 +7,16 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Poppins', 'Rouge Script';
+    font-family: 'Poppins';
 }
 
 /* from Bulma */
 .icon {
-    align-items: center;
+    align-items: rightr;
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.logo-font {
-    text-transform: uppercase;
 }
 
 .main-logo-link {
@@ -66,6 +62,7 @@ i.fas.fa-user.fa-lg::before {
 
 i.fas.fa-shopping-bag.fa-lg::before {
     color: white;
+
 }
 
 p.my-0 {
@@ -83,13 +80,64 @@ p.my-0 {
         -1;
 }
 
-button.navbar-toggler-light.collapsed {
-    color: white;
+.navbar-brand {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "rochester";
+    float: left;
+    padding-bottom: 5px;
 }
 
-nav.navbar.navbar-expand=lg.navbar-light.w-100{
-    color: white;
+.navbar-nav li {
+    padding-right: 10px;
 }
+
+div#navbar-Responsive.collapse.navbar-collapse {
+    float: right;
+}
+
+footer {
+    align-items: center;
+    margin-top: 50px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-container {
+    padding: 16px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* -- FOOTER ICONS adapted from Font Awesome -- */
+.social-icons {
+    list-style: none;
+}
+
+.social-icons i {
+    font-size: 120%;
+    margin: 0 30px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -112,16 +160,4 @@ nav.navbar.navbar-expand=lg.navbar-light.w-100{
     .header-container {
         padding-top: 164px;
     }
-}
-
-span.navbar-toggler-icon {
-    color: white;
-}
-
-button.navbar-toggler {
-    color: white;
-}
-
-nav.navbar.navbar-expand {
-    color: white;
 }
