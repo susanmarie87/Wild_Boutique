@@ -88,12 +88,20 @@ p.my-0 {
     padding-bottom: 5px;
 }
 
+a.navbar-brand {
+    float: left;
+}
+
 .navbar-nav li {
     padding-right: 10px;
 }
 
 div#navbar-Responsive.collapse.navbar-collapse {
-    float: right;
+    float: center;
+}
+
+div.collapse.navbar-collapse {
+    justify-content: center;
 }
 
 footer {
@@ -116,6 +124,11 @@ footer ul {
     display: flex;
     justify-content: center;
     margin: 0;
+}
+
+div.container.justify-content-between {
+    margin: 0;
+    padding: 0 20px;
 }
 
 /* -- FOOTER ICONS adapted from Font Awesome -- */
