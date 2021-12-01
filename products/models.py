@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
 
     class Meta:
@@ -10,7 +11,6 @@ class Category(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
-
 
 
 class Product(models.Model):
