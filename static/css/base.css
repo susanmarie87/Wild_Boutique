@@ -151,6 +151,16 @@ div.container.justify-content-between {
     text-decoration: underline;
 }
 
+.overlay-store {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
