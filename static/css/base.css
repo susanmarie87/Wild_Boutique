@@ -58,6 +58,7 @@ body {
 
 i.fas.fa-user.fa-lg::before {
     color: white;
+    align-items: end;
 }
 
 i.fas.fa-shopping-bag.fa-lg::before {
@@ -67,6 +68,8 @@ i.fas.fa-shopping-bag.fa-lg::before {
 
 p.my-0 {
     color: white;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .overlay {
@@ -94,6 +97,11 @@ a.navbar-brand {
 
 .navbar-nav li {
     padding-right: 10px;
+}
+
+div.container.justify-content-between {
+    margin: 0;
+    padding: 0;
 }
 
 div#navbar-Responsive.collapse.navbar-collapse {
@@ -124,11 +132,6 @@ footer ul {
     display: flex;
     justify-content: center;
     margin: 0;
-}
-
-div.container.justify-content-between {
-    margin: 0;
-    padding: 0 20px;
 }
 
 /* -- FOOTER ICONS adapted from Font Awesome -- */
