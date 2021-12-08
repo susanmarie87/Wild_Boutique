@@ -18,8 +18,26 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <div class="search">
+        <div class="col-md-6 offset-md-3">
+            <form method="GET" action="{% url 'products' %}">
+                <div class="input-group-append">
+                    <input class="form-control rounded-0" type="text" name="q" style="border-color:blueviolet;"
+                        placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="form-control btn rounded-0" style="background-color: black;color: #fff;"
+                            type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="row">
-        <div class="product-container col-10 offset-1">
+        <div class="product-container col-10 offset-1" style="margin-top: 3.5rem;">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for product in products %}
