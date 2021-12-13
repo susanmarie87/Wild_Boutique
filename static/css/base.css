@@ -141,6 +141,13 @@ footer ul {
     margin: 0;
 }
 
+image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 /* -- FOOTER ICONS adapted from Font Awesome -- */
 .social-icons {
     list-style: none;
