@@ -245,7 +245,7 @@ Colors are brand colors that have been adopted for their strong visual contrast 
  6. The home page will have:
 
         - A hero image.
-        - Informative text
+        - Informative text.
 
 7. The login/register page will have:
 
@@ -296,14 +296,9 @@ Colors are brand colors that have been adopted for their strong visual contrast 
         - A grand total
         - Messages to convey successful or unsuccessful check out
 
-14. The favorites page will have:
 
-        - Has cards displaying favorited items that link to product detail view.
-        - Heart icons on the cards that allow removal.
-        - If emptry a navigation button to the all products page.
-        - Toast messages to convey successful or unsuccessful removal of items.
 
-15. The contact form page will have a form with fields for:
+13. The contact form page will have a form with fields for:
 
         - Name
         - Email
@@ -312,9 +307,68 @@ Colors are brand colors that have been adopted for their strong visual contrast 
         - Submission button
         - Toast messages to convey successful or unsuccessful submission of the form.
 
-16. All users interactions will either be confirmed or notified of an error either via on screen messages, orders, contact forms and profile set up will be also confirmed via email.
+14. All users interactions will either be confirmed or notified of an error either via on screen messages, orders, contact forms and profile set up will be also confirmed via email.
 
-17. All products page and the cart page will have a scroll to top button.
+15. All products page and the cart page will have a scroll to top button.
+
+## Information Architecture
+
+### Data Storage
+
+#### User Table
+
+|   Title           | Key In Database                  | Form Validation   | Data Type  |
+| ----------------- | -------------------------------- | ----------------- | ---------- |
+| Account id        | _id                              | No Validation     | Primary Key|
+| First Name        | first_name                       | max length 20     | CharField  |
+| Last Name         | last_name                        | hashed min length | CharField  |
+| Email             | email                            | Must have @ &.com | Email      |
+| Street Address    | default_street_adress_1          | max length 120    | CharField  |
+| Street Address  2 | default_street_adress_1          | max length 120    | CharField  |
+| City or Town      | default_city_town                | max length 120    | CharField  |
+| County/State      | default_county_state             | max length 72     | CharField  |
+| Postal Code       | default_postcode_zip             | max length 120    | CharField  |
+| Postal Code       | default_postcode_zip             | max length 120    | CharField  |
+| Contact           |                                  |Number max         |            |
+| Number            | default_phone_number         |length 20          | CharField  |
+| Country           | country                          |pycountry select   | Option     |
+
+
+### Products Table
+
+|   Title           | Key In Database                  | Form Validation      | Data Type   |
+| Product Id        | _id                              | No Validation        | Primary Key |
+| Product Name      | name                             | max length 254       | CharField   |
+| Price             | price                            | max digits  6        | DecimalField|
+| description       |description                       | No validation        | CharField   |
+| sale_type         |sale_type                         | max length 20        | DecimalField|
+| image             |image                             | Null True Blank True | ImageField  |
+
+
+
+### Orders Table
+
+|   Title           | Key In Database                  | Form Validation   | Data Type   |
+| ----------------- | -------------------------------- | ----------------- | ----------  |
+| Order Number      | order_number                     | No Validation     | Primary Key | 
+| User Profile      | user_profile                     |     text          | Foreign Key |
+| First Name        | first_name                       | max length 100    | CharField   |
+| Last Name         | last_name                        | max length 100    | CharField   |      |
+| email             | email                            | max length 120    | CharField   |
+| Phone number      | phone_number                     | max length 20     | CharField   |
+| Street Address  1 | default_street_adress_1          | max length 120    | CharField   |
+| Street Address  2 | default_street_adress_1          | max length 120    | CharField   |
+| City or Town      | default_city_town                | max length 120    | CharField   |
+| County/State      | default_county_state             | max length 72     | CharField   |
+| Postal Code       | default_postcode_zip             | max length 120    | CharField   |
+| Country           | country                          |pycountry select   | Option      |
+| Contact           |                                  |Number max         |             |
+| Number            | default_telephone_number         |length 20          | CharField   |
+| Order Date        | order_date                       |datetime.date.today| DateField   |
+| Total Order       | total_order                      |max digits 10      | DecimalField|
+| Delivery Charge   | delivery_charge                  |max digits 5       | DecimalField|
+| Grand Total       | grand_total                      |max digits 10      | DecimaField |
+
 
 ## Technology Used
 
