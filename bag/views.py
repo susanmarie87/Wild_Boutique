@@ -22,6 +22,7 @@ def add_to_bag(request, item_id):
     print(request.session['bag'])
     return redirect(redirect_url)
 
+
 def update_bag(request, item_id):
     """A view to update the bag items"""
 
@@ -36,4 +37,14 @@ def update_bag(request, item_id):
     request.session['bag'] = bag
     print(request.session['bag'])
     return redirect(reverse('view_bag'))
-    
+
+
+def delete_bag_item(request, item_id):
+    """A view to delete bag items"""
+
+    basket = request.session.get('bag', {})
+    bag.pop(item_id)
+
+
+    request.session['bag'] = basket
+    return redirect(reverse,('bag'))
