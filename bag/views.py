@@ -1,10 +1,11 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 
 def view_bag(request):
     """ A view that renders the cart items"""
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """Add multiple products to shopping bag"""
@@ -35,16 +36,15 @@ def update_bag(request, item_id):
         bag.pop(item_id)
 
     request.session['bag'] = bag
-    print(request.session['bag'])
     return redirect(reverse('view_bag'))
 
 
 def delete_bag_item(request, item_id):
     """A view to delete bag items"""
 
-    basket = request.session.get('bag', {})
+    bag = request.session.get('bag', {})
     bag.pop(item_id)
 
-
-    request.session['bag'] = basket
-    return redirect(reverse,('bag'))
+    request.session['bag'] = bag
+    print(request.session['bag'])
+    return redirect(reverse('view_bag'))

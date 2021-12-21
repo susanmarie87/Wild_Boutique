@@ -51,7 +51,7 @@
         <input type="submit" class="bag-update-button" value="Update Quantity"></input>
         <input type="hidden" class="redirect_url" value="{{ request.path }}"></input>
     </div>
-    <div><a class="float-left text-danger" href="#">Remove Item</a>
+    <div><a class="float-left text-dark" href="{% url 'delete_bag_item' item.item_id %}">Delete Item</a>
     </div>
     </form>
     {% endfor %}
@@ -76,7 +76,6 @@
                     <i class="fas fa-lock"></i>
                 </span>
             </a>
-
         </td>
     </tr>
 </div>
