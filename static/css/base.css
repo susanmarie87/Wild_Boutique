@@ -141,13 +141,29 @@ footer ul {
     margin: 0;
 }
 
-image {
-    float: left;
-    width: 100px;
-    height: 100px;
+img.img-fluid.rounded {
+
+    width: 640px;
+    height: 427px;
     object-fit: cover;
 }
 
+div.table.table-sm.table-borderless {}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 /* -- FOOTER ICONS adapted from Font Awesome -- */
 .social-icons {
     list-style: none;

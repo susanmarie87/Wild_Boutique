@@ -337,6 +337,7 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 ### Products Table
 
 |   Title           | Key In Database                  | Form Validation      | Data Type   |
+| ----------------- | -------------------------------- | ----------------- | ----------  |
 | Product Id        | _id                              | No Validation        | Primary Key |
 | Product Name      | name                             | max length 254       | CharField   |
 | Price             | price                            | max digits  6        | DecimalField|
