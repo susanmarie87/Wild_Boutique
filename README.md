@@ -404,3 +404,113 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 https://unsplash.com/photos/D6SQVDF7x_E
 
 https://unsplash.com/photos/LAOVX-PFNvI
+
+## BUGS
+
+BUG #1
+
+Trying to run a test function to render my webpage.
+
+For some reason my files are upside down. I thought my Migrations folder 
+along with settings and url files belonged in the top file.
+
+I thought that my views/admin files were supposed to be under the __init__.py.(tells project manage.py is a
+ directory we can import from)
+
+I created the project directory first with the Django- admin wild_indigos command and then 
+
+the startapp shop command.
+
+Shouldn't the project directory be at the top?
+
+Is that impacting my
+
+I have tried to move the folders.
+
+I have tried changing the name on the 
+
+
+_____________
+
+During the beginning of my testing stage, I tried to render a basic hello function. 
+Initially I was getting a:
+
+Page not found (404)
+Request Method:	GET
+Request URL:	http://localhost:8000/
+Using the URLconf defined in wild_indigos.urls, Django tried these URL patterns, in this order:
+
+admin/
+hello/ [name='hello']
+The empty path didn’t match any of these.
+
+
+This error was being returned because I did not have function mapped to the home url
+in my root urls.py.
+
+Django needs to define the url with an empty string. Once I removed hello from the string, the test function
+properly rendered to the page
+
+ Bug #2
+On the first test run to check my index.html, an error kept returning:
+
+'module' object is not callable.
+It turns out that I had improperly imported os in the wrong file. By removing this, I was able to open my project. The project 
+
+
+BUG 3
+When landing page is throttled at 150% or 125% on mid-tier and low-end mobiles, the nav and footer get huge and cover the content on the hero image.
+
+
+BUG 4
+When wiring up my item-detail folder into urls.py, I was met whith an invalid syntax error. This error occurred because when I created the path, I forgot to add the commas at the end of both paths which led to the invalid syntax error.
+
+This was solved by of course adding a ), to the end of the path.
+
+Bug 5
+When setting up the view for product details. I had 
+Context = {
+‘product’: products,
+}
+This returned a templating error and would not render the individual product once clicked.
+
+This issue was solved by changing ‘products’ to ‘product’
+
+
+Bug # 6
+
+When wiring up the shopping bag app to the project, a templating error was returned that would not render the shopping cart page. This error 
+
+
+Bug #7
+When trying to implement the logic for adding the quantity times the price total, I receive a TypeError for an integer and a string 
+Total +=
+
+This bug was in the Product Models file. The bug was fixed by changing the price string to a DecimalField and running migrations. After the models were properly migrated, the cart was able to render the prices of the items. 
+
+Bug # 8
+
+Scott helped me with this one. I am using Bootstrap 5 and because of this, when I went to add the
+Toasts to my project, it was not working. This was because Bootstrap 5 stopped using JQuery and are
+instead using Vanilla JS. The initialization step is different.
+In Bootstrap 4 the JavaScript Initialization is:
+<script type=”text/javascript”>
+      $(.toast).toast(‘show’);
+</script>
+In Bootstrap 5 it is quite different:
+
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+
+Scott was able to make a loop that cycled through the toasts:
+For (let x = 0; x < toastList.length;  x++) {
+                               toastList[x].show();
+               }
+This solved the issue and my website started returning the Toast messages successfully.
+
+
+
+
+
