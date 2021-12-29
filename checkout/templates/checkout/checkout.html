@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -83,7 +83,6 @@
     </td>
 </tr>
 </div>
-{% else %}
 <p class="lead mb-5">Your bag is empty.</p>
 <a href="{% url 'bag' %}" class=" btn">
     <span class="icon">
@@ -91,9 +90,12 @@
     </span>
     <span class="text-uppercase">Keep Shopping</span>
 </a>
-{% endif %}
-</div>
-</div>
-</div>
 
+
+{% endblock %}
+
+{% block postload %}
+{{ block.super 
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
 {% endblock %}
