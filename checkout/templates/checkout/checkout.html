@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h1 class="page-header">Checkout</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Complete the form to checkout</p>
+        </div>
+        <div class="col-12">
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <p>Customer Details:</p>
+                {{ order_form.first_name | as_crispy_field }}
+                {{ order_form.last_name | as_crispy_field }}
+                {{ order_form.email | as_crispy_field }}
+                {{ order_form.phone_number | as_crispy_field }}
+                <p>Delivery Details</p>
+                {{ order_form.street_address1 | as_crispy_field }}
+                {{ order_form.street_address2 | as_crispy_field }}
+                {{ order_form.town_or_city | as_crispy_field }}
+                {{ order_form.post_code | as_crispy_field }}
+                {{ order_form.county | as_crispy_field }}
+
+
+                <div class="col-12">
+                    <p>Payment Information</p>
+                </div>
+                <!--Stripe Element-->
+                <div class="col-12">
+                    <div id="card-element">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<td colspan="5" class="pt-5 text-right">
+    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+</td>
+</tr>
+<tr>
+    <td colspan="5" class="text-right">
+        <a href="{% url 'products' %}" class="btn">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+        </a>
+        <button id="submit-button" class="btn checkout-btn">
+            <span class="">Complete Your Order</span>
+            <span class="icon">
+                <i class="fas fa-lock"></i>
+            </span>
+        </button>
+        <a href="{% url 'checkout' %}" class="btn">
+            <span class="text-uppercase">Secure Checkout</span>
+            <span class="icon">
+                <i class="fas fa-lock"></i>
+            </span>
+        </a>
+    </td>
+</tr>
+</div>
+{% else %}
+<p class="lead mb-5">Your bag is empty.</p>
+<a href="{% url 'bag' %}" class=" btn">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+</a>
+{% endif %}
+</div>
+</div>
+</div>
+
+{% endblock %}
