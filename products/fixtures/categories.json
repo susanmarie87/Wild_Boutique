@@ -1,36 +1,37 @@
-{
-    "pk": 1,
-    "model": "products.category",
-    "fields": {
-        "name": "jewelry",
-        "friendly_name": "Jewelry"
-    }
-}, {
-    "pk": 2,
-    "model": "products.category",
-    "fields": {
-        "name": "bathbombs",
-        "friendly_name": "Bath Bombs"
-    }
-}, {
-    "pk": 3,
-    "model": "products.category",
-    "fields": {
-        "name": "rollers",
-        "friendly_name": "Essential Oil Rollers"
-    }
-}, {
-    "pk": 4,
-    "model": "products.category",
-    "fields": {
-        "name": "tinctures",
-        "friendly_name": "Wellness Tinctures"
-    }
-}, {
-    "pk": 5,
-    "model": "products.category",
-    "fields": {
-        "name": "shirts",
-        "friendly_name": "Shirts"
-    }
-}, 
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "jewelry",
+            "friendly_name": "Jewelry"
+        }
+    }, {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "bathbombs",
+            "friendly_name": "Bath Bombs"
+        }
+    }, {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "rollers",
+            "friendly_name": "Essential Oil Rollers"
+        }
+    }, {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "tinctures",
+            "friendly_name": "Wellness Tinctures"
+        }
+    }, {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "shirts",
+            "friendly_name": "Shirts"
+        }
+    } 
+]

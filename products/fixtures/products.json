@@ -1,165 +1,182 @@
-{
-    "pk": 1,
-    "model": "products.product",
-    "fields": {
-        "name": "bathbombs",
-        "description": "Geode Bathbomb",
-        "price": 10,
-        "category": 2,
-        "image": "bathbomb.jpg"
-
-    }
-}, {
-    "pk": 2,
-    "model": "products.product",
-    "fields": {
-        "name": "bathbombs",
-        "description": "Queen of the Night",
-        "price": 10,
-        "category": 2,
-        "image": "queen.jpg"
-
-    }
-}, {
-    "pk": 3,
-    "model": "products.product",
-    "fields": {
-        "name": "bathbombs",
-        "description": "Stress Away",
-        "price": 5.00,
-        "category": 2,
-        "image": "relax.jpg"
-
-    }
-}, {
-    "pk": 4,
-    "model": "products.product",
-    "fields": {
-        "name": "bathbombs",
-        "description": "Pain Relief",
-        "price": 10.00,
-        "category": 2,
-        "image": "bathbomb.jpg"
-
-    }
-}, {
-    "pk": 5,
-    "model": "products.product",
-    "fields": {
-        "name": "tinctures",
-        "description": "Relax & Restore",
-        "price": 15.00,
-        "category": 4,
-        "image": "calm-tincture.jpg"
-
-    }
-}, {
-    "pk": 6,
-    "model": "products.product",
-    "fields": {
-        "name": "tinctures",
-        "description": "Happy Drops",
-        "price": 10.00,
-        "category": 4,
-        "image": "tincture.jpg"
-
-    }
-} {
-    "pk": 7,
-    "model": "products.product",
-    "fields": {
-        "name": "tinctures",
-        "description": "cramp relief",
-        "price": 15.00,
-        "category": 4,
-        "image": "pain-tincture.jpg"
-
-    }
-} {
-    "pk": 8,
-    "model": "products.product",
-    "fields": {
-        "name": "jewelry",
-        "description": "turquoise",
-        "price": 15.00,
-        "category": 1,
-        "image": "bracelet.png"
-
-    }
-} {
-    "pk": 9,
-    "model": "products.product",
-    "fields": {
-        "name": "jewelry",
-        "description": "angel",
-        "price": 15.00,
-        "category": 1,
-        "image": "bracelet2.png"
-
-    }
-}, {
-    "pk": 10,
-    "model": "products.product",
-    "fields": {
-        "name": "jewelry",
-        "description": "rose gold",
-        "price": 15.00,
-        "category": 1,
-        "image": "bracelet3.png"
-
-    }
-}, {
-    "pk": 11,
-    "model": "products.product",
-    "fields": {
-        "name": "jewelry",
-        "description": "blue bird",
-        "price": 15.00,
-        "category": 1,
-        "image": "bracelet4.png"
-
-    } {
-        "pk": 12,
+[
+    {
+        "pk": 1,
         "model": "products.product",
         "fields": {
-            "name": "choose love",
-            "description": "Shirts",
-            "price": 25.00,
-            "category": 5,
-            "image": "choose-love.jpg"
+            "name": "bathbombs",
+            "description": "Geode Bathbomb",
+            "price": 10,
+            "category": 2,
+            "image": "bathbomb.jpg"
 
         }
-    } {
-        "pk": 13,
+    },
+    {
+        "pk": 2,
         "model": "products.product",
         "fields": {
-            "name": "peace",
-            "description": "Shirts",
-            "price": 25.00,
-            "category": 5,
-            "image": "peace.jpg"
+            "name": "bathbombs",
+            "description": "Queen of the Night",
+            "price": 10,
+            "category": 2,
+            "image": "queen.jpg"
 
         }
-    } {
-        "pk": 14,
+    },
+    {
+        "pk": 3,
         "model": "products.product",
         "fields": {
-            "name": "No One Cares",
-            "description": "Shirts",
-            "price": 25.00,
-            "category": 5,
-            "image": "nocares.jpg"
+            "name": "bathbombs",
+            "description": "Stress Away",
+            "price": 5.00,
+            "category": 2,
+            "image": "relax.jpg"
 
         }
-    } {
-        "pk": 15,
+    },
+    {
+        "pk": 4,
         "model": "products.product",
         "fields": {
-            "name": "Not Today",
-            "description": "Shirt",
-            "price": 25.00,
-            "category": 5,
-            "image": "not-today.jpg"
+            "name": "bathbombs",
+            "description": "Pain Relief",
+            "price": 10.00,
+            "category": 2,
+            "image": "bathbomb.jpg"
 
         }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "tinctures",
+            "description": "Relax & Restore",
+            "price": 15.00,
+            "category": 4,
+            "image": "calm-tincture.jpg"
+
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "tinctures",
+            "description": "Happy Drops",
+            "price": 10.00,
+            "category": 4,
+            "image": "tincture.jpg"
+
+        }
+    }, 
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "tinctures",
+            "description": "cramp relief",
+            "price": 15.00,
+            "category": 4,
+            "image": "pain-tincture.jpg"
+
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": "jewelry",
+            "description": "turquoise",
+            "price": 15.00,
+            "category": 1,
+            "image": "bracelet.png"
+
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "jewelry",
+            "description": "angel",
+            "price": 15.00,
+            "category": 1,
+            "image": "bracelet2.png"
+
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "jewelry",
+            "description": "rose gold",
+            "price": 15.00,
+            "category": 1,
+            "image": "bracelet3.png"
+
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "jewelry",
+            "description": "blue bird",
+            "price": 15.00,
+            "category": 1,
+            "image": "bracelet4.png"
+
+        }
+    }, 
+    {
+            "pk": 12,
+            "model": "products.product",
+            "fields": {
+                "name": "choose love",
+                "description": "Shirts",
+                "price": 25.00,
+                "category": 5,
+                "image": "choose-love.jpg"
+
+            }
+    },
+    {
+            "pk": 13,
+            "model": "products.product",
+            "fields": {
+                "name": "peace",
+                "description": "Shirts",
+                "price": 25.00,
+                "category": 5,
+                "image": "peace.jpg"
+
+            }
+    },
+    {
+            "pk": 14,
+            "model": "products.product",
+            "fields": {
+                "name": "No One Cares",
+                "description": "Shirts",
+                "price": 25.00,
+                "category": 5,
+                "image": "nocares.jpg"
+
+            }
+    },
+    {
+            "pk": 15,
+            "model": "products.product",
+            "fields": {
+                "name": "Not Today",
+                "description": "Shirt",
+                "price": 25.00,
+                "category": 5,
+                "image": "not-today.jpg"
+
+            }
     }
+]            

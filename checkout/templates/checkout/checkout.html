@@ -29,15 +29,14 @@
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <p>Customer Details:</p>
-                {{ order_form.first_name | as_crispy_field }}
-                {{ order_form.last_name | as_crispy_field }}
+                {{ order_form.full_name | as_crispy_field }}
                 {{ order_form.email | as_crispy_field }}
                 {{ order_form.phone_number | as_crispy_field }}
                 <p>Delivery Details</p>
                 {{ order_form.street_address1 | as_crispy_field }}
                 {{ order_form.street_address2 | as_crispy_field }}
                 {{ order_form.town_or_city | as_crispy_field }}
-                {{ order_form.post_code | as_crispy_field }}
+                {{ order_form.postcode | as_crispy_field }}
                 {{ order_form.county | as_crispy_field }}
 
 
@@ -84,7 +83,7 @@
 </tr>
 </div>
 <p class="lead mb-5">Your bag is empty.</p>
-<a href="{% url 'bag' %}" class=" btn">
+<a href="{% url 'checkout' %}" class=" btn">
     <span class="icon">
         <i class="fas fa-chevron-left"></i>
     </span>
