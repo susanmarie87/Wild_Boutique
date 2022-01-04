@@ -1,25 +1,12 @@
-[
-    {
+[{
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "name": "bathbombs",
-            "description": "Geode Bathbomb",
-            "price": 10,
+            "name": "Bath Bomb Trio",
+            "description": "Get the best of all bath bomb worlds with our trio.",
+            "price": ,
             "category": 2,
-            "image": "bathbomb.jpg"
-
-        }
-    },
-    {
-        "pk": 2,
-        "model": "products.product",
-        "fields": {
-            "name": "bathbombs",
-            "description": "Queen of the Night",
-            "price": 10,
-            "category": 2,
-            "image": "queen.jpg"
+            "image": "pharma-hemp-complex-yVAXSK6zFIM-unsplash_LRkdjtF.jpg"
 
         }
     },
@@ -48,14 +35,14 @@
         }
     },
     {
-        "pk": 5,
+        "pk": 3,
         "model": "products.product",
         "fields": {
-            "name": "tinctures",
-            "description": "Relax & Restore",
-            "price": 15.00,
-            "category": 4,
-            "image": "calm-tincture.jpg"
+            "name": "bathbombs",
+            "description": "Pure Happiness",
+            "price": 5.00,
+            "category": 2,
+            "image": "relax.jpg"
 
         }
     },
@@ -70,7 +57,7 @@
             "image": "tincture.jpg"
 
         }
-    }, 
+    },
     {
         "pk": 7,
         "model": "products.product",
@@ -80,6 +67,30 @@
             "price": 15.00,
             "category": 4,
             "image": "pain-tincture.jpg"
+
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "tinctures",
+            "description": "Stress Away",
+            "price": 5.00,
+            "category": 2,
+            "image": ""
+
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "tinctures",
+            "description": "Relax & Restore",
+            "price": 5.00,
+            "category": 2,
+            "image": "relax.jpg"
 
         }
     },
@@ -130,53 +141,41 @@
             "image": "bracelet4.png"
 
         }
-    }, 
-    {
-            "pk": 12,
-            "model": "products.product",
-            "fields": {
-                "name": "choose love",
-                "description": "Shirts",
-                "price": 25.00,
-                "category": 5,
-                "image": "choose-love.jpg"
-
-            }
     },
     {
-            "pk": 13,
-            "model": "products.product",
-            "fields": {
-                "name": "peace",
-                "description": "Shirts",
-                "price": 25.00,
-                "category": 5,
-                "image": "peace.jpg"
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Shirt Combo",
+            "description": "Shirts",
+            "price": 55.00,
+            "category": 5,
+            "image": "ian-dooley-rBkihK3n_YI-unsplash.jpg.jpg"
 
-            }
+        }
     },
     {
-            "pk": 14,
-            "model": "products.product",
-            "fields": {
-                "name": "No One Cares",
-                "description": "Shirts",
-                "price": 25.00,
-                "category": 5,
-                "image": "nocares.jpg"
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Peace",
+            "description": "Shirts",
+            "price": 25.00,
+            "category": 5,
+            "image": "shirt3_Ru8nUZr.jpg"
 
-            }
+        }
     },
     {
-            "pk": 15,
-            "model": "products.product",
-            "fields": {
-                "name": "Not Today",
-                "description": "Shirt",
-                "price": 25.00,
-                "category": 5,
-                "image": "not-today.jpg"
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Not Today",
+            "description": "Shirt",
+            "price": 25.00,
+            "category": 5,
+            "image": "not-today.jpg"
 
-            }
+        }
     }
-]            
+]
