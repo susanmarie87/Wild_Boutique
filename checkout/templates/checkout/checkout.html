@@ -2,10 +2,6 @@
 {% load static %}
 
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
-
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -13,6 +9,11 @@
     </div>
 </div>
 {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
 
 {% block content %}
 <div class="container">
@@ -36,65 +37,71 @@
                 {{ order_form.street_address1 | as_crispy_field }}
                 {{ order_form.street_address2 | as_crispy_field }}
                 {{ order_form.town_or_city | as_crispy_field }}
-                {{ order_form.postcode | as_crispy_field }}
                 {{ order_form.county | as_crispy_field }}
+                {{ order_form.postcode | as_crispy_field }}
+                {{ order_form.country | as_crispy_field }}
 
 
-                <div class="col-12">
-                    <p>Payment Information</p>
+                <div class="form-check form-check-inline float-right mr-0">
+                    {% if user.is_authenticated %}
+                    <label class="form-check-label" for="id-save-info">Save this delivery information to my
+                        profile</label>
+                    <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info"
+                        checked>
+                    {% else %}
+                    <label class="form-check-label" for="id-save-info">
+                        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
+                        <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                    </label>
+                    {% endif %}
                 </div>
-                <!--Stripe Element-->
-                <div class="col-12">
-                    <div id="card-element">
+                </fieldset>
+                <fieldset class="px-3">
+                    <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                    <!-- A Stripe card element will go here -->
+                    <div class="mb-3" id="card-element"></div>
 
-                    </div>
+                    <!-- Used to display form errors -->
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                </fieldset>
+
+                <div class="submit-button text-right mt-5 mb-2">
+                    <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="font-weight-bold">Adjust Bag</span>
+                    </a>
+                    <button id="submit-button" class="btn btn-black rounded-0">
+                        <span class="font-weight-bold">Complete Order</span>
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </button>
+                    <p class="small text-danger my-0">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
 <td colspan="5" class="pt-5 text-right">
     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
 </td>
 </tr>
-<tr>
-    <td colspan="5" class="text-right">
-        <a href="{% url 'products' %}" class="btn">
-            <span class="icon">
-                <i class="fas fa-chevron-left"></i>
-            </span>
-            <span class="text-uppercase">Keep Shopping</span>
-        </a>
-        <button id="submit-button" class="btn checkout-btn">
-            <span class="">Complete Your Order</span>
-            <span class="icon">
-                <i class="fas fa-lock"></i>
-            </span>
-        </button>
-        <a href="{% url 'checkout' %}" class="btn">
-            <span class="text-uppercase">Secure Checkout</span>
-            <span class="icon">
-                <i class="fas fa-lock"></i>
-            </span>
-        </a>
-    </td>
-</tr>
-</div>
-<p class="lead mb-5">Your bag is empty.</p>
-<a href="{% url 'checkout' %}" class=" btn">
-    <span class="icon">
-        <i class="fas fa-chevron-left"></i>
-    </span>
-    <span class="text-uppercase">Keep Shopping</span>
-</a>
-
 
 {% endblock %}
 
-{% block postload %}
-{{ block.super 
-{{ stripe_public_key|json_script:"id_stripe_public_key" }}
-{{ client_secret|json_script:"id_client_secret" }}
+{% block postloadjs %}
+   {{ block.super }}
+   {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+   {{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
