@@ -1,5 +1,6 @@
 import uuid
 
+
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -10,6 +11,7 @@ from products.models import Product
 from profiles.models import UserProfile
 
 # Create your models here.
+
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
@@ -36,7 +38,6 @@ class Order(models.Model):
 
         return uuid.uuid4().hex.upper()
 
-
     def update_total(self):
         """
         Update total each time a line is added.
@@ -45,7 +46,7 @@ class Order(models.Model):
         self.delivery_charge = self.total_order * settings.DELIVERY_PERCENTAGE / 100
         self.grand_total = self.total_order + self.delivery_charge
         self.save()
-    
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
