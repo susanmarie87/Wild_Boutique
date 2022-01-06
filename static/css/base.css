@@ -164,6 +164,7 @@ div.table.table-sm.table-borderless {}
 .toast-capper {
     height: 2px;
 }
+
 /* -- FOOTER ICONS adapted from Font Awesome -- */
 .social-icons {
     list-style: none;
@@ -193,6 +194,7 @@ div.table.table-sm.table-borderless {}
     background: white;
     z-index: -1;
 }
+
 
 /* -------------------------------- Media Queries */
 
