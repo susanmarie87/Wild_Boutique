@@ -91,7 +91,13 @@ AUTHENTICATION_BACKENDS = [
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
+
+    # Facebook authentification 
+    'social_core.backends.facebook.Facebook0Auth2',
 ]
+
+SOCIAL_AUTH_FACEBOOK_KEY ='511837656739159'
+SOCIAL_AUTH_FACEBOOK_SECRET ='f593521500470d2a3c3b0e99292b63c9'
 
 SITE_ID = 1
 
