@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'profiles',
    
    # Other
     'crispy_forms',
@@ -92,8 +93,6 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 
-    # Facebook authentification 
-    'social_core.backends.facebook.Facebook0Auth2',
 ]
 
 
