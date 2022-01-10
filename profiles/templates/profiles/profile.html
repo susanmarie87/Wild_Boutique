@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container container-format">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h1 class="page-header">My Profile</h1>
+        </div>
+        <div class="col-12">
+            <p>Welcome back {{user.username}}</p>
+            <a href="{url 'account'}"></a>
+        </div>
+    </div>
+
+    {% endblock %}
