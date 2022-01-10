@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'profiles',
    
    # Other
     'crispy_forms',
+    'sweetify',
 ]
 
 MIDDLEWARE = [
@@ -96,8 +96,6 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.facebook.Facebook0Auth2',
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY ='511837656739159'
-SOCIAL_AUTH_FACEBOOK_SECRET ='f593521500470d2a3c3b0e99292b63c9'
 
 SITE_ID = 1
 
@@ -181,3 +179,8 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+
+
+#sweetalert specification
+
+SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
