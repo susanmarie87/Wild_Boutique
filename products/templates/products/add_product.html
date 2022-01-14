@@ -19,24 +19,22 @@
                 <hr>
                 <h2>Product Management</h2>
                 <h5 class="text-muted">Add a Product</h5>
-            </hr>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-12">
-            <p>Complete the form to checkout</p>
-        </div>
-        <div class="col-12">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" id="multipart/form-data">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <a class="btn btn-outline-black rounded-0" href="{% url 'products %}">Cancel</a>
-                <button class="btn btn-black rounded-0" tye="submit">Add Product</button>
+                </hr>
             </div>
-        </form>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" tye="submit">Add Product</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
-                
+
 
 {% endblock %}

@@ -47,7 +47,7 @@ def add_product(request):
     form = ProductForm()
     template = 'products/add_product.html'
     context = {
-        'product': product,
+        'form': form,
     }
     
     return render(request, template, context)
