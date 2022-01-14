@@ -6,7 +6,19 @@
             "description": "Get the best of all bath bomb worlds with our trio.",
             "price": 15.00,
             "category": 2,
-            "image": "pharma-hemp-complex-yVAXSK6zFIM-unsplash_LRkdjtF.jpg"
+            "image": "bathbomb_trio.jpg"
+
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Stress Away",
+            "description": "Melt the stress of a long day away with our relax bathbomb.",
+            "price": 5.00,
+            "category": 2,
+            "image": "relax_bathbomb.jpg"
 
         }
     },
@@ -14,11 +26,11 @@
         "pk": 3,
         "model": "products.product",
         "fields": {
-            "name": "bathbombs",
-            "description": "Stress Away",
-            "price": 5.00,
+            "name": "Pain Relief",
+            "description": "Crafted with wintergreen, peppermint, azul, and other oils to help your body recover after a hard workout or minor injury.",
+            "price": 10.00,
             "category": 2,
-            "image": "relax.jpg"
+            "image": "pain_relief_bathbomb.jpg"
 
         }
     },
@@ -26,23 +38,23 @@
         "pk": 4,
         "model": "products.product",
         "fields": {
-            "name": "bathbombs",
-            "description": "Pain Relief",
-            "price": 10.00,
+            "name": "Awaken",
+            "description": "Awaken your senses with these shower steamers crafted with envigorating essential oils.",
+            "price": 15.00,
             "category": 2,
-            "image": "bathbomb.jpg"
+            "image": "shower_melts.jpg"
 
         }
     },
     {
-        "pk": 3,
+        "pk": 5,
         "model": "products.product",
         "fields": {
-            "name": "bathbombs",
-            "description": "Pure Happiness",
-            "price": 5.00,
+            "name": "Good Vibes",
+            "description": "Crafted with chammonile, ashghawanda, lavender and other herbs to bring a sense of joy.",
+            "price": 10.00,
             "category": 2,
-            "image": "relax.jpg"
+            "image": "good_vibes.jpg"
 
         }
     },
@@ -50,23 +62,11 @@
         "pk": 6,
         "model": "products.product",
         "fields": {
-            "name": "tinctures",
-            "description": "Happy Drops",
-            "price": 10.00,
-            "category": 4,
-            "image": "tincture.jpg"
-
-        }
-    },
-    {
-        "pk": 7,
-        "model": "products.product",
-        "fields": {
-            "name": "tinctures",
-            "description": "cramp relief",
+            "name": "Cramp Relief",
+            "description": "This tincture is formulated to target those pesky monthly cramps women experience.",
             "price": 15.00,
-            "category": 4,
-            "image": "pain-tincture.jpg"
+            "category": 2,
+            "image": "monthly_visitor_tincture.jpg"
 
         }
     },
@@ -74,23 +74,11 @@
         "pk": 7,
         "model": "products.product",
         "fields": {
-            "name": "tinctures",
-            "description": "Stress Away",
+            "name": "Relax & Restore",
+            "description": "Like the name, this tincture was crafted to help you relax and restore.",
             "price": 5.00,
             "category": 2,
-            "image": ""
-
-        }
-    },
-    {
-        "pk": 3,
-        "model": "products.product",
-        "fields": {
-            "name": "tinctures",
-            "description": "Relax & Restore",
-            "price": 5.00,
-            "category": 2,
-            "image": "relax.jpg"
+            "image": "relax_restore.jpg"
 
         }
     },
@@ -98,11 +86,11 @@
         "pk": 8,
         "model": "products.product",
         "fields": {
-            "name": "jewelry",
-            "description": "turquoise",
+            "name": "Adventurous",
+            "description": "Ignite the sense with this tincture formulated to give youu an uplifting playful vibe.",
             "price": 15.00,
-            "category": 1,
-            "image": "bracelet.png"
+            "category": 2,
+            "image": "tincture_guy.jpg"
 
         }
     },
@@ -110,11 +98,11 @@
         "pk": 9,
         "model": "products.product",
         "fields": {
-            "name": "jewelry",
-            "description": "angel",
-            "price": 15.00,
-            "category": 1,
-            "image": "bracelet2.png"
+            "name": "Bracelet Trio",
+            "description": "This bracelet set will pair perfectly with one of our casual day tee's.",
+            "price": 5.00,
+            "category": 2,
+            "image": "bracelet_trio.jpg"
 
         }
     },
@@ -122,11 +110,11 @@
         "pk": 10,
         "model": "products.product",
         "fields": {
-            "name": "jewelry",
-            "description": "rose gold",
+            "name": "Meditation Bracelet",
+            "description": "These beautiful beads add style to your meditation sessions.",
             "price": 15.00,
             "category": 1,
-            "image": "bracelet3.png"
+            "image": "meditation_bracelet.jpg"
 
         }
     },
@@ -134,11 +122,11 @@
         "pk": 11,
         "model": "products.product",
         "fields": {
-            "name": "jewelry",
-            "description": "blue bird",
+            "name": "Howlite",
+            "description": "This beautiful howlite and blue water quartz bracelet is perfect for a day at the beach.",
             "price": 15.00,
             "category": 1,
-            "image": "bracelet4.png"
+            "image": "howlite.jpg"
 
         }
     },
@@ -146,11 +134,11 @@
         "pk": 12,
         "model": "products.product",
         "fields": {
-            "name": "Shirt Combo",
-            "description": "Shirts",
-            "price": 55.00,
-            "category": 5,
-            "image": "ian-dooley-rBkihK3n_YI-unsplash.jpg.jpg"
+            "name": "Make Today Amazing",
+            "description": "Make today amazing with this adorable and inspirational bracelet.",
+            "price": 15.00,
+            "category": 1,
+            "image": "amazing.jpg"
 
         }
     },
@@ -158,11 +146,23 @@
         "pk": 13,
         "model": "products.product",
         "fields": {
-            "name": "Peace",
-            "description": "Shirts",
+            "name": "Sweatshirt",
+            "description": "Keep nice and cozy witht his organic cotton sweatshirt.",
+            "price": 55.00,
+            "category": 5,
+            "image": "sweatshirt.jpg"
+
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Beautiful & Brave",
+            "description": "Uplift those around you with this catchy uplifting slogan tee.",
             "price": 25.00,
             "category": 5,
-            "image": "shirt3_Ru8nUZr.jpg"
+            "image": "beautiful_brave.jpg"
 
         }
     },
@@ -170,11 +170,23 @@
         "pk": 15,
         "model": "products.product",
         "fields": {
-            "name": "Not Today",
-            "description": "Shirt",
+            "name": "Peace",
+            "description": "love, light and skeleton peace sign sets the tone for this casual day tee.",
             "price": 25.00,
             "category": 5,
-            "image": "not-today.jpg"
+            "image": "peace.jpg"
+
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Skeleton",
+            "description": "Peace from Denver. In our classic skeleton style.",
+            "price": 25.00,
+            "category": 5,
+            "image": "skeleton.jpg"
 
         }
     }
