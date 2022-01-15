@@ -401,10 +401,6 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 
 
-https://unsplash.com/photos/D6SQVDF7x_E
-
-https://unsplash.com/photos/LAOVX-PFNvI
-
 ## BUGS
 
 BUG #1
@@ -513,4 +509,40 @@ This solved the issue and my website started returning the Toast messages succes
 
 
 
+## Testing
 
+- Implementation: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
+
+- TEST:
+
+
+
+
+
+
+
+## MEDIA
+Make to day amazing
+https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+3 bracelets image
+https://unsplash.com/photos/md87xXz3le4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+Pain tincture
+
+https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Tincture Guy
+https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Bathbomb in tub
+Photo by Anthony Shkraba from Pexels
+
+Howlite
+https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/photos/D6SQVDF7x_E
+
+https://unsplash.com/photos/LAOVX-PFNvI
