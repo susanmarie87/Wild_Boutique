@@ -88,7 +88,7 @@
 
 * I want to be able to see previous order details.
 
-* I want my details tto be saved to my account for faster purchases in future.
+* I want my details to be saved to my account for faster purchases in future.
 
 ### Site Goals <a name="site-goals"></a>
 
@@ -405,8 +405,8 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 Bug 1
  
-During the beginning of my testing stage, I tried to render a basic hello function. 
-Initially I was getting a:
+Problem: Trying to render a basic hello function. 
+returns this error:
 
 Page not found (404)
 Request Method:	GET
@@ -417,20 +417,22 @@ admin/
 hello/ [name='hello']
 The empty path didn’t match any of these.
 
-
-This error was being returned because I did not have function mapped to the home url
+Cause: This error was being returned because I did not have function mapped to the home url
 in my root urls.py.
 
-Django needs to define the url with an empty string. Once I removed hello from the string, the test function
-properly rendered to the page
+Solution: Django needs to define the url with an empty string. Once I removed hello from the string, the test function
+properly rendered to the page.
 ___________________________
 
 Bug 2
 
-On the first test run to check my index.html, an error kept returning:
+Problem: On the first test run to check my index.html, an error kept returning:
 
 'module' object is not callable.
-It turns out that I had improperly imported os in the wrong file. By removing this, I was able to open my project.
+
+Cause: It turns out that I had improperly imported os in the wrong file. 
+
+Solution: By removing the improperly imported os placement I was able to open my project.
 ___________________________
 
 Bug 3
@@ -441,34 +443,43 @@ __________________________
 
 Bug 4
 
-When wiring up my item-detail folder into urls.py, I was met whith an invalid syntax error. This error occurred because when I created the path, I forgot to add the commas at the end of both paths which led to the invalid syntax error.
+Problem: When wiring up my item-detail folder into urls.py, I was met whith an invalid syntax error. 
 
-This was solved by of course adding a ), to the end of the path.
+Cause: This error occurred because when I created the path, I forgot to add the commas at the end of both paths which led to the invalid syntax error.
+
+Solution: This was solved by of course adding a ), to the end of the path.
 _________________________
 
 Bug 5
 
-When setting up the view for product details. I had 
+Problem: When setting up the view for product details. I had 
 Context = {
 ‘product’: products,
 }
+
 This returned a templating error and would not render the individual product once clicked.
 
-This issue was solved by changing ‘products’ to ‘product’
+Cause: Invalid Syntax. 
+
+Solution: This issue was solved by changing ‘products’ to ‘product’
 ______________________________
 
 Bug 6
 
-When trying to implement the logic for adding the quantity times the price total, I receive a TypeError for an integer and a string 
+Problem: When trying to implement the logic for adding the quantity times the price total, I receive a TypeError for an integer and a string 
 Total +=
 
-This bug was in the Product Models file. The bug was fixed by changing the price string to a DecimalField and running migrations. After the models were properly migrated, the cart was able to render the prices of the items. 
+Cause: Wrong model field reference in the Product models.py file.
+
+Solution: The bug was fixed by changing the price string to a DecimalField and running migrations. After the models were properly migrated the cart was able to render the prices of the items. 
 ________________________
 
 Bug 7
 
-Scott helped me with this one. I am using Bootstrap 5 and because of this, when I went to add the
-Toasts to my project, it was not working. This was because Bootstrap 5 stopped using JQuery and are
+Problem: Scott helped me with this one. I am using Bootstrap 5 and because of this, when I went to add the
+Toasts to my project, it was not working. 
+
+Cause: This was because Bootstrap 5 stopped using JQuery and are
 instead using Vanilla JS. The initialization step is different.
 In Bootstrap 4 the JavaScript Initialization is:
 <script type=”text/javascript”>
@@ -481,16 +492,18 @@ var toastList = toastElList.map(function (toastEl) {
   return new bootstrap.Toast(toastEl, option)
 })
 
-Scott was able to make a loop that cycled through the toasts:
+Solution: Scott was able to make a loop that cycled through the toasts:
 For (let x = 0; x < toastList.length;  x++) {
                                toastList[x].show();
                }
 This solved the issue and my website started returning the Toast messages successfully.
+
+**NOTE** I ended up switching back to Bootstrap4 due to design complications.
 ______________________________
 
 Bug 9
 
-When trying to add CRUD into the project for the store owner, I was met with a disturbing error during the test phase. I added the new item, saw that it was processed properly and headed to the Django admin to delete the product. When I did this, an error came back with:
+Problem: When trying to add CRUD into the project for the store owner, I was met with a disturbing error during the test phase. I added the new item, saw that it was processed properly and headed to the Django admin to delete the product. When I did this, an error came back with:
 
 Page not found (404)
 Request Method: GET
@@ -503,9 +516,9 @@ accounts/
 The empty path matched the last one.
 You’re seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
 
-There was an issue with the session cookie and this was solved by taking the following steps:
+Cause: There was an issue with the session cookie and this was solved by taking the following steps:
 
-Open up Dev Tools, go to the Application tab, select Storage from the sidebar, then click the "Clear Site Data" button, it will fix the issue for you by emptying your cart (see image below).
+Solution: Open up Dev Tools, go to the Application tab, select Storage from the sidebar, then click the "Clear Site Data" button, it will fix the issue for you by emptying your cart (see image below).
 _______________________
 
 Bug 10
@@ -548,13 +561,25 @@ Cause: A corrupted value inside the migration file which was spotted by Kevin on
 
 Solution: Kevin gave it a valid value and I was able to run the migrations.
 
+___________
+Bug 13
+
+Problem:
+Cause:
+Solution:
+______________
+Bug 14
+
+Problem:
+Cause:
+Solution:
 
 
 ## User Story Testing
 
 - IMPLEMENTATION: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
 
-- TEST: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
+- T: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
 ![alt text](/path/img.jpg "Title")
 
 - Result:
