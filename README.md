@@ -102,7 +102,7 @@
 
 * I want the site to be fully mobile responsive.
 
-## Scope <a name="scope></a>
+## Scope <a name="scope"></a>
 
 ## Design
 
@@ -330,7 +330,7 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 | Postal Code       | default_postcode_zip             | max length 120    | CharField  |
 | Postal Code       | default_postcode_zip             | max length 120    | CharField  |
 | Contact           |                                  |Number max         |            |
-| Number            | default_phone_number         |length 20          | CharField  |
+| Number            | default_phone_number             |length 20          | CharField  |
 | Country           | country                          |pycountry select   | Option     |
 
 
@@ -401,33 +401,10 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 
 
-## BUGS
+## Bugs
 
-BUG #1
-
-Trying to run a test function to render my webpage.
-
-For some reason my files are upside down. I thought my Migrations folder 
-along with settings and url files belonged in the top file.
-
-I thought that my views/admin files were supposed to be under the __init__.py.(tells project manage.py is a
- directory we can import from)
-
-I created the project directory first with the Django- admin wild_indigos command and then 
-
-the startapp shop command.
-
-Shouldn't the project directory be at the top?
-
-Is that impacting my
-
-I have tried to move the folders.
-
-I have tried changing the name on the 
-
-
-_____________
-
+Bug 1
+ 
 During the beginning of my testing stage, I tried to render a basic hello function. 
 Initially I was getting a:
 
@@ -446,24 +423,31 @@ in my root urls.py.
 
 Django needs to define the url with an empty string. Once I removed hello from the string, the test function
 properly rendered to the page
+___________________________
 
- Bug #2
+Bug 2
+
 On the first test run to check my index.html, an error kept returning:
 
 'module' object is not callable.
-It turns out that I had improperly imported os in the wrong file. By removing this, I was able to open my project. The project 
+It turns out that I had improperly imported os in the wrong file. By removing this, I was able to open my project.
+___________________________
 
+Bug 3
 
-BUG 3
 When landing page is throttled at 150% or 125% on mid-tier and low-end mobiles, the nav and footer get huge and cover the content on the hero image.
 
+__________________________
 
-BUG 4
+Bug 4
+
 When wiring up my item-detail folder into urls.py, I was met whith an invalid syntax error. This error occurred because when I created the path, I forgot to add the commas at the end of both paths which led to the invalid syntax error.
 
 This was solved by of course adding a ), to the end of the path.
+_________________________
 
 Bug 5
+
 When setting up the view for product details. I had 
 Context = {
 ‘product’: products,
@@ -471,20 +455,17 @@ Context = {
 This returned a templating error and would not render the individual product once clicked.
 
 This issue was solved by changing ‘products’ to ‘product’
+______________________________
 
+Bug 6
 
-Bug # 6
-
-When wiring up the shopping bag app to the project, a templating error was returned that would not render the shopping cart page. This error 
-
-
-Bug #7
 When trying to implement the logic for adding the quantity times the price total, I receive a TypeError for an integer and a string 
 Total +=
 
 This bug was in the Product Models file. The bug was fixed by changing the price string to a DecimalField and running migrations. After the models were properly migrated, the cart was able to render the prices of the items. 
+________________________
 
-Bug # 8
+Bug 7
 
 Scott helped me with this one. I am using Bootstrap 5 and because of this, when I went to add the
 Toasts to my project, it was not working. This was because Bootstrap 5 stopped using JQuery and are
@@ -505,21 +486,95 @@ For (let x = 0; x < toastList.length;  x++) {
                                toastList[x].show();
                }
 This solved the issue and my website started returning the Toast messages successfully.
+______________________________
+
+Bug 9
+
+When trying to add CRUD into the project for the store owner, I was met with a disturbing error during the test phase. I added the new item, saw that it was processed properly and headed to the Django admin to delete the product. When I did this, an error came back with:
+
+Page not found (404)
+Request Method: GET
+Request URL: http://localhost:8000/
+Raised by: home.views.index
+Using the URLconf defined in wild_boutique.urls, Django tried these URL patterns, in this order:
+admin/
+accounts/
+[name='home']
+The empty path matched the last one.
+You’re seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
+
+There was an issue with the session cookie and this was solved by taking the following steps:
+
+Open up Dev Tools, go to the Application tab, select Storage from the sidebar, then click the "Clear Site Data" button, it will fix the issue for you by emptying your cart (see image below).
+_______________________
+
+Bug 10
+
+Problem: When clicking the secure checkout button an error occurred with crispy forms. 
+
+Cause: This was due to a gitpod corruption. 
+
+Solution: I had to run a command of:
+
+curl https://raw.githubusercontent.com/Code-Institute-Org/gitpod-full-template/main/.gitpod.dockerfile > .gitpod.dockerfile
+
+Then I had to copy and paste the original requirements.txt contents into https://lechien73.github.io/reqfix/ 
+
+Next, I copied the code returned from https://lechien73.github.io/reqfix/, into my requirements.txt file.
+
+Commit everything.
+
+Go to Github, click the green button and create a new workspace.
+
+Run the command of  pip3 install -r requirements.txt, to reinstall all the dependencies.
+
+I created a new instance of my project a new env.py and reinstalled all dependencies to it. As I had manually loaded my categories and products fixtures files into the Django admin, I was left to completely redo the products section. 
+_________________
+
+Bug 11
+
+Problem: Requirements.txt file was corrupted a second time.
+
+Cause: Unsure of how the file was corrupted a second time.
+
+Solution: Followed the same exact steps as the first time.
+______________________
+
+Bug 12
+
+Problem: I was unable to make migrations after the new install 
+
+Cause: A corrupted value inside the migration file which was spotted by Kevin on tutor support.
+
+Solution: Kevin gave it a valid value and I was able to run the migrations.
 
 
 
+## User Story Testing
 
-## Testing
+- IMPLEMENTATION: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
 
-- Implementation: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
+- TEST: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
+![alt text](/path/img.jpg "Title")
 
-- TEST:
+- Result:
 
+- Verdict:
+_________________
 
+- Implementation:
+- Test:
+- Result:
+- Verdict:
 
+_________________
 
+- Implementation:
+- Test:
+- Result:
+- Verdict:
 
-
+________________
 
 ## MEDIA
 Make to day amazing
