@@ -35,6 +35,7 @@ def checkout(request):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
+            order.save()
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -116,7 +117,6 @@ def checkout_success(request, order_number):
         user_profile_form = UserProfileForm(profile_data, instance=profile)
         if user_profile_form.is_valid():
             user_profile_form.save()
-
 
     messages.success(request, f'Order successfully processed! \
         You order number is {order_number}. A confirmation \
