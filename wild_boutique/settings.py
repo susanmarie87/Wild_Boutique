@@ -1,3 +1,4 @@
+"""Django settings"""
 from pathlib import Path
 
 import os
@@ -19,11 +20,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smp8780-wild-boutique.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['smp8780-wild-indigos.herokuapp.com', 'localhost']
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,11 +41,12 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
 
+
    # Other
     'crispy_forms',
     'sweetify',
 
-    #providers
+    # providers
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
 ]
@@ -74,7 +75,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',# required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -181,7 +182,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Stripe 
+# Stripe
 DELIVERY_PERCENTAGE = 15
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
@@ -190,7 +191,7 @@ STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 
 
-#sweetalert specification
+# sweetalert specification
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
 
 LOGIN_REDIRECT_URL = "/"
