@@ -1,0 +1,1 @@
+web: gunicorn wild_boutique.wsgi:application
