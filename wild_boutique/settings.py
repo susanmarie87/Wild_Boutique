@@ -40,10 +40,14 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-   
+
    # Other
     'crispy_forms',
     'sweetify',
+
+    #providers
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -187,5 +191,6 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 
 
 #sweetalert specification
-
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
+
+LOGIN_REDIRECT_URL = "/"
