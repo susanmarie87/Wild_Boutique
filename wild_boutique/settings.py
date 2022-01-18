@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'contact',
 
 
    # Other
@@ -207,6 +208,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLS in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    
 # Stripe
 DELIVERY_PERCENTAGE = 15
 FREE_DELIVERY_THRESHOLD = 50
