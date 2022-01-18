@@ -1,15 +1,19 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404
+)
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.conf import settings
-
-from .forms import OrderForm
-from .models import Order, OrderLineItem
-from products.models import Product
-from bag.contexts import bag_contents
-from profiles.forms import UserProfile
 
 import stripe
+
+from bag.contexts import bag_contents
+from products.models import Product
+from profiles.forms import UserProfile
+from .forms import OrderForm
+
+
+from .models import Order, OrderLineItem
 
 
 @login_required(login_url="/accounts/login")
