@@ -19,8 +19,20 @@ body {
     width: 1.5rem;
 }
 
+a.nav-link.link-style {
+    color: white;
+}
+
+a.nav-link.cart-link {
+    color: white
+}
+
 .main-logo-link {
     width: fit-content;
+}
+
+a {
+    color: white;
 }
 
 .shop-now-button {
@@ -99,16 +111,11 @@ p.my-0 {
 }
 
 a.navbar-brand {
-    float: left;
+    float: right;
 }
 
 .navbar-nav li {
-    padding-right: 10px;
-}
-
-div.container.justify-content-between {
-    margin: 0;
-    padding: 0;
+    padding-right: 0;
 }
 
 div#navbar-Responsive.collapse.navbar-collapse {
@@ -119,16 +126,12 @@ div.collapse.navbar-collapse {
     justify-content: center;
 }
 
-
-
 img.img-fluid.rounded {
 
     width: 640px;
     height: 427px;
     object-fit: cover;
 }
-
-div.table.table-sm.table-borderless {}
 
 .message-container {
     position: fixed;
