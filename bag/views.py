@@ -1,7 +1,9 @@
+""" Views"""
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
+
 
 def view_bag(request):
     """ A view that renders the cart items"""
@@ -30,14 +32,14 @@ def add_to_bag(request, item_id):
 
 def update_bag(request, item_id):
     """A view to update the bag items"""
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
 
     if quantity > 0:
-       bag[item_id] = quantity
-       messages.success(request, f'Updated {product.name} quantity to (bag[item_id])')
+        bag[item_id] = quantity
+        messages.success(request, f'Updated {product.name} quantity to (bag[item_id])')
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {product.name} quantity to (bag[item_id])')
@@ -55,6 +57,5 @@ def delete_bag_item(request, item_id):
 
     request.session['bag'] = bag
     messages.success(request, f'Removed {product.name} quantity to (bag[item_id])')
-    
-    return redirect(reverse('view_bag'))
 
+    return redirect(reverse('view_bag'))
