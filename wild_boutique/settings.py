@@ -185,7 +185,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = ''
+    AWS_STORAGE_BUCKET_NAME = 'wild-indigos.herokuapp.com'
     AWS_S3_REGION_NAME = 'us-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
