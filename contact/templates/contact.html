@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+{% include 'includes/main-nav.html' %}
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+
+<div class="container container-format">
+    <div class="row information-format form-position">
+        <div class="col-12 align-self-center">
+            <h1>Contact us today!</h1>
+            <p>Message any of our social media accounts for the fastest service!</p>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 information-format">
+            <h2>Social Media</h2>
+        </div>
+        <div class="col-12 information-format">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram social-icons"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                    class="fab fa-facebook social-icons"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
+                    class="fab fa-twitter social-icons"></i></a>
+        </div>
+    </div>
