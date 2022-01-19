@@ -185,6 +185,32 @@ img.img-fluid.rounded {
     z-index: -1;
 }
 
+h1 {
+    color: #ffffff;
+    position: center;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+.social-icons:hover {
+    text-decoration: none;
+    color: #ccccff;
+    font-size: 3rem;
+    padding: 0 2rem;
+    transition: ease-in-out 2s;
+}
+
+.div.col-12.information-format {
+    justify-content: center;
+    position: center;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;

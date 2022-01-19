@@ -5,7 +5,7 @@ import os
 from os import path
 import dj_database_url
 if path.exists("env.py"):
-    import env
+    import env # noqa: F401
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -144,7 +144,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': ('django.contrib.auth.password_validation.'
+                 'MinimumLengthValidator'),
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -187,12 +188,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
     # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
+    # AWS_S3_OBJECT_PARAMETERS = {
+    #    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    #    'CacheControl': 'max-age=94608000',
+    #}
 
-    AWS_STORAGE_BUCKET_NAME = 'wild-indigos.herokuapp.com'
+    AWS_STORAGE_BUCKET_NAME = 'smp8780-wild-indigos'
     AWS_S3_REGION_NAME = 'us-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY')
