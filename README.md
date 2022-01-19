@@ -607,35 +607,6 @@ Flake8 errors. The absolute bane of my existence. It tells me I have something i
 
 Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues. I wish there would have been better coverage of working through these errors. 
 
-## MEDIA
-Make to day amazing
-https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-
-3 bracelets image
-https://unsplash.com/photos/md87xXz3le4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-
-Pain tincture
-
-https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-Tincture Guy
-https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-Bathbomb in tub
-Photo by Anthony Shkraba from Pexels
-
-Howlite
-https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-https://unsplash.com/photos/D6SQVDF7x_E
-
-https://unsplash.com/photos/LAOVX-PFNvI
-
-https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-
 ## Deployment
 
 Below is an example of how to deploy this site locally based on using *VsCode IDE*, deploying to Heroku using *Amazon S3* for hosting of static and media files. This will allow the site to deploy automatically with commits to the master branch. The code can also be run locally.
@@ -765,3 +736,33 @@ python manage.py migrate
 5. It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
 6. When this has deployed select open app from the top bar of the *Heroku* App.
 
+
+## MEDIA
+Make to day amazing
+https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+3 bracelets image
+https://unsplash.com/photos/md87xXz3le4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+Pain tincture
+
+https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Tincture Guy
+https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Bathbomb in tub
+Photo by Anthony Shkraba from Pexels
+
+Howlite
+https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+https://unsplash.com/photos/D6SQVDF7x_E
+
+https://unsplash.com/photos/LAOVX-PFNvI
+
+https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLinkHi James. How are today?
+
+Test to fix bucket issues
