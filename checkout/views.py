@@ -1,5 +1,6 @@
 from django.shortcuts import (
-    render, redirect, reverse, get_object_or_404
+    render, redirect, reverse, get_object_or_404,
+    HttpResponse
 )
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
