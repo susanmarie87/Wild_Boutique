@@ -3,6 +3,7 @@ from django.shortcuts import (
 )
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 
 import stripe
@@ -11,7 +12,6 @@ from bag.contexts import bag_contents
 from products.models import Product
 from profiles.forms import UserProfile
 from .forms import OrderForm
-
 
 from .models import Order, OrderLineItem
 
@@ -136,7 +136,7 @@ def checkout_success(request, order_number):
 
     return render(request, template, context)
 
-
+@csrf_exempt
 def webhook_receiver(request):
 
     return HttpResponse ("Ok", content_type='text/plain')
