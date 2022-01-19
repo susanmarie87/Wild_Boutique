@@ -601,6 +601,12 @@ _________________
 
 ________________
 
+## UNRESOLVED ISSUES
+
+Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
+
+Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues. I wish there would have been better coverage of working through these errors. 
+
 ## MEDIA
 Make to day amazing
 https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
@@ -626,3 +632,136 @@ https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&
 https://unsplash.com/photos/D6SQVDF7x_E
 
 https://unsplash.com/photos/LAOVX-PFNvI
+
+https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+## Deployment
+
+Below is an example of how to deploy this site locally based on using *VsCode IDE*, deploying to Heroku using *Amazon S3* for hosting of static and media files. This will allow the site to deploy automatically with commits to the master branch. The code can also be run locally.
+
+### Deployment Requirements
+
+- [VScode](https://code.visualstudio.com/) IDE Local development tool
+- [python](https://www.python.org/downloads/) Documentation is based on Python v3.8
+- PIP package installer
+- [Stripe](https://stripe.com/gb) Payment infrastructure
+
+### Deploying Locally
+
+1. Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice.
+   Alternatively if you have git installed on your client you can run the following command from the terminal.
+
+ ```bash
+   git clone https://github.com/susanmarie87/wild-boutique.git
+   ```
+
+   1. Open us your local IDE (For this example we will be using VScode as linked in the requirements) and open the working folder.
+
+1. Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
+
+```bash
+pip install pipenv
+```
+
+1. In your root dir, create a new folder called .venv (ensure you have the .)
+
+1. To activate the virtual environment navigate to the below dir and run activate.bat
+
+```bash
+[folderinstalled]\scripts\activate\activate.bat
+```
+
+If you're using Linux or Mac use the below command 
+
+```bash
+source .venv/bin/activate
+```
+
+1. Next we need to install all modules required by the project to run, use the follow
+
+```bash
+pipenv install -r requirements.txt
+```
+
+1. Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
+
+```bash
+import os
+
+os.environ["SECRET_KEY"] = "[Your Secret Key]"
+os.environ["DEV"] = "1"
+os.environ["HOSTNAME"] = "0.0.0.0"
+os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
+os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
+os.environ["DATABASE_URL"] = "[Your DB URL]"
+```
+
+### Database setup
+
+1. To set up your database you will first need to run the following command
+
+```bash
+python manage.py migrate
+```
+
+1. To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+
+```bash
+python manage.py createsuperuser
+```
+
+1. From there you should now be able to run the server using the following command
+
+```bash
+python manage.py runserver
+```
+
+1. If everything has been correctly configure you should not get a message giving you a link to your locally hosted site usually at http://127.0.0.1:8000
+
+1. Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
+
+```bash
+python manage.py loaddata store/fixtures/categories.json
+python manage.py loaddata store/fixtures/products.json
+python manage.py loaddata clients/fixtures/clients.json
+```
+
+### Deploying to Heroku
+
+To run this application in an online environment you will need to deploy the code to *Heroku*.
+Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successful
+
+1. Either create an account at [Heroku](https://www.heroku.com/) or log in to your account
+1. Set up a new app under a unique name
+1. In the resources section, in the addons field type the below command and select the free cost option
+
+```bash
+heroku Postgres
+```
+
+1. in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
+1. in the Config Vars in Heroku you will need to populate with the following keys
+
+|          Key          |     Value    |
+|:---------------------:|:------------:|
+| AWS_ACCESS_KEY_ID     | [your value] |
+| AWS_SECRET_ACCESS_KEY | [your value] |
+| SECRET_KEY            | [your value] |
+| STRIPE_PUBLIC_KEY     | [your value] |
+| STRIPE_SECRET_KEY     | [your value] |
+| USE_AWS               | TRUE         |
+| DATABASE_URL          | [Your Value] |
+
+1. Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
+
+```bash
+python manage.py migrate
+```
+
+2. Next you will need to create a super user and populate the database as described in the database set up section
+3. When the migrations and data has been loaded, in your *Heroku* dashboard select the Deploy tab
+4. From here select the Github option and connect the repository from GitHub and select the branch (Master) to deploy from.
+5. It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
+6. When this has deployed select open app from the top bar of the *Heroku* App.
+
