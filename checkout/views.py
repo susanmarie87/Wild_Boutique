@@ -139,4 +139,4 @@ def checkout_success(request, order_number):
 
 def webhook_receiver(request):
 
-    return (HttpResponse("Ok"))
+    return HttpResponse ("Ok", content_type='text/plain')
