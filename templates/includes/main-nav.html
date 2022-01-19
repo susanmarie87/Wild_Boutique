@@ -42,7 +42,7 @@
       </li>
       {% endif %}
       <li class="nav-item">
-        <a class="nav-link cart-link" href="{% url 'products' %}">
+        <a class="nav-link cart-link" href="{% url 'view_bag' %}">
           <i class="fa fa-shopping-cart"></i>
           {% if grand_total %}
           £{{ grand_total|floatformat:2 }}
