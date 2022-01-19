@@ -140,4 +140,4 @@ def checkout_success(request, order_number):
 @csrf_exempt
 def webhook_receiver(request):
 
-    return HttpResponse ("Ok", content_type='text/plain')
+    return HttpResponse("Ok", content_type='text/plain')
