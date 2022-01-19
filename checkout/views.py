@@ -135,3 +135,8 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def webhook_receiver(request):
+
+    return (HttpResponse("Ok"))
