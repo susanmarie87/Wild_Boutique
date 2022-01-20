@@ -766,3 +766,6 @@ https://unsplash.com/photos/LAOVX-PFNvI
 https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLinkHi James. How are today?
 
 Test to fix bucket issues
+
+
+During my AWS crisis, I ccidentally committed more changed than should have been without explaining so I will detail those here:
