@@ -159,8 +159,6 @@ A mock-up of how the site will be laid out is available here via [Wire Frames]()
 
 ### Database Structure
 
-![Database Structure]()
-
 #### Data Models
 
 ###### Product & Categories
@@ -200,14 +198,11 @@ Django allauth was used to set up user authentication and built in decorators al
 
 ### Color Scheme
 
-![Canva](canva.com)
-
-The above color swatch shows a guideline for the color scheme of the site.
 
 Colors are brand colors that have been adopted for their strong visual contrast in an attempt to make all content as easily consumable and suitable for visually impared users as possible.
 * There are two main colors used throughout the project and they are listed below.
-    * #61988E - this is the orchid color used in the header and footer as well as border colors fonts etc.
-    * #211522- this is just your standard black that will be used as the 
+    * #FFFFFF - this is the color used in the header and footer as well as border colors fonts etc.
+    * #000- this is just your standard black that will be used as the 
     * #c197D2 - this is the off-white color used in the modal, forms, all auth etc. I wanted to have a nice easy to read white color and this was my preferred choice.
     
 
@@ -566,9 +561,9 @@ Solution: Kevin gave it a valid value and I was able to run the migrations.
 ___________
 Bug 13
 
-Problem:
-Cause:
-Solution:
+Problem: The Aws crisis. Images not displaying on Heroku.
+Cause: A backslash, /, generated in the AWS IAM secret convig variable. The backslash that is automaticcally generated in some AWS keys cause major issues in Heroku and this happened to me. Because of the slash in the key, it
+Solution: Scott and James had a student who had previously had these problems. I generated a new user key and added them to the Heroku config vars and the images displayed on Heroku.
 ______________
 Bug 14
 
@@ -610,7 +605,7 @@ _____________
 
 - USER STORY: "I want to be able to see all product details before I choose to buy the item"
 - Test: Product details were added in so the user could see better details before purchasing.
-- Result: Originally, there were product details. During the AWS crisis of my project my product details were there. The product details have now vanished into thin code air and I have no clue what has happened to them nor the time or brain power left to even attempt figuring that out before the deadline.
+- Result: Originally, there were product details.  During the AWS crisis of my project my product details were there. The product details have now vanished into thin code air and I have no clue what has happened to them nor the time or brain power left to even attempt figuring that out before the deadline.
 - Verdict: Products without details are worthless and will absolutely drive users away. Very poor user experience and mucy be addressed immediately. User stories were satisfied but not now when it counts.
 _____________
 - USER STORY: "I want to be able to sort the items based on their price.""I want to be able to see products price and sizes if they have any."
@@ -650,9 +645,15 @@ _________________________
 _________________________
 ## UNRESOLVED ISSUES
 
-Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
+Product detail CSS not picking up.
 
-Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues. I wish there would have been better coverage of working through these errors. 
+- Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
+
+- Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues. I wish there would have been better coverage of working through these errors. 
+
+Settings.py warning for import env but import env is used so I ignored that.
+
+The missing module docstrings were also left because I just did not keep track of exactly what each and every single 4018 files did properly and I ran out of time to go back and check.
 
 ## Deployment
 
@@ -811,15 +812,3 @@ https://unsplash.com/photos/D6SQVDF7x_E
 https://unsplash.com/photos/LAOVX-PFNvI
 
 https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLinkHi James. How are today?
-
-Test to fix bucket issues
-
-
-During my AWS crisis, I ccidentally committed more changed than should have been without explaining so I will detail those here:
-
-
-
-
-Settings.py warning for import env but import env is used so I ignored that.
-
-The missing module docstrings were also left because I just did not keep track of exactly what each and every single 4018 files did properly and I ran out of time to go back and check.
