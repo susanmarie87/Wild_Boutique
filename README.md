@@ -812,3 +812,11 @@ https://unsplash.com/photos/D6SQVDF7x_E
 https://unsplash.com/photos/LAOVX-PFNvI
 
 https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLinkHi James. How are today?
+
+
+## Acknowledgements
+
+The Tutors. All of them. The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. I am not a fan of social platforms especially when I have never felt so just dumb in my life and the thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
+
+Code Institute
+When I started this journey, I had no idea how badly life was getting ready to test me. Between our newly started business shutting down, Social distance learning with two kids locked inside of a house. 8 people in my family and social circle passing away to helping my husband start two other businesses while homeschooling full-time and being everything to everyone trying to learn HTML, CSS, Bootstrap, cloud based IDE's, JavaScript, Python, Mongo, Flask, Django, Balsamiq, Dev Tools and everything in-between, Code Institute went above and beyond to accomodate any and all needs. My brain may feel assauleted but the Code Institute staff is nothing short of incredible and helped ease the blows. The course and content itself are cutting-edge and incredibly informative. I am so thankful my coding journey brought me here and not the UCSD bootcamp I had originally applied to. Thank you Code Institute for this very wild journey. 
