@@ -5,7 +5,7 @@ import os
 from os import path
 import dj_database_url
 if path.exists("env.py"):
-    import env # noqa: F401
+    import env  # noqa: F401
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -141,17 +141,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': ('django.contrib.auth.password_validation.'
+                 'UserAttributeSimilarityValidator'),
     },
     {
         'NAME': ('django.contrib.auth.password_validation.'
                  'MinimumLengthValidator'),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': ('django.contrib.auth.password_validation.'
+                 'CommonPasswordValidator'),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': ('django.contrib.auth.password_validation.'
+                 'NumericPasswordValidator'),
     },
 ]
 
@@ -221,5 +224,3 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 # sweetalert specification
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
-
-LOGIN_REDIRECT_URL = "/"
