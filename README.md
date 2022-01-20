@@ -778,47 +778,35 @@ python manage.py migrate
 5. It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
 6. When this has deployed select open app from the top bar of the *Heroku* App.
 
-
+## Inspiration
+The inspiration for this project and much of the code functions and styling came from Code Institute and their project, 
+[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 ## MEDIA
-Make today amazing
 
-https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-
-3 bracelets image
-
-https://unsplash.com/photos/md87xXz3le4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[Make today amazing](https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 
-Pain tincture
-
-https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-Tincture Guy
-
-https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[3 bracelets image](https://unsplash.com/photos/md87xXz3le4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 
-Howlite
+[Pain tincture](https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink])
 
-https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
-Pain Tincture
-
-https://unsplash.com/photos/D6SQVDF7x_E
-
-Good Vibes tincture
-https://unsplash.com/photos/LAOVX-PFNvI
+[Tincture Guy](https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 
-Super Good vibes
+[Howlite](https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
-https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[Pain Tincture](https://unsplash.com/photos/D6SQVDF7x_E)
+
+[Good Vibes tincture](https://unsplash.com/photos/LAOVX-PFNvI)
+
+
+[Super Good vibes](https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 ## Acknowledgements
 
-The <strong>Tutors.</strong> All of them. The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. I am not a fan of social platforms especially when I have never felt so just dumb in my life and the thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
+The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong> All of them. The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
 
-<strong>Code Institute</strong>
+<strong>[Code Institute](https://codeinstitute.net//)</strong>
 
-When I started this journey, I had no idea how badly life was getting ready to test me. Between our newly started business shutting down, Social distance learning with two kids locked inside of a house. 8 people in my family and social circle passing away to helping my husband start two other businesses while homeschooling full-time and being everything to everyone trying to learn HTML, CSS, Bootstrap, cloud based IDE's, JavaScript, Python, Mongo, Flask, Django, Heroku Balsamiq, Dev Tools and everything in-between, Code Institute went above and beyond to accomodate any and all needs. My brain may feel assauleted but the Code Institute staff was nothing short of incredible and helped ease the blows. The course and content itself are cutting-edge and incredibly informative. I am so thankful my coding journey brought me here and not the UCSD bootcamp I had originally applied to. Thank you Code Institute for this very wild journey. 
+When I started this journey, I had no idea how badly life was getting ready to test me. Between our newly started business being forced to shut down, economic insecurity, Social distance learning for two kids who were locked inside of a house. Losing 8 people in my family and social circle to cancer during the course, to helping my husband start two other businesses. Being everything to everyone at home while trying to learn HTML, CSS, Bootstrap, cloud based IDE's, JavaScript, Python, Mongo, Flask, Django, Heroku Balsamiq, Dev Tools and everything in-between, was a daunting task to say the least and Code Institute went above and beyond to accomodate any and all needs. My brain may feel assaulted by these languages and frameworks but the Code Institute staff was nothing short of incredible and helped ease the blows. The course and content itself are cutting-edge and incredibly informative. I am so thankful my coding journey brought me here and not the UCSD bootcamp I had originally applied to. Thank you Code Institute for this very wild journey. 
