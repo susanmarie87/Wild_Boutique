@@ -565,12 +565,6 @@ Problem: The Aws crisis. Images not displaying on Heroku.
 Cause: A backslash, /, generated in the AWS IAM secret convig variable. The backslash that is automaticcally generated in some AWS keys cause major issues in Heroku and this happened to me. Because of the slash in the key, it
 Solution: Scott and James had a student who had previously had these problems. I generated a new user key and added them to the Heroku config vars and the images displayed on Heroku.
 ______________
-Bug 14
-
-Problem:
-Cause:
-Solution:
-
 
 ## User Story Testing
 
@@ -645,11 +639,11 @@ _________________________
 _________________________
 ## UNRESOLVED ISSUES
 
-Product detail CSS not picking up.
+Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
 
 - Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
 
-- Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues. I wish there would have been better coverage of working through these errors. 
+- Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues.
 
 Settings.py warning for import env but import env is used so I ignored that.
 
@@ -657,7 +651,7 @@ The missing module docstrings were also left because I just did not keep track o
 
 ## Deployment
 
-Below is an example of how to deploy this site locally based on using *VsCode IDE*, deploying to Heroku using *Amazon S3* for hosting of static and media files. This will allow the site to deploy automatically with commits to the master branch. The code can also be run locally.
+Below is an example of how to deploy this site locally based on using *Gitpod IDE*, deploying to Heroku using *Amazon S3* for hosting of static and media files. This will allow the site to deploy automatically with commits to the master branch. The code can also be run locally.
 
 ### Deployment Requirements
 
