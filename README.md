@@ -2,7 +2,7 @@
 
 ![Live Project]()
 
-[Live Site](https://herokuapp.com/)
+[Live Site](https://wild-indigos.herokuapp.com/)
 
 ## Milestone Project 4
 
@@ -89,6 +89,8 @@
 * I want to be able to see previous order details.
 
 * I want my details to be saved to my account for faster purchases in future.
+
+* I want to be able to login to my account with Facebook or Google.
 
 ### Site Goals <a name="site-goals"></a>
 
@@ -577,30 +579,75 @@ Solution:
 
 ## User Story Testing
 
-- IMPLEMENTATION: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
+- USER STORY: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
 
-- T: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
+- TEST: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
 ![alt text](/path/img.jpg "Title")
 
-- Result:
+- Result: There is now a button on the landing page.
 
-- Verdict:
+- Verdict: The button being the first thing a user notices immediately entices them to click the link and get to shopping right away.
 _________________
 
-- Implementation:
-- Test:
-- Result:
-- Verdict:
-
+- USER STORY: "I want to be able to easily navigate throughout the site."
+- Test: Is less really more?
+- Result: In keeping the site minimal without a lot of bells and whistles, users will easily be able to navigate the site.
+- Verdict: The verdict is still out.
 _________________
 
-- Implementation:
-- Test:
-- Result:
-- Verdict:
-
+- USER STORY: "I want to be able to find out more information about the company and see if they have a social media presence."
+"I want to be able to contact the company."
+- Test: There is a contact page with social media links.
+- Result: The contact page did not turn out the way I wanted it to. 
+- Verdict: The contact page needs more work in order to make social media links stand out and possibly used more throughout the site.
 ________________
 
+- USER STORY: "I would like to be able to search for a specific item using the search bar." "I want to be able to search the site based on the different categories."
+- Test: A searchbar was added into the products section. 
+- Result: This searchbar works across all browsers but the words have to be specific.
+- Verdict: The searchbar function is a nice addition and provides a good user experience. User stories satisfied. 
+_____________
+
+- USER STORY: "I want to be able to see all product details before I choose to buy the item"
+- Test: Product details were added in so the user could see better details before purchasing.
+- Result: Originally, there were product details. During the AWS crisis of my project my product details were there. The product details have now vanished into thin code air and I have no clue what has happened to them nor the time or brain power left to even attempt figuring that out before the deadline.
+- Verdict: Products without details are worthless and will absolutely drive users away. Very poor user experience and mucy be addressed immediately. User stories were satisfied but not now when it counts.
+_____________
+- USER STORY: "I want to be able to sort the items based on their price.""I want to be able to see products price and sizes if they have any."
+
+- Verdict: I did not add these user stories to the project.
+___________________
+- USER STORY: "I want to be able to add items to my shopping bag."
+"I would like to be notified when I add items to bag or interact with the site functionality."
+"I want to be able to edit my shopping bag."
+- TEST: The add and edit bag functions in the bag app along with Bootstrap toast messages were implemented to satisfy these user stories.
+- RESULT: The users can add and edit their bag flawlessly across all browsers. These features work properly and add a nice UX feature to the site
+- VERDICT: The user stories were satisfied.
+_________________________
+- USER STORY: "I want the checkout process to be quick and painless."
+- TEST: Stripe was implemented into the project.
+- RESULT: Stripe is only in test phase for this proejct but the it work perfectly throughout all browsers.
+- VERDICT: The stripe addition satisfies this user story.
+_________________________
+- USER STORY: "I want to be able to leave a review of certain products." "I want to receive confirmation of my order."
+
+- VERDICT: These user stories were not imlpemented.
+_________________________
+ USER STORY: "I want to be able to see previous order details." "I want my details to be saved to my account for faster purchases in future."
+- TEST: Create a profile to obtain and save order history and personal information. 
+- RESULT: As far as my testing went, the order details and customer information was saved.
+- VERDICT: These user stories were satisfied.
+_________________________
+ USER STORY: "I want to be able to see previous order details." "I want my details to be saved to my account for faster purchases in future."
+- TEST: Create a profile to obtain and save order history and personal information. 
+- RESULT: As far as my testing went, the order details and customer information was saved.
+- VERDICT: These user stories were satisfied.
+_________________________
+ USER STORY: " I want to be able to signup or login to my account with Facebook or Google."
+- TEST: There was an attempt to add Social Media functionality.
+- RESULT: Bugs and time constraints prevented me from implementing these features all the way.
+- VERDICT: These user stories were not satisfied.
+_________________________
 ## UNRESOLVED ISSUES
 
 Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
@@ -769,3 +816,10 @@ Test to fix bucket issues
 
 
 During my AWS crisis, I ccidentally committed more changed than should have been without explaining so I will detail those here:
+
+
+
+
+Settings.py warning for import env but import env is used so I ignored that.
+
+The missing module docstrings were also left because I just did not keep track of exactly what each and every single 4018 files did properly and I ran out of time to go back and check.
