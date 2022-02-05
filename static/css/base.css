@@ -1,4 +1,5 @@
 /* code Institute's Boutique Ado code was largely used for styling across site*/
+/*02/04/2022 version 2.1*/
 html {
     height: 100%;
 }
@@ -187,21 +188,21 @@ img.img-fluid.rounded {
 }
 
 h1 {
-    color: #ffffff;
+    color: #09090a;
     position: center;
 }
 
 h2 {
-    color: #ffffff;
+    color: #09090a;
 }
 
 p {
-    color: #ffffff;
+    color: #09090a;
 }
 
 .social-icons:hover {
     text-decoration: none;
-    color: #ccccff;
+    color: #09090a;
     font-size: 3rem;
     padding: 0 2rem;
     transition: ease-in-out 2s;
