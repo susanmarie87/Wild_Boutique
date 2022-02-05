@@ -6,6 +6,7 @@ from os import path
 import dj_database_url
 if path.exists("env.py"):
     import env  # noqa: F401
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -224,3 +225,6 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 # sweetalert specification
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
+
+
+django_heroku.settings(locals())
