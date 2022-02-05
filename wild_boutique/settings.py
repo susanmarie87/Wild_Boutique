@@ -7,6 +7,7 @@ import dj_database_url
 if path.exists("env.py"):
     import env  # noqa: F401
 #import django_heroku
+import mimetypes
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,6 +25,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['wild-indigos.herokuapp.com', 'localhost']
 
+
+mimetypes.add_type("text/css", ".css", True)
 
 # Application definition
 INSTALLED_APPS = [
