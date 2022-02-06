@@ -1,7 +1,4 @@
-.form-position {
-    text-align: -webkit-center;
-}
-
-.form-size {
-    width: 50%;
+.container {
+    position: relative;
+    justify-content: center;
 }

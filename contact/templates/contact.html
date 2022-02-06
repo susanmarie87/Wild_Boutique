@@ -5,32 +5,39 @@
 {% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
+<h1 class="products-title">Contact Us</h1>
 
-<div class="container container-format">
-    <div class="row information-format form-position">
-        <div class="col-12 align-self-center">
-            <h1>Contact us today!</h1>
-            <p>Message any of our social media accounts for the fastest service!</p>
-        </div>
+<!-- Contact Form (code snippet adapted from www.W3schools.com) -->
+<div class="container">
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <label for="subject">Subject:</label>
+        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
-    </div>
 
-    <div class="row justify-content-center">
-        <div class="col-12 information-format">
-            <h2>Social Media</h2>
-        </div>
-        <div class="col-12 information-format">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
-                    class="fab fa-instagram social-icons"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
-                    class="fab fa-facebook social-icons"></i></a>
-            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
-                    class="fab fa-twitter social-icons"></i></a>
-        </div>
-    </div>
+<div class="col-12 information-format">
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+            class="fab fa-instagram social-icons"></i></a>
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+            class="fab fa-facebook social-icons"></i></a>
+    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
+            class="fab fa-twitter social-icons"></i></a>
+</div>
+</div>
+</div>
+</div>
 
-    {% endblock %}
+{% endblock %}
