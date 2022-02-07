@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<div class="overlay-contact"></div>
 <h1 class="products-title">Contact Us</h1>
 
 <!-- Contact Form (code snippet adapted from www.W3schools.com) -->
@@ -23,21 +23,17 @@
         <input type="email" id="email" name="email" placeholder="Email Address" required>
         <label for="subject">Subject:</label>
         <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-        <input type="submit" value="Submit">
+        <button id="contact-form-submit" class="w3-btn w3-round-xxlarge" value="submit">Submit</button>
     </form>
-</div>
+
+    <div class="col-12 information-format">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram social-icons"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook social-icons"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
+                class="fab fa-twitter social-icons"></i></a>
+    </div>
 
 
-<div class="col-12 information-format">
-    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
-            class="fab fa-instagram social-icons"></i></a>
-    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
-            class="fab fa-facebook social-icons"></i></a>
-    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
-            class="fab fa-twitter social-icons"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-{% endblock %}
+    {% endblock %}

@@ -160,11 +160,17 @@ img.img-fluid.rounded {
 /* -- FOOTER ICONS adapted from Font Awesome -- */
 .social-icons {
     list-style: none;
+    text-align: center;
+}
+
+div.col-12.information-format {
+    text-align: center;
 }
 
 .social-icons i {
     font-size: 120%;
-    margin: 0 30px;
+    margin: 10px 30px;
+    margin-top: 20px;
 }
 
 .social-icons a {
@@ -211,6 +217,15 @@ p {
 .div.col-12.information-format {
     justify-content: center;
     position: center;
+}
+
+.contact-form-submit {
+    text-align: center;
+}
+
+form#search {
+    background-color: #ffffff;
+    transparent: #000;
 }
 
 @media (min-width: 1200px) {
@@ -271,10 +286,24 @@ p {
     border-color: #222;
 }
 
+/* Contact Page */
+h1.products-title {
+    text-align: center;
+    text: 30px;
+    color: #36383a;
+    text-shadow: #222;
+}
+
+div.overlay-contact {
+    background: linear-gradient(#ddcaca, #9198e5);
+}
+
 form {
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
     padding: 50px;
-    padding-top: 20px;
+    padding-top: 60px;
+    margin-top: 50px;
+    background: linear-gradient(#ddcaca, #9198e5);
 }
 
 input,
@@ -290,9 +319,9 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #680d68;
+    background-color: #eaf2f3;
     color: white;
-    padding: 12px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -303,7 +332,7 @@ input[type="submit"]:hover {
 }
 
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
