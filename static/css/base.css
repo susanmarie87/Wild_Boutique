@@ -235,7 +235,6 @@ form#search {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
@@ -298,12 +297,16 @@ div.overlay-contact {
     background: linear-gradient(#ddcaca, #9198e5);
 }
 
-form {
+form#contact {
     box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
     padding: 50px;
     padding-top: 60px;
     margin-top: 50px;
     background: linear-gradient(#ddcaca, #9198e5);
+}
+
+li {
+    color: black;
 }
 
 input,
