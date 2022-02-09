@@ -70,7 +70,8 @@
                 </span>
                 <span class="text-uppercase">Keep Shopping</span>
             </a>
-            <a href="{% url 'checkout' %}">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'checkout' %}" class="btn">
                 <span class="text-uppercase">Secure Checkout</span>
                 <span class="icon">
                     <i class="fas fa-lock"></i>
@@ -78,10 +79,17 @@
             </a>
         </td>
     </tr>
+    {% else %}
+    <a href="{% url 'account_login' %}" class="btn"><span class="">Sign in to Checkout
+            Now</span>
+        <span class="icon">
+            <i class="fas fa-lock"></i>
+        </span></a>
+    {% endif %}
 </div>
 {% else %}
 <p class="lead mb-5">Your bag is empty.</p>
-<a href="{% url 'products' %}" class=" btn-btn-outline-black rounded-0 btn-lg">
+<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
     <span class="icon">
         <i class="fas fa-chevron-left"></i>
     </span>
