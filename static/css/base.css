@@ -40,7 +40,7 @@ a.nav-link.cart-link {
 }
 
 a {
-    color: #ffffff;
+    color: #9198e5;
 }
 
 
@@ -228,6 +228,11 @@ form#search {
     transparent: #000;
 }
 
+/* Login Page*/
+.a.socialaccount.provider.facebook {
+    color: #000;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
@@ -293,7 +298,7 @@ h1.products-title {
     text-shadow: #222;
 }
 
-div.overlay-contact {
+.overlay-contact {
     background: linear-gradient(#ddcaca, #9198e5);
 }
 
@@ -303,10 +308,6 @@ form#contact {
     padding-top: 60px;
     margin-top: 50px;
     background: linear-gradient(#ddcaca, #9198e5);
-}
-
-li {
-    color: black;
 }
 
 input,
@@ -322,7 +323,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #eaf2f3;
+    background-color: #3e3f3f;
     color: white;
     padding: 8px 16px;
     border: none;
@@ -334,6 +335,9 @@ input[type="submit"]:hover {
     background-color: rgb(46, 42, 42);
 }
 
+div.socialaccount_ballot {
+    color: #000;
+}
 
 /* Media Queries */
 
