@@ -32,7 +32,7 @@ card.addEventListener('change', function (event) {
                 <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-        `;
+            `;
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
@@ -46,10 +46,13 @@ form.addEventListener('submit', function (ev) {
     card.update({
         'disabled': true
     });
-    $('#submit-button').attr('disabled', true);
-    $stripe.ConfirmCardPayment(clientSecret, {
+    $('#submit-button').attr('disabled', true)
+    stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
+            billing_details: {
+                name: 'Penny Lane'
+            }
         }
     }).then(function (result) {
         if (result.error) {
