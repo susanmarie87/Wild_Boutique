@@ -339,36 +339,70 @@ div.socialaccount_ballot {
     color: #000;
 }
 
+/* Products */
+button {}
+
+/* Checkout*/
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
 /* Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
+@media (max-width: 775px) {
+    .animate-charcter {
+        font-size: 40px;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
-}
-
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
+    /* Slightly larger container on xl screens */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 80%;
+        }
     }
 
-    body {
-        height: calc(100vh - 116px);
+    /* fixed top navbar only on medium and up */
+    @media (min-width: 992px) {
+        .fixed-top-desktop-only {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+
+        .header-container {
+            padding-top: 164px;
+        }
     }
-}
+
+    @media (max-width: 991px) {
+        .header-container {
+            padding-top: 116px;
+        }
+
+        body {
+            height: calc(100vh - 116px);
+        }
+    }
