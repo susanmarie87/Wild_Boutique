@@ -39,10 +39,12 @@ def update_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {product.name} quantity to (bag[item_id])')
+        messages.success(request,
+                         f'Updated {product.name} quantity to (bag[item_id])')
     else:
         bag.pop(item_id)
-        messages.success(request, f'Removed {product.name} quantity to (bag[item_id])')
+        messages.success(request,
+                         f'Removed {product.name} quantity to (bag[item_id])')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -56,6 +58,7 @@ def delete_bag_item(request, item_id):
     bag.pop(item_id)
 
     request.session['bag'] = bag
-    messages.success(request, f'Removed {product.name} quantity to (bag[item_id])')
+    messages.success(request,
+                     f'Removed {product.name} quantity to (bag[item_id])')
 
     return redirect(reverse('view_bag'))
