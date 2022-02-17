@@ -11,16 +11,16 @@ from .forms import UserProfileForm
 @login_required
 def profile(request):
     """Displays profile"""
-    profile = get_object_or_404(UserProfile, user=request.user)
+    profile_user = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
-        form = UserProfileForm(request.POST, instance=profile)
+        form = UserProfileForm(request.POST, instance=profile_user)
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile updated successfully')
 
-    form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+    form = UserProfileForm(instance=profile_user)
+    orders = profile_user.orders.all()
 
     template = 'profiles/profile.html'
     context = {
