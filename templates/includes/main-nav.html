@@ -30,7 +30,7 @@
           My Account
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Account Details</a>
+          <a class="dropdown-item" href="{% url 'profile' %}">Account Details</a>
           <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
         </div>
       </li>
@@ -45,7 +45,7 @@
         <a class="nav-link cart-link" href="{% url 'view_bag' %}">
           <i class="fa fa-shopping-cart"></i>
           {% if grand_total %}
-          £{{ grand_total|floatformat:2 }}
+          ${{ grand_total|floatformat:2 }}
           {% else %}
           $0.00
           {% endif %}
