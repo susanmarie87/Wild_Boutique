@@ -1,5 +1,6 @@
-from products.models import Product
 from django.shortcuts import render
+from products.models import Product
+
 
 # Create your views here.
 
@@ -7,10 +8,10 @@ from django.shortcuts import render
 def index(request):
     """A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products_list = Product.objects.all()
 
     context = {
-        'products': products,
+        'products': products_list,
     }
 
     return render(request, 'home/index.html', context)
@@ -18,10 +19,10 @@ def index(request):
 def products(request):
     """A view to show all products, including sorting and search queries """
 
-    product = Product.objects.all()
+    products_list = Product.objects.all()
 
     context = {
-        'products': products,
+        'products': products_list,
     }
 
-    return render(request, 'products/products.html')
+    return render(request, 'products/products.html', context)
