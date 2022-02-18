@@ -1,8 +1,11 @@
+"""Form to save user information"""
 from django import forms
 from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
+    """View returns user profile information"""
     class Meta:
+        """ A Meta class to handle user profile model behavior"""
         model = UserProfile
         exclude = ('user',)
 
