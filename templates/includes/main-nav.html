@@ -8,7 +8,6 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'home' %}">Home</a>
           <span class="sr-only">(current)</span>
-          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'products' %}">Products</a>
@@ -24,34 +23,36 @@
     <a href="/" class="navbar-brand">
 
       {% if request.user.is_authenticated %}
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          My Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="{% url 'profile' %}">Account Details</a>
-          <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
-        </div>
-      </li>
-      {% else %}
-      <li class="nav-item">
-        <a class="nav-link link-style" href="{% url 'account_login' %}" aria-haspopup="true" aria-expanded="false">
-          Sign-in
-        </a>
-      </li>
-      {% endif %}
-      <li class="nav-item">
-        <a class="nav-link cart-link" href="{% url 'view_bag' %}">
-          <i class="fa fa-shopping-cart"></i>
-          {% if grand_total %}
-          ${{ grand_total|floatformat:2 }}
-          {% else %}
-          $0.00
-          {% endif %}
-        </a>
-      </li>
+      <ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Sign-in
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'profile' %}">Account Details</a>
+            <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+          </div>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link link-style" href="{% url 'account_login' %}" aria-haspopup="true" aria-expanded="false">
+            Sign-in
+          </a>
+        </li>
+        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link cart-link" href="{% url 'view_bag' %}">
+            <i class="fa fa-shopping-cart"></i>
+            {% if grand_total %}
+            ${{ grand_total|floatformat:2 }}
+            {% else %}
+            $0.00
+            {% endif %}
+          </a>
+        </li>
       </ul>
+    </a>
   </div>
   </div>
 </nav>
