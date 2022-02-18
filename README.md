@@ -565,30 +565,11 @@ Problem: The Aws crisis. Images not displaying on Heroku.
 Cause: A backslash, /, generated in the AWS IAM secret convig variable. The backslash that is automaticcally generated in some AWS keys cause major issues in Heroku and this happened to me. Because of the slash in the key, it
 Solution: Scott and James had a student who had previously had these problems. I generated a new user key and added them to the Heroku config vars and the images displayed on Heroku.
 ______________
+BUG 14
 
-
-## <a>Remaining Flake8 errors</a>
-
-- The linter is not figuring out the inherited model. An attempt to remedy this error was made by adding pylint Django module as an argument to Flake8 in Settings but was unsuccessful.
-
-- The automatically generated Django files came with a ton of errors but those have been ignored as they may effect efficiency.
-
-- Import env and unused django.contrib import admin have errors almost driven me to drink. I have left it be. When I remove it, the project breaks. When I leave it, I get an error. 
-
-- The Products app in views.py has a "Missing Module Docstring" error on line 1, but there is a module docstring so that's python styling for you.
-
-- Profiles app has a few errors in the models.py file:
-"Instance of 'OneToOneField' has no 'username' member"
-"UserProfile' has no 'objects' member
-
-- Several errors in the Checkout app view.py file in regards to profiles and objects that I was unable to solve. All relating to the products having no objects or not existing even though it seems like they exist because they work. An attempt was made to remedy these errors but were ultimately left ignored.
-
-- Warnings in signal.py contact file but when arguments are removed the website breaks
-
-
-## HTML Validation Errors
-
-I could not find the </a> tags they were speaking of. I went through every template and could not find them so there are unfortunately four html validation errors.
+Problem: Details about products like price and CSS not picking up.
+Cause: Somehow the product details were not picked up in AWS.
+Solution: Correcting the CSS files in AWS.
 
 ## User Story Testing
 
@@ -665,13 +646,35 @@ _________________________
 
 Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
 
-- Flake8 errors. The absolute bane of my existence. It tells me I have something imported but unused. I remove the import, my code breaks. I put the import back in. The code works, the error stays. For example my settings.py file is crying about env being imported but not used. I remove the rnv import and it was unable to locate my contact app. I reinstall the env import and it my contact app was located. This happens with the majority of imports I remove so I am just going to have to stick with an error.
 
-- Along with the line too long issues and doctrings. I ran out of time trying to solve all of these issues.
+## <a>Remaining Design Issues</a>
+ The desktop version of the navbar is awful but I could not figure out what was blocking me from being able to get the account and cart to sit on the right side. The mobile and nav version look akay.
 
-Settings.py warning for import env but import env is used so I ignored that.
+ The button on the products search bar broke on me a few days back and I have not been able to figure out what I did to break that.
 
-The missing module docstrings were also left because I just did not keep track of exactly what each and every single 4018 files did properly and I ran out of time to go back and check.
+## <a>Remaining Flake8 errors</a>
+
+- The linter is not figuring out the inherited model. An attempt to remedy this error was made by adding pylint Django module as an argument to Flake8 in Settings but was unsuccessful.
+
+- The automatically generated Django files came with a ton of errors but those have been ignored as they may effect efficiency.
+
+- Import env and unused django.contrib import admin have errors almost driven me to drink. I have left it be. When I remove it, the project breaks. When I leave it, I get an error. 
+
+- The Products app in views.py has a "Missing Module Docstring" error on line 1, but there is a module docstring so that's python styling for you.
+
+- Profiles app has a few errors in the models.py file:
+"Instance of 'OneToOneField' has no 'username' member"
+"UserProfile' has no 'objects' member
+
+- Several errors in the Checkout app view.py file in regards to profiles and objects that I was unable to solve. All relating to the products having no objects or not existing even though it seems like they exist because they work. An attempt was made to remedy these errors but were ultimately left ignored.
+
+- Warnings in signal.py contact file but when arguments are removed the website breaks
+
+
+## HTML Validation Errors
+
+I could not find the </a> tags they were speaking of. I went through every template and could not find them so there are unfortunately four html validation errors.
+
 
 ## Deployment
 
