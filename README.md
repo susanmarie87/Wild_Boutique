@@ -566,6 +566,30 @@ Cause: A backslash, /, generated in the AWS IAM secret convig variable. The back
 Solution: Scott and James had a student who had previously had these problems. I generated a new user key and added them to the Heroku config vars and the images displayed on Heroku.
 ______________
 
+
+## <a>Remaining Flake8 errors</a>
+
+- The linter is not figuring out the inherited model. An attempt to remedy this error was made by adding pylint Django module as an argument to Flake8 in Settings but was unsuccessful.
+
+- The automatically generated Django files came with a ton of errors but those have been ignored as they may effect efficiency.
+
+- Import env and unused django.contrib import admin have errors almost driven me to drink. I have left it be. When I remove it, the project breaks. When I leave it, I get an error. 
+
+- The Products app in views.py has a "Missing Module Docstring" error on line 1, but there is a module docstring so that's python styling for you.
+
+- Profiles app has a few errors in the models.py file:
+"Instance of 'OneToOneField' has no 'username' member"
+"UserProfile' has no 'objects' member
+
+- Several errors in the Checkout app view.py file in regards to profiles and objects that I was unable to solve. All relating to the products having no objects or not existing even though it seems like they exist because they work. An attempt was made to remedy these errors but were ultimately left ignored.
+
+- Warnings in signal.py contact file but when arguments are removed the website breaks
+
+
+## HTML Validation Errors
+
+I could not find the </a> tags they were speaking of. I went through every template and could not find them so there are unfortunately four html validation errors.
+
 ## User Story Testing
 
 - USER STORY: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
@@ -655,7 +679,7 @@ Below is an example of how to deploy this site locally based on using *Gitpod ID
 
 ### Deployment Requirements
 
-- [VScode](https://code.visualstudio.com/) IDE Local development tool
+- [Gitpod](https://www.gitpod.com/) IDE Local development tool
 - [python](https://www.python.org/downloads/) Documentation is based on Python v3.8
 - PIP package installer
 - [Stripe](https://stripe.com/gb) Payment infrastructure
@@ -669,12 +693,12 @@ Below is an example of how to deploy this site locally based on using *Gitpod ID
    git clone https://github.com/susanmarie87/wild-boutique.git
    ```
 
-   1. Open us your local IDE (For this example we will be using VScode as linked in the requirements) and open the working folder.
+   1. Open us your local IDE (For this example we will be using Gitpod as linked in the requirements) and open the working folder.
 
 1. Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
 
 ```bash
-pip install pipenv
+pip3 install pipenv
 ```
 
 1. In your root dir, create a new folder called .venv (ensure you have the .)
@@ -694,7 +718,7 @@ source .venv/bin/activate
 1. Next we need to install all modules required by the project to run, use the follow
 
 ```bash
-pipenv install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 1. Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
@@ -715,19 +739,19 @@ os.environ["DATABASE_URL"] = "[Your DB URL]"
 1. To set up your database you will first need to run the following command
 
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 1. To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
 
 ```bash
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 1. From there you should now be able to run the server using the following command
 
 ```bash
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 1. If everything has been correctly configure you should not get a message giving you a link to your locally hosted site usually at http://127.0.0.1:8000
@@ -735,9 +759,9 @@ python manage.py runserver
 1. Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
 
 ```bash
-python manage.py loaddata store/fixtures/categories.json
-python manage.py loaddata store/fixtures/products.json
-python manage.py loaddata clients/fixtures/clients.json
+python3 manage.py loaddata store/fixtures/categories.json
+python3 manage.py loaddata store/fixtures/products.json
+python3 manage.py loaddata clients/fixtures/clients.json
 ```
 
 ### Deploying to Heroku
@@ -769,7 +793,7 @@ heroku Postgres
 1. Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
 
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 2. Next you will need to create a super user and populate the database as described in the database set up section
@@ -802,6 +826,10 @@ The inspiration for this project and much of the code functions and styling came
 
 
 [Super Good vibes](https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+[Glowing text](https://www.w3docs.com/snippets/css/how-to-create-a-glowing-text.html)
+
+[Glass Morphism](https://css.glass/)
 
 ## Acknowledgements
 
