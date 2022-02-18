@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/moonmed.jpg') no-repeat center center fixed;
+    background: url('/media/landing.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -21,7 +21,6 @@ body {
     width: 1.5rem;
 }
 
-.div.container-fluid {}
 
 a.nav-link.link-style {
     color: #ffffff;
@@ -98,6 +97,16 @@ p.my-0 {
     color: #ffffff;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+h1.display-4.logo-font.text-black {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0;
 }
 
 .overlay {
@@ -225,7 +234,6 @@ p {
 
 form#search {
     background-color: #ffffff;
-    transparent: #000;
 }
 
 /* Login Page*/
@@ -238,6 +246,7 @@ form#search {
         max-width: 80%;
     }
 }
+
 
 /* Allauth form formatting */
 .allauth-form-inner-content p {
@@ -293,7 +302,6 @@ form#search {
 /* Contact Page */
 h1.products-title {
     text-align: center;
-    text: 30px;
     color: #36383a;
     text-shadow: #222;
 }
@@ -340,7 +348,6 @@ div.socialaccount_ballot {
 }
 
 /* Products */
-button {}
 
 /* Checkout*/
 .animate-charcter {
@@ -355,12 +362,31 @@ button {}
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 190px;
+    font-size: 50px;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    text-fill-color: transparent;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
 }
 
 @keyframes textclip {
@@ -373,6 +399,10 @@ button {}
 @media (max-width: 775px) {
     .animate-charcter {
         font-size: 40px;
+    }
+
+    h1.display-4.logo-font.text-black {
+        font-size: 30px;
     }
 
     /* Slightly larger container on xl screens */
