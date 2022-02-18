@@ -1,3 +1,4 @@
+""""Views to render checkout"""
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404,
     HttpResponse
@@ -19,6 +20,7 @@ from .models import Order, OrderLineItem
 
 @login_required(login_url="/accounts/login")
 def checkout(request):
+    """Stripe Checkout View"""
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -139,5 +141,5 @@ def checkout_success(request, order_number):
 
 @csrf_exempt
 def webhook_receiver(request):
-
+    """"Returns HTTP Response"""
     return HttpResponse("Ok", content_type='text/plain')

@@ -1,3 +1,4 @@
+"""Models for checkout app"""
 import uuid
 
 from django.db import models
@@ -13,6 +14,7 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """A view to render the order information models"""
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                     null=True, blank=True, related_name='orders')
@@ -59,6 +61,7 @@ class Order(models.Model):
         return self.order_number
 
 class OrderLineItem(models.Model):
+    """Order price information"""
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
