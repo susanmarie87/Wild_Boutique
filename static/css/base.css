@@ -42,7 +42,7 @@ a {
     color: #9198e5;
 }
 
-
+/* -- Browse button on landing page -- */
 .shop-now-button {
     background: #222;
     color: #ffffff;
@@ -83,6 +83,7 @@ a {
     background: #000 !important;
 }
 
+/* -- Navbar Icons -- */
 i.fas.fa-user.fa-lg::before {
     color: #ffffff;
     align-items: end;
@@ -99,6 +100,7 @@ p.my-0 {
     justify-content: flex-end;
 }
 
+/* -- Glass Morphism effect on landing-- */
 h1.display-4.logo-font.text-black {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 18px;
@@ -120,6 +122,7 @@ h1.display-4.logo-font.text-black {
         -1;
 }
 
+/* -- Navbar -- */
 .navbar-brand {
     font-size: 40px;
     font-weight: 300;
@@ -144,13 +147,7 @@ div.collapse.navbar-collapse {
     justify-content: center;
 }
 
-img.img-fluid.rounded {
-
-    width: 640px;
-    height: 427px;
-    object-fit: cover;
-}
-
+/* -- Toast messaging stying-- */
 .message-container {
     position: fixed;
     top: 72px;
@@ -176,6 +173,7 @@ div.col-12.information-format {
     text-align: center;
 }
 
+/* -- Footer social media icons-- */
 .social-icons i {
     font-size: 120%;
     margin: 10px 30px;
@@ -228,6 +226,7 @@ p {
     position: center;
 }
 
+/* -- Contact Form-- */
 .contact-form-submit {
     text-align: center;
 }
