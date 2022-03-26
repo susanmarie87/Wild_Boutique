@@ -1,4 +1,36 @@
-<div class="alert alert-success" role="alert">
-    <h4 class="alert-heading">Message received!</h4>
-    <p>Thank you for contacting Wild Indigos.</p>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/success.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+
+        <div class="hero-content">
+
+                <h1 class="hero-title">
+                        Thank you for contacting Wild Indigos!
+                </h1>
+
+                <h2 class="hero-subtitle">
+                        We will be in touch soon!
+                </h2>
+        </div>
+</section>
+<div class="col-12 information-format">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram social-icons"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook social-icons"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter social-icons"></i></a>
 </div>
+</div>
+
+
+{% endblock %}

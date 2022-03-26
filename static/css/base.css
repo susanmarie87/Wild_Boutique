@@ -5,14 +5,14 @@ html {
 }
 
 body {
-    background: url('/media/landing.jpg') no-repeat center center fixed;
+    background: url('/media/horse.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Poppins';
 }
 
-/* from Bulma */
+/* from Bulma 
 .icon {
     align-items: right;
     display: inline-flex;
@@ -41,7 +41,7 @@ a.nav-link.cart-link {
 a {
     color: #9198e5;
 }
-
+*/
 /* -- Browse button on landing page -- */
 .shop-now-button {
     background: #222;
@@ -123,28 +123,74 @@ h1.display-4.logo-font.text-black {
 }
 
 /* -- Navbar -- */
-.navbar-brand {
-    font-size: 40px;
-    font-weight: 300;
-    font-family: "rochester";
-    float: left;
-    padding-bottom: 5px;
+.nav-layout {
+    margin-left: 0%;
+    padding-right: 1rem;
 }
 
-a.navbar-brand {
+.navbar-light .navbar-nav .nav-link {
+    color: #D9D9D9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.collapse-format {
+    text-align: right;
+}
+
+.basket-icon {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: #fff;
+}
+
+.basket-update-button {
+    border: none;
+    color: teal;
+    background-color: #fff;
+    padding: 0;
+    font-size: small;
+}
+
+.logo {
+    margin: 1rem auto 0 auto;
+    max-height: 5rem;
+}
+
+.information-format {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-format {
+    margin-top: 3rem;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #D9D9D9
+}
+
+.cart-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.div.row.bg-dark {
+    padding: 0;
+    margin: 0;
     float: right;
-}
-
-.navbar-nav li {
-    padding-right: 0;
-}
-
-div#navbar-Responsive.collapse.navbar-collapse {
-    float: center;
-}
-
-div.collapse.navbar-collapse {
-    justify-content: center;
 }
 
 /* -- Toast messaging stying-- */
