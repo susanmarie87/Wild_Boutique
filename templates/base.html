@@ -50,55 +50,53 @@
 <!-- code Institute's Boutique Ado code was largely used for styling across site -->
 
 <body>
-    <div class="row bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-light">
 
-            {% include 'includes/main-nav.html' %}
-        </nav>
 
-        {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-            {% with message.level as level %}
-            {% if level == 40 %}
-            {% include 'includes/toasts/error.html' %}
-            {% elif level == 30 %}
-            {% include 'includes/toasts/warning.html' %}
-            {% include 'includes/toasts/success.html' %}
-            {% elif level == 25 %}
-            {% include 'includes/toasts/success.html' %}
-            {% else %}
-            {% include 'includes/toasts/info.html' %}
-            {% endif %}
-            {% endwith %}
-            {% endfor %}
-        </div>
+    {% include 'includes/main-nav.html' %}
+
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/warning.html' %}
+        {% include 'includes/toasts/success.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/success.html' %}
+        {% else %}
+        {% include 'includes/toasts/info.html' %}
         {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
+    {% endif %}
 
-        {% block page_header %}
-        {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        {% block postloadjs %}
+    {% block postloadjs %}
 
 
-        {% endblock %}
+    {% endblock %}
 
-        <script type="text/javascript">
-            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-            var toastList = toastElList.map(function (toastEl) {
-                return new bootstrap.Toast(toastEl);
-            });
+    <script type="text/javascript">
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl);
+        });
 
-            for (let x = 0; x < toastList.length; x++) {
-                toastList[x].show();
-            }
-        </script>
+        for (let x = 0; x < toastList.length; x++) {
+            toastList[x].show();
+        }
+    </script>
 
-        {% load sweetify %}
-        {% sweetify %}
+    {% load sweetify %}
+    {% sweetify %}
 </body>
 
 </html>
