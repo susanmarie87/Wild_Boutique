@@ -19,15 +19,14 @@
         </li>
       </ul>
     </div>
-    <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">
-      <img class="logo img-fluid" src="#" alt="Logo" aria-label="Logo"></a>
+
     <div class="navbar-collapse collapse dual-nav w-50 order-2">
       <ul class="nav navbar-nav ml-auto">
         {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Sing-in
+            Signed in {{user}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{% url 'profile' %}">Account Details</a>
