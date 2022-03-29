@@ -1,13 +1,16 @@
+"""Admin app allows site owner to use CRUD functionality for records"""
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """Updates line item total"""
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """Admin order details"""
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
