@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/landing.jpg') no-repeat center center fixed;
+    background: url('/media/flower.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -47,19 +47,19 @@ a {
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: #101013;
+    color: #fff;
 }
 
 .content p {
     font-size: 20px;
-    color: #131314;
+    color: #fff;
 }
 
 .content {
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 30%;
     animation: moveright 1s linear 1;
-    animation-delay: 1s;
+    animation-delay: .5s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -80,17 +80,20 @@ a {
 
 .content .btn {
     display: inline-block;
-    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    background: linear-gradient(45deg, #f090b8, #ebdee6);
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     box-sizing: border-box;
     text-decoration: none;
     color: #fff;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
 }
 
+#contact {
+    background: url("/media/glitter.jpg") no-repeat center;
+}
 
-/* -- Browse button on landing page 
+/* -- Browse button on landing page */
 .shop-now-button {
     background: #222;
     color: #ffffff;
@@ -159,7 +162,7 @@ h1.display-4.logo-font.text-black {
     margin: 0;
 }
 
-/* -- Navbar -- */
+/* -- Navbar  -- */
 .nav-layout {
     margin-left: 0%;
     padding-right: 1rem;
