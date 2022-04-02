@@ -90,7 +90,9 @@ a {
 }
 
 #contact {
-    background: url("/media/glitter.jpg") no-repeat center;
+    background: url("/media/background.jpg") no-repeat center;
+    background-size: cover;
+
 }
 
 /* -- Browse button on landing page */
@@ -180,14 +182,6 @@ h1.display-4.logo-font.text-black {
     font-size: 1.5rem;
     padding-top: 1rem;
     color: #fff;
-}
-
-.basket-update-button {
-    border: none;
-    color: teal;
-    background-color: #fff;
-    padding: 0;
-    font-size: small;
 }
 
 .logo {
