@@ -295,6 +295,11 @@ p {
         -1;
 }
 
+#img.card-img-top.img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
 /* -- Contact Form-- */
 .contact-form-submit {
     text-align: center;
@@ -372,10 +377,15 @@ form#search {
     background: url("/media/glitter.jpg") no-repeat center;
     background-size: cover;
     margin-top: 20px;
-    ;
 }
 
-.btn-primary {
+@media only screen and (min-width: 992px) {
+    .div.col-12 {
+        padding: 10px 12px;
+    }
+}
+
+form .btn-primary {
     background-color: #c60063;
     border-color: #c60063;
 }
@@ -422,6 +432,55 @@ input[type="submit"]:hover {
 
 div.socialaccount_ballot {
     color: #000;
+}
+
+/* 404 Error Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frem {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./caveman.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frem p {
+    position: absolute;
+    top: 3rem;
+    font-size: 7rem;
+    color: #00000063;
+}
+
+.frem h2 {
+    position: absolute;
+    bottom: 8rem;
+    font-size: 34px;
+}
+
+.frem h5 {
+    position: absolute;
+    bottom: 6rem;
+    color: #9c9c9c;
+}
+
+.frem a {
+    position: absolute;
+    bottom: 1rem;
+    background: linear-gradient(45deg, #ff0034, #ffbc00);
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 13px;
 }
 
 /* Media Queries */
