@@ -15,6 +15,12 @@
 
 {% block content %}
 <div class="overlay"></div>
+<header class="jumbotron jumbotron-fluid">
+    <div class="container-fluid text-center">
+        <h1 class="display-3">Wild Products</h1>
+        <p class="lead pb-4">Find our products</p>
+    </div>
+</header>
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
@@ -26,7 +32,7 @@
         <div class="col-md-6 offset-md-3">
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group-append">
-                    <input class="form-control rounded-0" type="text" name="q" style="border-color:blueviolet;"
+                    <input class="form-control rounded-0" type="text" name="q" style="border-color:black;color: #fff;"
                         placeholder="Search">
                     <div class="input-group-append">
                         <button class="form-control btn rounded-0" style="background-color: black;color: #fff;"
