@@ -217,34 +217,22 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 1. Responsive to different screen sizes.
 2. Supported by Chrome, Opera, and Firefox browsers.
 3. Adapted for users with special accessibility requirements where possible.
-4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, delete/edit product page, contact form page, favorites page, 404 error and 500 error page.
+4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, product page, bag page, checkout form page, contact form page, 404 error and 500 error page.
 
-        - Each page will have a navigation header
-        - Each page will have a footer
-        - Each page will have a favicon on the browser tab
 
-5. Each page will have a 'sticky' navbar
-
-        - High contrast between text and background.
-        - Text logo on the left, or removed on smaller screens
-        - A central search bar
-        - Menu options in the center or to the left on mobile
-        - The logo will route back to the home page
-        - Menu options will change to color on hover & envoke a pointer
-        - On mobile devices, the menu items will switch to a toggle button and slide down the page when button is clicked
-        - The mobile nav will not have 'on-hover' styling
-        - Anon users will see my account(signup/register), search bar, shopping cart total, all products, contact page, equipment and classes page 
-        - Registered users will see the above mentioned with an additional profile tab and log out option under the 'my account' nav item
-
- 6. The home page will have:
+5. The home page will have:
 
         - A hero image.
+        _ Animated content.
         - Informative text.
+        - Card section displaying products with links.
+        - A contact section
+        - A footer
 
-7. The login/register page will have:
+6. The login/register page will have:
 
         - A form requesting user information (name, username & password) and a submission button
-        - Toast messages displaying successfull/unsuccessfulsubmission of information
+        - Toast messages.
 
 8. The profile page will have: 
 
@@ -255,10 +243,9 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 9. The all products page will have:
 
-        - A sort by category bar
-        - A section displaying existing products
-        - Each product will have an image, label and a link to review its details
-        - To an admin user there will be a link to edit/delete
+        - Existing products.
+        - Each product will have an image, label and a link to review its details.
+        - To an admin user there will be a link to edit/delete.
 
 10. The product detail page will have:
 
