@@ -79,11 +79,8 @@
     {% block content %}
     {% endblock %}
 
+
     {% block postloadjs %}
-
-
-    {% endblock %}
-
     <script type="text/javascript">
         var toastElList = [].slice.call(document.querySelectorAll('.toast'))
         var toastList = toastElList.map(function (toastEl) {
@@ -94,6 +91,7 @@
             toastList[x].show();
         }
     </script>
+    {% endblock %}
 
     {% load sweetify %}
     {% sweetify %}
