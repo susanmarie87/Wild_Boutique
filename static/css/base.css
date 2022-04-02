@@ -367,6 +367,19 @@ form#search {
     border-color: #222;
 }
 
+/* Checkout */
+.jumbotron {
+    background: url("/media/glitter.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 20px;
+    ;
+}
+
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}
+
 /* Contact Page */
 h1.products-title {
     text-align: center;
