@@ -3,11 +3,7 @@
 
 
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
+
 {% endblock %}
 
 {% block content %}
@@ -18,7 +14,6 @@
             <h2 class="logo-font mb-4">Shopping Bag</h2>
         </div>
     </div>
-
     <div class="row">
         <div class="col-12 sm-6">
             {% if bag_items %}
@@ -41,8 +36,7 @@
                 </td>
             </tr>
             <div class="col-sm-6 col-md-2">
-                <form action="{% url 'update_bag' item.item_id %}" method="POST"
-                    action="{% url 'update_bag' item.item_id %}">
+                <form action="{% url 'update_bag' item.item_id %}" method="POST">
                     {% csrf_token %}
             </div>
             <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="0"
@@ -51,7 +45,8 @@
         <input type="submit" class="bag-update-button" value="Update Quantity"></input>
         <input type="hidden" class="redirect_url" value="{{ request.path }}"></input>
     </div>
-    <div><a class="float-left text-dark" href="{% url 'delete_bag_item' item.item_id %}">Delete Item</a>
+    <div>
+        <a class="float-left text-dark" href="{% url 'delete_bag_item' item.item_id %}">Delete Item</a>
     </div>
     </form>
     {% endfor %}
@@ -96,8 +91,6 @@
     <span class="text-uppercase">Keep Shopping</span>
 </a>
 {% endif %}
-</div>
-</div>
-</div>
+
 
 {% endblock %}
