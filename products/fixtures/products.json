@@ -51,7 +51,7 @@
         "model": "products.product",
         "fields": {
             "name": "Good Vibes",
-            "description": "Crafted with chammonile, ashghawanda, lavender and other herbs to bring a sense of joy.",
+            "description": "Crafted with chammomile, ashghawanda, lavender and other herbs to bring a sense of joy.",
             "price": 10.00,
             "category": 2,
             "image": "good_vibes.jpg"
@@ -87,7 +87,7 @@
         "model": "products.product",
         "fields": {
             "name": "Adventurous",
-            "description": "Ignite the sense with this tincture formulated to give youu an uplifting playful vibe.",
+            "description": "Ignite the sense with this tincture formulated to give you an uplifting playful vibe.",
             "price": 15.00,
             "category": 2,
             "image": "tincture_guy.jpg"

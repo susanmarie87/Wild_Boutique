@@ -6,7 +6,7 @@ from os import path
 import mimetypes
 import dj_database_url
 if path.exists("env.py"):
-    import env  # noqa: F401
+    import env
 # import django_heroku
 
 
