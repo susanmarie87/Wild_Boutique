@@ -19,7 +19,10 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 * The website I have built is a full stack E-commerce web application for a company that my daughter and I created called Wild Boutique. I built a basic front-end website for Wild Boutique for my MS1 but with my skills advancing, I decided to remake the website and add all of the commerce features.
 
-* The application I have developed uses E-commerce functionality. Payments are made using Stripe. Only registered users can leave comments and leave reviews, review section so that users can voice their own opinion on specific products, Confirmation emails, CRUD functionality for admin users to add, update and delete products reviews and blog posts, comments, CRUD functionality for users to create read update and delete their own reviews in the reviews section and the ability to delete comments they have left on blog posts, admin have authorisation to do anything on the site.
+* The application I have designed is an intuitive E-commerce store for company that sells organic tinctures, bathbombs, aromatherapy bracelets, and apparel. This website is equipped with Stripe. The user can add and delete product, and update the cart to their preference. The user can also contact the site as well.
+
+* The Site Owner has properly working CRUD functionality. The owner can successfully create a new product. 
+
 
 * For the assessor, the admin login details have been included in the comments section when submitting the project.
 
@@ -117,27 +120,25 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 * Responsive Design 
 * Informative Landing Page
-* Sticky top Nav Bar & Mobile Nav Bar 
+* Mobile Nav Bar 
 * Relational database to store all uploaded data/content
 * CRUD functionality at varying levels for profiles and products
 * Authentication functionality
 * Profile page
 * Search functionality
 * Contact functionality
-*  list functionality
+* List functionality
 * E-Commerce functionality
 
 **Skeleton Structure**
 
-This application will be made up of multiple pages derived or based around 6 data models, product, cart, checkout, user profile, contact form and favorites.
+This application will be made up of multiple pages derived or based around 6 data models, product, cart, checkout, user profile, and contact form.
 
 The landing page will consist of a large hero image with a text introduction of the site's offering or purpose.
 
 Login, registration, add/edit products/profile and contact pages will all consist of forms with varying inputs dependant on the purpose of the form.
 
 The profile page will display user information derived from the form and past orders .
-
-The favorite products page will display favorited items with options to remove them or view the product in detail.
 
 The products page will display all products and can be sorted or filtered.
 
@@ -147,13 +148,11 @@ The product detail page will display the image and details with an option to pur
 
 The nav bar items will highlight on hover.
 
-The user will be able to interact with the data on the application via the search bar, products will display below the search bar if found or a line of text with '0 products found' if not found. They can also filter and sort categories using a sort selector drop down.
-
-All forms will validate and change colour/display messages to notify the user of errors.
+All forms will show a success or error messages through webhooks.
 
 Delete features will trigger warning modals and require confirmation before the action runs.
 
-Successful actions and unsuccessful actions will be flagged with django messages to the user.
+Successful actions and unsuccessful actions will be flagged with Django messages to the user.
 
 Authentication processes, placed orders and contact form submission will trigger emails sent to the users email address provided.
 
@@ -184,11 +183,6 @@ A mock-up of how the site will be laid out is available here via [Wire Frames]()
 - The order model creates an instance of an order on the data base with billing information, date and time of placement and by whom. 
 - The order model is linked to the Order Line Item model which holds the product information for the order placed.
 - The Order Line Item model is linked to products.
-
-##### Favorites and favorited Items
-- The favorites creates a 'container' for users to store favorited products. 
-- The favorited items model creates instances of these favorite products in the container.
-- This model is linked to the user and to the poduct model.
 
 ##### Contact
 - The contact model stores users queries in the backend for the admin user to view.
