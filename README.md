@@ -1,6 +1,9 @@
-# Wild Indigos E-commerce Store
+# [*Wild Boutique*](https://wild-indigos.herokuapp.com/)
 
-![Live Project]()
+Wild Boutique is a s holistically minded brand and community.
+We promote whole body health and wellness. Our mindful approach to healthy and connected living drives our community bond and we want this website to represent the beauty of that.
+
+![Wild Indigos](media/responsive.png)
 
 [Live Site](https://wild-indigos.herokuapp.com/)
 
@@ -12,11 +15,11 @@
 
 * I created this site as a way for my daughter to sell her bracelets online and for myself to begin the process of building a like-minded community through wellness. This site will be tailored to suit all of ur customer's needs.
 
-* This project was built to showcase my abilites in designing and developing a full-stack web application using the django web framework, HTML, CSS, Javascript and Python.
+* This project was built to showcase my abilites in designing and developing a full-stack web application predominantly using  Django, Javascript, Python, Bootstrap.
 
-* The website I have built is a full stack ecommerce web application for a company that my daughter and I created called Wild Indigos. I built a basic front-end website for Wild Indigos for my MS1 but with my skills advancing, I decided to remake the website and add all of the commerce features.
+* The website I have built is a full stack E-commerce web application for a company that my daughter and I created called Wild Boutique. I built a basic front-end website for Wild Boutique for my MS1 but with my skills advancing, I decided to remake the website and add all of the commerce features.
 
-* The application I have developed uses E-commerce functionality, payments are made using Stripe, a blog section for customers to use to create SEO friendly blog posts to increase  organic traffic to the site and a comments section for users to add comments for interactivity with the store and leave comments on blog posts, Only registered users can leave comments and leave reviews, review section so that users can voice their own opinion on specific products, Confirmation emails, CRUD functionality for admin users to add, update and delete products reviews and blog posts, comments, CRUD functionality for users to create read update and delete their own reviews in the reviews section and the ability to delete comments they have left on blog posts, admin have authorisation to do anything on the site.
+* The application I have developed uses E-commerce functionality. Payments are made using Stripe. Only registered users can leave comments and leave reviews, review section so that users can voice their own opinion on specific products, Confirmation emails, CRUD functionality for admin users to add, update and delete products reviews and blog posts, comments, CRUD functionality for users to create read update and delete their own reviews in the reviews section and the ability to delete comments they have left on blog posts, admin have authorisation to do anything on the site.
 
 * For the assessor, the admin login details have been included in the comments section when submitting the project.
 
@@ -659,6 +662,11 @@ From line 135, column 5; to line 135, column 35
 
 Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
 
+## FUTURE IMPLEMENTATION
+
+A blog section for customers to use to create SEO friendly blog posts, in hopes to increase organic traffic to the site. 
+
+A comments section for users to add comments for interactivity with the store and leave comments on blog posts.
 
 ## <a>Remaining Design Issues</a>
  The desktop version of the navbar is awful but I could not figure out what was blocking me from being able to get the account and cart to sit on the right side. The mobile and nav version look akay.
@@ -837,7 +845,7 @@ The inspiration for this project and much of the code functions and styling came
 
 [Contact section textured background](https://unsplash.com/@thomas2006)
 
-[Landing page bracelet image](brooke-cagle-kElEigko7PU-unsplash)
+[Landing page bracelet image Brooke Cagle](https://unsplash.com/photos/kElEigko7PU)
 
 
 [Howlite](https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
@@ -846,9 +854,9 @@ The inspiration for this project and much of the code functions and styling came
 
 [Good Vibes tincture](https://unsplash.com/photos/LAOVX-PFNvI)
 
-[Supplement Landing Image](emma-jane-hobden-UNs7kXHGIe0-unsplash)
+[Supplement Landing Image Emma-Jane Hobden](https://unsplash.com/photos/UNs7kXHGIe0)
 
-[Hero Image] (erriko-boccia-TWB035qnbQs-unsplash)
+[Hero Image Erriko Boccia](https://unsplash.com/photos/TWB035qnbQs)
 
 [Super Good vibes](https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -860,6 +868,17 @@ The inspiration for this project and much of the code functions and styling came
 
 ## Acknowledgements
 
-The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong> All of them. The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
+The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong> All of them:
+
+1. [@Scott_CI -U4NJFT2M6](https://code-institute-room.slack.com/)
+2. [@sheryl_ci - U01PFKGS623](https://code-institute-room.slack.com/)
+3. [@james_ci - U02HZ4NTSHG](https://code-institute-room.slack.com/)
+4. [@sean_ci - U023BDTRM9C](https://code-institute-room.slack.com/)
+5. [@ed_ci - Ed Bradley](https://code-institute-room.slack.com/)
+6. [@john_ci - John Long](https://code-institute-room.slack.com/)
+7. [@rebecca_ci - U02NKD296N5](https://code-institute-room.slack.com/)
+8. [@michael_ci - Michael Park](https://code-institute-room.slack.com/)
+
+ The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
 
 <strong>[Code Institute](https://codeinstitute.net//)</strong>
