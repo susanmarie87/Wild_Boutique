@@ -642,6 +642,19 @@ _________________________
 - RESULT: Bugs and time constraints prevented me from implementing these features all the way.
 - VERDICT: These user stories were not satisfied.
 _________________________
+
+## HTML VALIDATION
+
+The code has been passed through  [W3 Validator](https://validator.w3.org/). When the files are passed through individually, the code comes back with a multitude of errors. 
+When the code is passed through by URI which is what I was instructed to do via tutor support, the code only has one warning which is:
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 135, column 5; to line 135, column 35
+
+    ↩↩    <script type="text/javascript">↩ 
+
+    
+
 ## UNRESOLVED ISSUES
 
 Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
@@ -649,6 +662,8 @@ Product detail CSS not picking up. Out of nowhere they have just disappeared and
 
 ## <a>Remaining Design Issues</a>
  The desktop version of the navbar is awful but I could not figure out what was blocking me from being able to get the account and cart to sit on the right side. The mobile and nav version look akay.
+
+ Navbar update- The problem was that I had left a nav element in the base. When I tried to remove it, the navbar would disappear. This issue was FINALLY solved by adding the bg-dark class to the main-nav.html file and my navbar looks better now.
 
  The button on the products search bar broke on me a few days back and I have not been able to figure out what I did to break that.
 
@@ -820,6 +835,10 @@ The inspiration for this project and much of the code functions and styling came
 
 [Tincture Guy](https://unsplash.com/photos/D6SQVDF7x_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
+[Contact section textured background](https://unsplash.com/@thomas2006)
+
+[Landing page bracelet image](brooke-cagle-kElEigko7PU-unsplash)
+
 
 [Howlite](https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -827,6 +846,9 @@ The inspiration for this project and much of the code functions and styling came
 
 [Good Vibes tincture](https://unsplash.com/photos/LAOVX-PFNvI)
 
+[Supplement Landing Image](emma-jane-hobden-UNs7kXHGIe0-unsplash)
+
+[Hero Image] (erriko-boccia-TWB035qnbQs-unsplash)
 
 [Super Good vibes](https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -834,10 +856,10 @@ The inspiration for this project and much of the code functions and styling came
 
 [Glass Morphism](https://css.glass/)
 
+[Template Design](https://www.developerdrive.com/responsive-landing-page-bootstrap-4/)
+
 ## Acknowledgements
 
 The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong> All of them. The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
 
 <strong>[Code Institute](https://codeinstitute.net//)</strong>
-
-When I started this journey, I had no idea how badly life was getting ready to test me. Between our newly started business being forced to shut down, economic insecurity, Social distance learning for two kids who were locked inside of a house. Losing 8 people in my family and social circle to cancer during the course, to helping my husband start two other businesses. Being everything to everyone at home while trying to learn HTML, CSS, Bootstrap, cloud based IDE's, JavaScript, Python, Mongo, Flask, Django, Heroku Balsamiq, Dev Tools and everything in-between, was a daunting task to say the least and Code Institute went above and beyond to accomodate any and all needs. My brain may feel assaulted by these languages and frameworks but the Code Institute staff was nothing short of incredible and helped ease the blows. The course and content itself are cutting-edge and incredibly informative. I am so thankful my coding journey brought me here and not the UCSD bootcamp I had originally applied to. Thank you Code Institute for this very wild journey. 
