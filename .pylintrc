@@ -1,0 +1,9 @@
+[BASIC]
+good-names=
+    e,
+    StripeWH_Handler
+
+
+[MASTER] 
+load-plugins=pylint_django
+django-settings-module=wild_boutique.settings
