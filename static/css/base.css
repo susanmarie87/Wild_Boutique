@@ -19,7 +19,7 @@ body {
     margin-top: 24px;
     margin-bottom: 15px;
     color: #fff;
-    font-family: 'Kanit';
+    font-family: 'Catamaran';
 }
 
 .content p {
@@ -48,7 +48,10 @@ body {
     }
 }
 
-
+h2.display-4.text-center.mt-5.mb-3 {
+    font-family: 'Catamaran';
+    color: #ffffff;
+}
 
 .content .btn {
     display: inline-block;
@@ -291,6 +294,16 @@ form#search {
     background: url("/media/glitter.jpg") no-repeat center;
     background-size: cover;
     margin-top: 20px;
+}
+
+/* Jumbotron Text styling */
+
+h1.display-3 {
+    color:#ffffff;
+}
+
+p.lead.pb-4 {
+    color: #ffffff;
 }
 
 @media only screen and (min-width: 992px) {
