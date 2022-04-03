@@ -12,37 +12,8 @@ body {
     font-family: 'Poppins';
 }
 
-/* from Bulma 
-.icon {
-    align-items: right;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-
-a.nav-link.link-style {
-    color: #ffffff;
-}
-
-.li.nav-item {
-    position: right;
-}
-
-a.nav-link.cart-link {
-    color: #ffffff
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-a {
-    color: #9198e5;
-}
-*/
-.content h3 {
+/* -- Landing page animation element */
+.content h1 {
     font-size: 60px;
     font-weight: 100;
     margin-top: 24px;
@@ -231,52 +202,6 @@ h1.display-4.logo-font.text-black {
 }
 
 /* -- FOOTER ICONS adapted from Font Awesome -- */
-.social-icons {
-    list-style: none;
-    text-align: center;
-}
-
-div.col-12.information-format {
-    text-align: center;
-}
-
-/* -- Footer social media icons-- */
-.social-icons i {
-    font-size: 120%;
-    margin: 10px 30px;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.social-icons a:hover {
-    color: #6c757d;
-    text-decoration: underline;
-}
-
-h1 {
-    color: #09090a;
-    position: center;
-}
-
-h2 {
-    color: #09090a;
-}
-
-p {
-    color: #09090a;
-}
-
-.social-icons:hover {
-    text-decoration: none;
-    color: #09090a;
-    font-size: 3rem;
-    padding: 0 2rem;
-    transition: ease-in-out 2s;
-}
 
 .div.col-12.information-format {
     justify-content: center;
@@ -386,8 +311,8 @@ form#search {
 }
 
 form .btn-primary {
-    background-color: #c60063;
-    border-color: #c60063;
+    background-color: #f090b8;
+    border-color: #ebdee6;
 }
 
 /* Contact Page */
@@ -402,7 +327,7 @@ form#contact {
     padding: 50px;
     padding-top: 60px;
     margin-top: 50px;
-    background: linear-gradient(#ddcaca, #9198e5);
+    background: linear-gradient(#f090b8, #ebdee6);
 }
 
 input,
