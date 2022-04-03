@@ -1,3 +1,4 @@
+"""Views to render profile and order history"""
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -33,7 +34,8 @@ def profile(request):
 
 
 def order_history(request, order_number):
-    order = get_object_or_404(Order, order_number=Order_number)
+    """Saves order history to profile"""
+    order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
         f'This is a past conifrmation for order number {order_number}.'

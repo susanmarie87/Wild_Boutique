@@ -1,3 +1,4 @@
+"""URL to grab order history"""
 from django.urls import path
 from . import views
 
