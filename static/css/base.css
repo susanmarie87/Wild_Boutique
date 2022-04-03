@@ -360,6 +360,10 @@ input[type="submit"]:hover {
 div.socialaccount_ballot {
     color: #000;
 }
+/* search icon */
+.div-input-group-append {
+    margin: 0px;
+}
 
 /* 404 Error Page */
 * {
@@ -422,11 +426,11 @@ div.socialaccount_ballot {
 /*Landing page animation element*/
 @media only screen and (max-width: 600px) {
     .content h1 {
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 70;
         margin-top: 40px;
         margin-bottom: 20px;
-        color: rgb(39, 3, 3);
+        color: #ffffff;
     }
     a.btn {
        padding-top: 40px;
