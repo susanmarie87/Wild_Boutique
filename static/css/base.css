@@ -9,7 +9,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Sans-Serif';
 }
 
 /* -- Landing page animation element */
@@ -19,6 +19,7 @@ body {
     margin-top: 24px;
     margin-bottom: 15px;
     color: #fff;
+    font-family: 'Kanit';
 }
 
 .content p {
@@ -59,14 +60,13 @@ body {
     color: #fff;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
 }
-
+/* -- Contact section on landing page */
 #contact {
     background: url("/media/background.jpg") no-repeat center;
     background-size: cover;
-
 }
 
-/* -- Browse button on landing page */
+/* -- Black Buttons throughout pages */
 .shop-now-button {
     background: #222;
     color: #ffffff;
@@ -122,17 +122,6 @@ p.my-0 {
     color: #ffffff;
     align-items: flex-end;
     justify-content: flex-end;
-}
-
-/* -- Glass Morphism effect on landing-- */
-h1.display-4.logo-font.text-black {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 18px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 0;
 }
 
 /* -- Navbar  -- */
@@ -417,7 +406,19 @@ div.socialaccount_ballot {
     h1.display-4.logo-font.text-black {
         font-size: 30px;
     }
-
+/*Landing page animation element*/
+@media only screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 30px;
+        font-weight: 70;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: rgb(39, 3, 3);
+    }
+    a.btn {
+       padding-top: 40px;
+    }
+}
     /* Slightly larger container on xl screens */
     @media (min-width: 1200px) {
         .container {
