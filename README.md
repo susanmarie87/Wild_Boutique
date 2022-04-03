@@ -13,7 +13,7 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 ## Strategy <a name="strategy"></a>
 
-* I created this site as a way for my daughter to sell her bracelets online and for myself to begin the process of building a like-minded community through wellness. This site will be tailored to suit all of ur customer's needs.
+* I created this site as a way for my daughter to sell her bracelets online and for myself to begin the process of building a like-minded community through wellness. This site will be tailored to suit all of our customer's needs.
 
 * This project was built to showcase my abilites in designing and developing a full-stack web application predominantly using  Django, Javascript, Python, Bootstrap.
 
@@ -195,17 +195,19 @@ Django allauth was used to set up user authentication and built in decorators al
 
 ### Color Scheme
 
+This new theme has been chosen because it feels like a breath of fresh air. The white navbar and other white elements across the site give the site such a light a bright feel. 
 
-Colors are brand colors that have been adopted for their strong visual contrast in an attempt to make all content as easily consumable and suitable for visually impared users as possible.
+The dark text colors are brand colors that have been adopted for their strong visual contrast in an attempt to make all content as easily consumable and suitable for visually impared users as possible.
 * There are two main colors used throughout the project and they are listed below.
     * #FFFFFF - this is the color used in the header and footer as well as border colors fonts etc.
-    * #000- this is just your standard black that will be used as the 
-    * #c197D2 - this is the off-white color used in the modal, forms, all auth etc. I wanted to have a nice easy to read white color and this was my preferred choice.
+    * #ebdee6-  A shade of white that is used in the buttons and contact form
+    * #f090b8 - A gentle red that is used in conjunction with white as a linear gradient to bring about an eye popping design that blends nicely with the flowers on the hero image. This ties the site together with the beautiful flowers in the hero image.
     
 
 ### Typography
 
-[Google Fonts](https://fonts.google.com/quicksand) will be the main font for all content.  
+[Google Fonts](https://fonts.google.com/poppins) will be the main font for all content across links and buttons and all descriptiive messaging.
+[Google Fonts](https://fonts.google.com/Catamaran) will be used on the landing page for the Animated element section and also the card heading, This font was chosen because the hero image is strong and an equally strong font needed to be applied in order to avoid straining the eyes.   
 
 
 ### Imagery
@@ -217,7 +219,8 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 1. Responsive to different screen sizes.
 2. Supported by Chrome, Opera, and Firefox browsers.
 3. Adapted for users with special accessibility requirements where possible.
-4. There will be multiple pages: Landing page, all products page, product detail page, shopping bag, checkout page, successfull check out page, profile page, login page, sign up page, product page, bag page, checkout form page, contact form page, 404 error and 500 error page.
+4. There will be multiple pages: 
+Landing page. Products page. Product detail page. Shopping bag. Checkout Form Page. Successfull Check out page. Profile Page. login page, sign up page, product page, bag page, checkout form page, contact form page, 404 error and 500 error page.
 
 
 5. The home page will have:
@@ -231,15 +234,16 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 
 6. The login/register page will have:
 
-        - A form requesting user information (name, username & password) and a submission button
-        - Toast messages.
+        - A form requesting user information (name, username & password) and a submission button.
+        - Links to signup with your Google or Facebook accounts.
+        - Toast messages letting you know if the attempt was successful or not.
 
 8. The profile page will have: 
 
-        - An area displaying the users information
-        - An area displaying orders the user has purchased
-        - There will be an option to edit information
-        - Toast messages displaying successfull/unsuccessful update of information
+        - An area displaying the users information.
+        - An area displaying orders the user has purchased.
+        - There will be an option to edit information.
+        - Toast messages displaying successfull/unsuccessful update of information.
 
 9. The all products page will have:
 
@@ -380,6 +384,33 @@ Colors are brand colors that have been adopted for their strong visual contrast 
 - [Git](https://git-scm.com/)
 - [Postgres](https://www.postgresql.org/)
 
+##  Resubmission Notes
+
+Some of the problems noted in the project assessment results were as follows:
+
+1. Very poor UX design.
+- I agreed. The last project UX design was awful. I tried my best to turn the poor UX design around by completely changing the entire theme and overall site. The confirmation pages have minimal but effective designs with link to take the user back the home pages. The "login" after being logged in messaging has been corrected. The desktop checkout form has been corrected. Jumbotrons were added across the site to break up the sections a bit and bold headers were added. 
+
+2. Confirmation pages that were bare with no return links.
+
+3. Login displayed after a user has already logged in.
+- Easy fix by changing the text on the navbar link. I also added Jinja templating to add the user's name for a personal touch.
+
+4. Oversize checkout form on desktop screens.
+- This was solved by adding a row and column to the bootstrap portion to properly size the form across desktop screens.
+
+5. Add product button for Site Owner CRUD funtionality is missing.
+
+6. The edit crud functionality creates a new product instead of updating the current one.
+
+- This issue was solved by removing:
+if form.is_valid():
+            product = form.save()
+and updating the html tags to properly reflect correct function. Fixing these two issues now allows a product to be updated properly.
+
+7. Stripe confirmation emails.
+- Currently working on resolving this issue which is proving to be a challenge. Stripe will not allow me to send automatic confirmation receipts with a TEST API key. I can manually send the emails from the Stripe dashboard, but they will not automatically send.
+
 
 
 ## Bugs
@@ -418,12 +449,6 @@ ___________________________
 
 Bug 3
 
-When landing page is throttled at 150% or 125% on mid-tier and low-end mobiles, the nav and footer get huge and cover the content on the hero image.
-
-__________________________
-
-Bug 4
-
 Problem: When wiring up my item-detail folder into urls.py, I was met whith an invalid syntax error. 
 
 Cause: This error occurred because when I created the path, I forgot to add the commas at the end of both paths which led to the invalid syntax error.
@@ -431,7 +456,7 @@ Cause: This error occurred because when I created the path, I forgot to add the 
 Solution: This was solved by of course adding a ), to the end of the path.
 _________________________
 
-Bug 5
+Bug 3
 
 Problem: When setting up the view for product details. I had 
 Context = {
@@ -499,7 +524,7 @@ You’re seeing this error because you have DEBUG = True in your Django settings
 
 Cause: There was an issue with the session cookie and this was solved by taking the following steps:
 
-Solution: Open up Dev Tools, go to the Application tab, select Storage from the sidebar, then click the "Clear Site Data" button, it will fix the issue for you by emptying your cart (see image below).
+Solution: Open up Dev Tools, go to the Application tab, select Storage from the sidebar, then click the "Clear Site Data" button, it will fix the issue for you by emptying your cart.
 _______________________
 
 Bug 10
