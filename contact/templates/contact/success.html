@@ -9,32 +9,12 @@
 {% endblock %}
 
 {% block content %}
-<section class="hero">
-
-        <div class="hero-content">
-
-                <h1 class="hero-title">
-                        Thank you for contacting Wild Indigos!
-                </h1>
-
-                <h2 class="hero-subtitle">
-                        We will be in touch soon!
-                </h2>
-                <div class="my-5"></div>
-                <a href="{% url 'home' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Back
-                        home</a>
-        </div>
-        </div>
-</section>
-<div class="col-12 information-format">
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
-                        class="fab fa-instagram social-icons"></i></a>
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i
-                        class="fab fa-facebook social-icons"></i></a>
-        <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i
-                        class="fab fa-twitter social-icons"></i></a>
-</div>
-</div>
-
+<div class="content">
+        <h1 class="page-header">Thank You!</h1>
+    
+        <p>For contacting us.<br> We will get back to you shortly.</p>
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">Back to store</a>
+    
+    </div>
 
 {% endblock %}
