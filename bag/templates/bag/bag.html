@@ -18,6 +18,9 @@
         <div class="col-12 sm-6">
             {% if bag_items %}
             {% for item in bag_items %}
+            <form action="{% url 'update_bag' item.item_id %}" method="POST">
+                {% csrf_token %}
+                <table>
             <tr>
                 <td class="p-3 w-25">
                     <img class="img-fluid rounded" src="{{ item.product.image.url }}">
@@ -35,21 +38,22 @@
                     <p class="my-0"><strong>"{{ item.product.name }}"</strong></p>
                 </td>
             </tr>
+        </table>
             <div class="col-sm-6 col-md-2">
-                <form action="{% url 'update_bag' item.item_id %}" method="POST">
-                    {% csrf_token %}
             </div>
             <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="0"
                 max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.id }}">
+            <input type="submit" class="bag-update-button" value="Update Quantity"></input>
+            <input type="hidden" class="redirect_url" value="{{ request.path }}"></input>
+            <div>
+                <a class="float-left text-dark" href="{% url 'delete_bag_item' item.item_id %}">Delete Item</a>
+            </div>
+            </form>
+            {% endfor %}
         </div>
-        <input type="submit" class="bag-update-button" value="Update Quantity"></input>
-        <input type="hidden" class="redirect_url" value="{{ request.path }}"></input>
     </div>
-    <div>
-        <a class="float-left text-dark" href="{% url 'delete_bag_item' item.item_id %}">Delete Item</a>
-    </div>
-    </form>
-    {% endfor %}
+
+<table>
     <tr>
         <td colspan="5" class="pt-5 text-right">
             <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -74,6 +78,7 @@
             </a>
         </td>
     </tr>
+</table>
     {% else %}
     <a href="{% url 'account_login' %}" class="btn"><span class="">Sign in to Checkout
             Now</span>

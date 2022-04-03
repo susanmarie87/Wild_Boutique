@@ -21,9 +21,10 @@
 <div class="container">
         <form id="contact" action="" method="POST">
                 {% csrf_token %}
-                {{ form }}
+               <table width="90%">{{ form }}</table>
                 <button id="contact-form-submit" class="btn btn-black rounded-0" value="submit">Submit</button>
         </form>
+</div>
 
 
 
