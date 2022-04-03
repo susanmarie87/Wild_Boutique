@@ -1,3 +1,4 @@
+"""views to render index page and product list"""
 from django.shortcuts import render
 from products.models import Product
 
