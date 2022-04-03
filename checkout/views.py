@@ -1,4 +1,5 @@
 """"Views to render checkout"""
+import json
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404,
     HttpResponse
@@ -10,7 +11,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 
 import stripe
-import json
 
 from bag.contexts import bag_contents
 from products.models import Product
@@ -22,6 +22,7 @@ from .models import Order, OrderLineItem
 
 @require_POST
 def cache_checkout_data(request):
+    """Saves User payment information"""
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,9 +34,9 @@ def cache_checkout_data(request):
         return HttpResponse(status=200)
     except Exception as e:
         messages.error(request, ('Sorry, your payment cannot be '
-                                 'processed right now. Please try '
-                                 'again later.'))
-    return HttpResponse(content=e, status=400)           
+                                'processed right now. Please try '
+                                'again later.'))
+    return HttpResponse(content=e, status=400)
 
 @login_required(login_url="/accounts/login")
 def checkout(request):

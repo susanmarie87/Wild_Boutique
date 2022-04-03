@@ -1,9 +1,12 @@
+"""Product forms"""
 from django import forms
 from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    A view to render the form
+    """
     class Meta:
         model = Product
         fields = '__all__'
