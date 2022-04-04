@@ -5,21 +5,21 @@ html {
 }
 
 body {
-    background: url('/media/flower.jpg') no-repeat center center fixed;
+    background: url("/media/flower.jpg") no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Poppins', 'Sans-Serif';
+    font-weight: 200;
+    font-family: "Poppins", 'Sans-Serif';
 }
 
 /* -- Landing page animation element */
 .content h1 {
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 500;
     margin-top: 24px;
     margin-bottom: 15px;
     color: #fff;
-    font-family: 'Catamaran';
+    font-family: "Poppins";
 }
 
 .content p {
@@ -31,7 +31,7 @@ body {
     margin-left: 10%;
     margin-top: 30%;
     animation: moveright 1s linear 1;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -49,7 +49,8 @@ body {
 }
 
 h2.display-4.text-center.mt-5.mb-3 {
-    font-family: 'Catamaran';
+    font-family: 'Poppins';
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -63,6 +64,7 @@ h2.display-4.text-center.mt-5.mb-3 {
     color: #fff;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
 }
+
 /* -- Contact section on landing page */
 #contact {
     background: url("/media/background.jpg") no-repeat center;
@@ -118,7 +120,6 @@ i.fas.fa-user.fa-lg::before {
 
 i.fas.fa-shopping-bag.fa-lg::before {
     color: #ffffff;
-
 }
 
 p.my-0 {
@@ -134,7 +135,7 @@ p.my-0 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #D9D9D9;
+    color: #d9d9d9;
 }
 
 .collapse-format {
@@ -163,7 +164,7 @@ p.my-0 {
 
 .link-style {
     text-decoration: none;
-    color: #D9D9D9
+    color: #d9d9d9;
 }
 
 .cart-link {
@@ -208,13 +209,11 @@ p.my-0 {
     left: 0;
     position: fixed;
     background: #ffffff;
-    z-index:
-        -1;
+    z-index: -1;
 }
 
 img.card-img-top.img-fluid {
     height: 230.44px;
-
 }
 
 /* -- Contact Form-- */
@@ -237,7 +236,6 @@ form#search {
     }
 }
 
-
 /* Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
@@ -251,7 +249,7 @@ form#search {
     border-radius: 0;
 }
 
-.allauth-form-inner-content label:not([for='id_remember']) {
+.allauth-form-inner-content label:not([for="id_remember"]) {
     display: none;
 }
 
@@ -260,7 +258,7 @@ form#search {
 }
 
 .allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
+.allauth-form-inner-content input[type="submit"] {
     /* btn */
     display: inline-block;
     font-weight: 400;
@@ -273,17 +271,18 @@ form#search {
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {
+.allauth-form-inner-content input[type="submit"]:hover {
     color: #fff;
     background-color: #222;
     border-color: #222;
@@ -291,9 +290,10 @@ form#search {
 
 @media only screen and (min-width: 768px) {
     .allauth-form-inner-content {
-       margin-top: 5.5rem;
+        margin-top: 5.5rem;
     }
 }
+
 /* Checkout */
 .jumbotron {
     background: url("/media/glitter.jpg") no-repeat center;
@@ -304,7 +304,7 @@ form#search {
 /* Jumbotron Text styling */
 
 h1.display-3 {
-    color:#ffffff;
+    color: #ffffff;
 }
 
 p.lead.pb-4 {
@@ -365,12 +365,14 @@ input[type="submit"]:hover {
 div.socialaccount_ballot {
     color: #000;
 }
+
 /* search icon */
 .div-input-group-append {
     margin: 0px;
 }
 
 /* 404 Error Page */
+
 * {
     margin: 0;
     padding: 0;
@@ -384,7 +386,7 @@ div.socialaccount_ballot {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(./caveman.gif);
+    background: url('https://wild-indigos.s3.us-west-1.amazonaws.com/media/caveman.gif');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -428,19 +430,22 @@ div.socialaccount_ballot {
     h1.display-4.logo-font.text-black {
         font-size: 30px;
     }
-/*Landing page animation element*/
-@media only screen and (max-width: 600px) {
-    .content h1 {
-        font-size: 50px;
-        font-weight: 70;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        color: #ffffff;
+
+    /*Landing page animation element*/
+    @media only screen and (max-width: 600px) {
+        .content h1 {
+            font-size: 50px;
+            font-weight: 70;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        a.btn {
+            padding-top: 40px;
+        }
     }
-    a.btn {
-       padding-top: 40px;
-    }
-}
+
     /* Slightly larger container on xl screens */
     @media (min-width: 1200px) {
         .container {
