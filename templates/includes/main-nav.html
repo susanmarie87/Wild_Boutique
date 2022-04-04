@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Wild Indigos</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Wild Indigos</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">&nbsp;</span>
@@ -45,7 +45,7 @@
         {% endif %}
         <li class="nav-item">
           <a class="nav-link cart-link" href="{% url 'view_bag' %}">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart">&nbsp;</i>
             {% if grand_total %}
             ${{ grand_total|floatformat:2 }}
             {% else %}
