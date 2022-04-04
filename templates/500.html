@@ -2,21 +2,20 @@
 {% load static %}
 
 {% block page_header %}
-{% include 'includes/main-nav.html' %}
+
 {% endblock %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="{% static 'static/css/success.css' %}">
 {% endblock %}
 
 {% block content %}
-
-<div class="container">
-    <div class="row">
-        <div class="col-12 centered">
-            <h1>500 error</h1>
-            <a href="{% url 'products' aria-label%}=" view {{product.name}}">Go back</a>
-        </div>
-    </div>
+<!--Inspiration for the caveman error page found from QuickCode here: https://www.youtube.com/watch?v=P7C9nZQKBEg'-->
+<div class="overlay"></div>
+<div class="frem">
+    <p>404</p>
+    <h2>Looks like you're lost</h2>
+    <h5>the page you are looking for not available</h5>
+    <a href="{% url 'home' %}" class="btn btn-black rounded-0">Home</a>
 </div>
-
 {% endblock %}
