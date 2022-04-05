@@ -1,9 +1,11 @@
 # [*Wild Boutique*](https://wild-indigos.herokuapp.com/)
 
+
+![Wild Indigos](media/responsive.png)
+
 Wild Boutique is a s holistically minded brand and community.
 We promote whole body health and wellness. Our mindful approach to healthy and connected living drives our community bond and we want this website to represent the beauty of that.
 
-![Wild Indigos](media/responsive.png)
 
 [Live Site](https://wild-indigos.herokuapp.com/)
 
@@ -652,6 +654,10 @@ _________________________
 - VERDICT: These user stories were not satisfied.
 _________________________
 
+## Special Note
+
+On computer, when going through tests, it seems as though the inspect tool has a lag time and must  be refreshed.Otherwise the site design gets completely skewed.
+
 ## HTML VALIDATION
 
 The code has been passed through  [W3 Validator](https://validator.w3.org/). When the files are passed through individually, the code comes back with a multitude of errors. 
@@ -704,6 +710,9 @@ A comments section for users to add comments for interactivity with the store an
 
 I could not find the </a> tags they were speaking of. I went through every template and could not find them so there are unfortunately four html validation errors.
 
+## Lighthouse Report
+
+The Lighthouse report in regards to performance was not that impressive. In a real life website, the JSON 
 
 ## Deployment
 
@@ -837,6 +846,8 @@ python3 manage.py migrate
 ## Inspiration
 The inspiration for this project and much of the code functions and styling came from Code Institute and their project, 
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+
+[Template Design](https://www.developerdrive.com/responsive-landing-page-bootstrap-4/)
 ## MEDIA
 
 [Make today amazing](https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
@@ -853,6 +864,7 @@ The inspiration for this project and much of the code functions and styling came
 
 [Landing page bracelet image Brooke Cagle](https://unsplash.com/photos/kElEigko7PU)
 
+[Sweatshirt photo by Rangga Aditya Armien:]( https://www.pexels.com/photo/more-faith-less-fear-white-sweater-189199/)
 
 [Howlite](https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -866,15 +878,16 @@ The inspiration for this project and much of the code functions and styling came
 
 [Super Good vibes](https://unsplash.com/photos/k2DvXqBl_rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
+[Bathbomb Trio](https://unsplash.com/photos/yVAXSK6zFIM)
+
 [Glowing text](https://www.w3docs.com/snippets/css/how-to-create-a-glowing-text.html)
 
-[Glass Morphism](https://css.glass/)
 
-[Template Design](https://www.developerdrive.com/responsive-landing-page-bootstrap-4/)
 
 ## Acknowledgements
 
-The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong> All of them:
+The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong>
+All of them:
 
 1. [@Scott_CI -U4NJFT2M6](https://code-institute-room.slack.com/)
 2. [@sheryl_ci - U01PFKGS623](https://code-institute-room.slack.com/)
@@ -886,5 +899,9 @@ The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwar
 8. [@michael_ci - Michael Park](https://code-institute-room.slack.com/)
 
  The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
+
+<a></a>
+The Mentors
+[Simaen Daelin-U4MVA9YQP](https://code-institute-room.slack.com/)
 
 <strong>[Code Institute](https://codeinstitute.net//)</strong>
