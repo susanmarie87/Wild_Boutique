@@ -194,11 +194,6 @@ p.my-0 {
     height: 2px;
 }
 
-/* -- FOOTER ICONS adapted from Font Awesome -- */
-
-.div.col-12.information-format {
-    justify-content: center;
-}
 
 /* Product Page */
 .overlay {
@@ -320,6 +315,7 @@ a {
 h1.display-3 {
     color: #ffffff;
     font-family: 'Arima + Madurai';
+
 }
 
 p.lead.pb-4 {
@@ -337,7 +333,7 @@ form .btn-primary {
     border-color: #ebdee6;
 }
 
-/* Contact Page */
+/* Contact Page 
 h1.products-title {
     text-align: center;
     color: #36383a;
@@ -378,12 +374,18 @@ input[type="submit"]:hover {
 }
 
 div.socialaccount_ballot {
-    color: #000;
+    color: #000;*/
 }
 
 /* search icon */
 .div-input-group-append {
-    margin: 0px;
+    height: 85%;
+    width: 75%;
+}
+
+button.form-control.btn.rounded-0 {
+    height: 100%;
+    width: 100%;
 }
 
 /* 404 Error Page */
