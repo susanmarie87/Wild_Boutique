@@ -198,7 +198,6 @@ p.my-0 {
 
 .div.col-12.information-format {
     justify-content: center;
-    position: center;
 }
 
 /* Product Page */
@@ -222,6 +221,11 @@ button.form-control.btn.rounded-0 {
     width: 90%;
 }
 
+input.form-control.rounded-0 {
+    height: 60%;
+    width: 363%;
+}
+
 /* -- Contact Form-- */
 .contact-form-submit {
     text-align: center;
@@ -234,6 +238,10 @@ form#search {
 /* Login Page*/
 .a.socialaccount.provider.facebook {
     color: #000;
+}
+
+a {
+    color: #ffffff;
 }
 
 @media (min-width: 1200px) {
@@ -454,7 +462,7 @@ div.socialaccount_ballot {
     }
 
     @media only screen and (max-width: 408px) {
-        label.form-check-label {
+        .label.form-check-label {
             display: none;
         }
     }
@@ -488,6 +496,13 @@ div.socialaccount_ballot {
 
         body {
             height: calc(100vh - 116px);
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        #input.form-control.rounded-0 {
+            height: 363;
+            width: 60;
         }
     }
 }
