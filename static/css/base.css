@@ -453,6 +453,12 @@ div.socialaccount_ballot {
         }
     }
 
+    @media only screen and (max-width: 408px) {
+        label.form-check-label {
+            display: none;
+        }
+    }
+
     /* Slightly larger container on xl screens */
     @media (min-width: 1200px) {
         .container {
