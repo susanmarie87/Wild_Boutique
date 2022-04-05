@@ -15,11 +15,11 @@ body {
 /* -- Landing page animation element */
 .content h1 {
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 800;
     margin-top: 24px;
     margin-bottom: 15px;
     color: #fff;
-    font-family: "Poppins";
+    font-family: "BioRhyme+Expanded";
 }
 
 .content p {
@@ -49,8 +49,8 @@ body {
 }
 
 h2.display-4.text-center.mt-5.mb-3 {
-    font-family: 'Poppins';
-    font-weight: 500;
+    font-family: 'BioRhyme+Expanded';
+    font-weight: 800;
     color: #ffffff;
 }
 
@@ -216,6 +216,12 @@ img.card-img-top.img-fluid {
     height: 230.44px;
 }
 
+button.form-control.btn.rounded-0 {
+    margin-left: 2px;
+    height: 72%;
+    width: 90%;
+}
+
 /* -- Contact Form-- */
 .contact-form-submit {
     text-align: center;
@@ -305,6 +311,7 @@ form#search {
 
 h1.display-3 {
     color: #ffffff;
+    font-family: 'Arima + Madurai';
 }
 
 p.lead.pb-4 {
