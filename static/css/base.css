@@ -135,7 +135,7 @@ p.my-0 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #d9d9d9;
+    color: #8f8b8b;
 }
 
 .collapse-format {
@@ -503,8 +503,8 @@ button.form-control.btn.rounded-0 {
 
     @media only screen and (max-width: 600px) {
         #input.form-control.rounded-0 {
-            height: 363;
-            width: 60;
+            height: 363%;
+            width: 60%;
         }
     }
 }
