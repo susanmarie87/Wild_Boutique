@@ -231,12 +231,20 @@ form#search {
 }
 
 /* Login Page*/
-.a.socialaccount.provider.facebook {
+a.socialaccount.provider.facebook {
+    color: #000;
+}
+
+a.socialaccount.provider.google {
     color: #000;
 }
 
 a {
-    color: #ffffff;
+    color: rgb(20, 132, 139);
+}
+
+#li {
+    color: #000;
 }
 
 @media (min-width: 1200px) {
