@@ -1,7 +1,7 @@
 # [*Wild Boutique*](https://wild-indigos.herokuapp.com/)
 
 
-![Wild Indigos](media/responsive.png)
+![Wild Indigos](media/screens.png)
 
 Wild Boutique is a s holistically minded brand and community.
 We promote whole body health and wellness. Our mindful approach to healthy and connected living drives our community bond and we want this website to represent the beauty of that.
@@ -49,7 +49,7 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
     * [structure](#structure)
 
     * [skeleton](#skeleton)
-        * [wireframes](#wireframes)
+        * [wireframes](/media/MS4-wireframes.zip)
         * [Database](#database)
     
     * [surface](#surface)
@@ -134,7 +134,7 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 **Skeleton Structure**
 
-This application will be made up of multiple pages derived or based around 6 data models, product, cart, checkout, user profile, and contact form.
+This application will be made up of multiple pages derived or based around 5 data models, product, cart, checkout, user profile, and contact form.
 
 The landing page will consist of a large hero image with a text introduction of the site's offering or purpose.
 
@@ -213,6 +213,10 @@ The dark text colors are brand colors that have been adopted for their strong vi
 
 
 ### Imagery
+
+The Hero image reflects this brand perfectly. A beautiful woman standing in a sea of pink flowers that while are beautiful, are all the same, and the woman in the hero image has somehow found a gorgeous red flower that she is smelling under angelic light. This imagery reflects the message the brand is trying to send. In a world full of pretty and proper flowers, be a Wild Indigo.
+
+Other images were just basic product images that seem to match the boho theme associated with the Wild Indigos brand. These photos were obtained through Unsplash and Pexels. 
 
 ## Features
 
@@ -705,6 +709,9 @@ A comments section for users to add comments for interactivity with the store an
 
 - Warnings in signal.py contact file but when arguments are removed the website breaks
 
+## Site Issues
+
+At the 670 screen size, the product pictures in the bag look pixelated.
 
 ## HTML Validation Errors
 
