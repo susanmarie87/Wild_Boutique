@@ -48,11 +48,6 @@ body {
     }
 }
 
-h2.display-4.text-center.mt-5.mb-3 {
-    font-family: 'BioRhyme+Expanded';
-    font-weight: 800;
-    color: #ffffff;
-}
 
 .content .btn {
     display: inline-block;
@@ -69,6 +64,13 @@ h2.display-4.text-center.mt-5.mb-3 {
 #contact {
     background: url("/media/background.jpg") no-repeat center;
     background-size: cover;
+}
+
+/*Contact us section on landing*/
+h2.display-4.text-center.mt-5.mb-3 {
+    font-family: 'BioRhyme+Expanded';
+    font-weight: 800;
+    color: #ffffff;
 }
 
 /* -- Black Buttons throughout pages */
@@ -194,6 +196,9 @@ p.my-0 {
     height: 2px;
 }
 
+.div.col-12.information-format {
+    justify-content: center;
+}
 
 /* Product Page */
 .overlay {
@@ -206,28 +211,23 @@ p.my-0 {
     z-index: -1;
 }
 
+.font-weight-bold {
+    font-weight: 200;
+}
+
 img.card-img-top.img-fluid {
     height: 230.44px;
 }
 
 button.form-control.btn.rounded-0 {
     margin-left: 2px;
-    height: 72%;
-    width: 90%;
+    height: 50%;
+    width: 70%;
 }
 
 input.form-control.rounded-0 {
     height: 60%;
     width: 363%;
-}
-
-/* -- Contact Form-- */
-.contact-form-submit {
-    text-align: center;
-}
-
-form#search {
-    background-color: #ffffff;
 }
 
 /* Login Page*/
@@ -252,6 +252,13 @@ a {
         max-width: 80%;
     }
 }
+
+/* -- FOOTER ICONS adapted from Font Awesome -- */
+
+.div.col-12.information-format {
+    justify-content: center;
+}
+
 
 /* Allauth form formatting */
 .allauth-form-inner-content p {
@@ -341,7 +348,16 @@ form .btn-primary {
     border-color: #ebdee6;
 }
 
-/* Contact Page 
+/* -- Contact Form-- */
+.contact-form-submit {
+    text-align: center;
+}
+
+form#search {
+    background-color: #ffffff;
+}
+
+/* Contact Page */
 h1.products-title {
     text-align: center;
     color: #36383a;
@@ -382,18 +398,19 @@ input[type="submit"]:hover {
 }
 
 div.socialaccount_ballot {
-    color: #000;*/
+    color: #000;
 }
 
-/* search icon */
+/* Products page search bar icon */
 .div-input-group-append {
-    height: 85%;
+    height: 70%;
     width: 75%;
 }
 
 button.form-control.btn.rounded-0 {
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 85%;
+    margin-top: 6%;
 }
 
 /* 404 Error Page */
