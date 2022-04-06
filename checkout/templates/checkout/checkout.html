@@ -9,7 +9,6 @@
         <div class="container-fluid text-center">
             <h1 class="display-3">Complete your purchase.</h1>
             <p class="lead pb-4">Fill out the form below.</p>
-            <p><a href="{% url 'products' %}" class="btn btn-black rounded-0" role="button">Keep Shopping</a></p>
         </div>
     </header>
 </section>
@@ -84,17 +83,16 @@
                         <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
+            </form>
         </div>
-        </form>
     </div>
 </div>
 
-<td colspan="5" class="pt-5 text-right">
-    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-</td>
-</tr>
+
+<h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+<h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+<h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+
 
 {% endblock %}
 
