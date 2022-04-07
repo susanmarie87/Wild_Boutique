@@ -395,9 +395,12 @@ Landing page. Products page. Product detail page. Shopping bag. Checkout Form Pa
 Some of the problems noted in the project assessment results were as follows:
 
 1. Very poor UX design.
-- I agreed. The last project UX design was awful. I tried my best to turn the poor UX design around by completely changing the entire theme and overall site. The confirmation pages have minimal but effective designs with link to take the user back the home pages. The "login" after being logged in messaging has been corrected. The desktop checkout form has been corrected. Jumbotrons were added across the site to break up the sections a bit and bold headers were added. 
+
+- I agreed. The last project UX design was awful. I tried my best to turn the poor UX design around by completely changing the entire theme and overall site. The landing pages has been completely refreshed. A better hero image was applies. The navbar was made light to fit a light and bright theme. A three card section was added to feature our products and give the users a better idea right upon landing on the site, what our purpose is. Content with a good description was added to the hero image and given an animation effect. The "login" after being logged in messaging has been corrected. The desktop checkout form has been corrected. Jumbotrons were added across the site to break up the sections a bit and bold headers were added.
 
 2. Confirmation pages that were bare with no return links.
+
+- The confirmation pages have minimal but effective designs with a button link not to take the user back the home pages.
 
 3. Login displayed after a user has already logged in.
 - Easy fix by changing the text on the navbar link. I also added Jinja templating to add the user's name for a personal touch.
@@ -406,8 +409,10 @@ Some of the problems noted in the project assessment results were as follows:
 - This was solved by adding a row and column to the bootstrap portion to properly size the form across desktop screens.
 
 5. Add product button for Site Owner CRUD funtionality is missing.
+- I was able to implement the 'add' button onto the site for the shop owner making their experience much easier.
 
 6. The edit crud functionality creates a new product instead of updating the current one.
+- This was fixed by changing 
 
 - This issue was solved by removing:
 if form.is_valid():
@@ -598,7 +603,6 @@ Solution: This problem ws solved by manually adding the productndetails into S3 
 - USER STORY: "I want to be able to quickly view the products sold on the site." In order to meet this user story, a button was placed directly on the landing page for an obvious link to the products. There is also a product link located on the navbar.
 
 - TEST: The button style was adapted from Boutique Ado and so of course it functions perfectly and breaks down perfectly across all screen sizes across all browsers.
-![alt text](/path/img.jpg "Title")
 
 - Result: There is now a button on the landing page.
 
@@ -909,7 +913,7 @@ All of them:
 3. [@james_ci - U02HZ4NTSHG](https://code-institute-room.slack.com/)
 4. [@sean_ci - U023BDTRM9C](https://code-institute-room.slack.com/)
 5. [@ed_ci - Ed Bradley](https://code-institute-room.slack.com/)
-6. [@john_ci - John Long](https://code-institute-room.slack.com/)
+6. [@john traas_ci - John Traas](https://code-institute-room.slack.com/)
 7. [@rebecca_ci - U02NKD296N5](https://code-institute-room.slack.com/)
 8. [@michael_ci - Michael Park](https://code-institute-room.slack.com/)
 9. [@ger_ci-U030LJXSLQH](https://code-institute-room.slack.com/)
