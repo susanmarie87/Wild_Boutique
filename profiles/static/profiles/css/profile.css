@@ -1,0 +1,42 @@
+div.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #ffffff;
+    z-index: -1;
+}
+
+div.container.header-container {
+    height: 116px;
+    width: 70px;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+}
+
+.order-history {
+    max-height: 416px;
+    /* height of profile form + submit button */
+    overflow-y: auto;
+}
+
+#profile-update-form .form-control {
+    color: #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
