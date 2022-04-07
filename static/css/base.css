@@ -204,10 +204,6 @@ p.my-0 {
     justify-content: center;
 }
 
-/* Profile Page */
-header.jumbotron.jumbotron-fluid {
-    background-size: cover;
-}
 
 /* Product Page */
 .overlay {
@@ -303,7 +299,7 @@ a {
     -ms-user-select: none;
     user-select: none;
     background-color: #000;
-    border: 1px solid #000;
+    border: 1px solid rgb(56, 55, 55);
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -318,7 +314,7 @@ a {
 .allauth-form-inner-content input[type="submit"]:hover {
     color: #fff;
     background-color: #222;
-    border-color: #222;
+    border-color: rgb(56, 55, 55);
 }
 
 @media only screen and (min-width: 768px) {
@@ -348,6 +344,13 @@ p.lead.pb-4 {
     color: #ffffff;
 }
 
+#div.col-12.col-lg-6 {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 @media only screen and (min-width: 992px) {
     .div.col-12 {
         padding: 10px 12px;
@@ -369,7 +372,19 @@ form#search {
 }
 
 input.form-control.rounded-0 {
+    color: #000;
+}
+
+.profile-update-form {
+    text-align: center;
+}
+
+form#search {
     background-color: #000;
+}
+
+input.form-control.rounded-0 {
+    color: #000;
 }
 
 /* Contact Page */
@@ -443,7 +458,6 @@ button.form-control.btn.rounded-0 {
     align-items: center;
     flex-direction: column;
     background: url('https://wild-indigos.s3.us-west-1.amazonaws.com/media/caveman.gif');
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -488,76 +502,81 @@ button.form-control.btn.rounded-0 {
     }
 
     /*Landing page animation element*/
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 590px) {
         .content h1 {
-            font-size: 60px;
-            font-weight: 800;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-family: 'Arima+Madurai';
+            font-size: 50px;
         }
 
-        a.btn {
-            padding-top: 40px;
+        @media only screen and (max-width: 600px) {
+            .content h1 {
+                font-size: 40px;
+                font-weight: 800;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                color: #ffffff;
+                font-family: 'Arima+Madurai';
+            }
+
+            a.btn {
+                padding-top: 40px;
+            }
+        }
+
+        @media all and (max-width: 800px) and (min-width: 600px) {
+            .content h1 {
+                font-size: 60px;
+                font-weight: 800;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: #ffffff;
+                font-family: 'Arima+Madurai';
+            }
+
+
+        }
+
+        @media only screen and (max-width: 755px) {
+            label.form-check-label {
+                display: none;
+            }
+        }
+
+        /* Slightly larger container on xl screens */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 80%;
+            }
+        }
+
+        /* fixed top navbar only on medium and up */
+        @media (min-width: 992px) {
+            .fixed-top-desktop-only {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+            }
+
+            .header-container {
+                padding-top: 164px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .header-container {
+                padding-top: 116px;
+            }
+
+            body {
+                height: calc(100vh - 116px);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #input.form-control.rounded-0 {
+                height: 363%;
+                width: 60%;
+            }
         }
     }
-
-    @media all and (max-width: 800px) and (min-width: 600px) {
-        .content h1 {
-            font-size: 60px;
-            font-weight: 800;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-family: 'Arima+Madurai';
-        }
-
-
-    }
-
-    @media only screen and (max-width: 408px) {
-        .label.form-check-label {
-            display: none;
-        }
-    }
-
-    /* Slightly larger container on xl screens */
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 80%;
-        }
-    }
-
-    /* fixed top navbar only on medium and up */
-    @media (min-width: 992px) {
-        .fixed-top-desktop-only {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: 1030;
-        }
-
-        .header-container {
-            padding-top: 164px;
-        }
-    }
-
-    @media (max-width: 991px) {
-        .header-container {
-            padding-top: 116px;
-        }
-
-        body {
-            height: calc(100vh - 116px);
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        #input.form-control.rounded-0 {
-            height: 363%;
-            width: 60%;
-        }
-    }
-}
