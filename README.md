@@ -563,7 +563,7 @@ Problem: Requirements.txt file was corrupted a second time.
 Cause: Unsure of how the file was corrupted a second time.
 
 Solution: Followed the same exact steps as the first time.
-______________________
+____________
 
 Bug 12
 
@@ -577,14 +577,21 @@ ___________
 Bug 13
 
 Problem: The Aws crisis. Images not displaying on Heroku.
-Cause: A backslash, /, generated in the AWS IAM secret convig variable. The backslash that is automaticcally generated in some AWS keys cause major issues in Heroku and this happened to me. Because of the slash in the key, it
+Cause: A backslash, /, generated in the AWS IAM secret convig variable. The backslash that is automatically generated in some AWS keys cause major issues in Heroku and this happened to me. Because of the slash in the key, it
 Solution: Scott and James had a student who had previously had these problems. I generated a new user key and added them to the Heroku config vars and the images displayed on Heroku.
-______________
+_____________
 BUG 14
 
 Problem: Details about products like price and CSS not picking up.
 Cause: Somehow the product details were not picked up in AWS.
 Solution: Correcting the CSS files in AWS.
+
+_____________
+BUG 15
+
+Problem: Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
+Cause: The issue was that somehow someway, my details disappeared from AWS S3 Bucket.
+Solution: This problem ws solved by manually adding the productndetails into S3 static folder's CSS file in the bucket. The details rendered across the deployed Heroku version after this.
 
 ## User Story Testing
 
@@ -713,9 +720,10 @@ A comments section for users to add comments for interactivity with the store an
 
 At the 670 screen size, the product pictures in the bag look pixelated.
 
+
 ## HTML Validation Errors
 
-I could not find the </a> tags they were speaking of. I went through every template and could not find them so there are unfortunately four html validation errors.
+
 
 ## Lighthouse Report
 
@@ -904,6 +912,7 @@ All of them:
 6. [@john_ci - John Long](https://code-institute-room.slack.com/)
 7. [@rebecca_ci - U02NKD296N5](https://code-institute-room.slack.com/)
 8. [@michael_ci - Michael Park](https://code-institute-room.slack.com/)
+9. [@ger_ci-U030LJXSLQH](https://code-institute-room.slack.com/)
 
  The tutor support was invaluable for me. As someone who literally hadn't been on a computer since 2008 and has absolutely zero tech skills, I would have never been able to figure out the AWS key was breaking my images when deployed to Heroku. I would have never known that my requirements.txt file had been corrupted. The tutors practically dragged me through this course. They all had impeccable patience and manners. I know I would have wanted to get snarky with me after some of the things I have put them through. I am not a fan of social platforms and especially when I have never felt so just dumb in my life. The thought of putting that on full display for strangers to see was mortifying to me. For others, Slack is invaluable, but for me, it was terrifying. I am beyond thankful I had this resource and though it may not seem like it, I learned so much from my sessions. A note would probably be to increase the tutor support option and really promote it as that sets Code Institute apart from the rest.
 
