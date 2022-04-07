@@ -218,8 +218,13 @@ The dark text colors are brand colors that have been adopted for their strong vi
 
 ### Typography
 
-[Google Fonts](https://fonts.google.com/poppins) will be the main font for all content across links and buttons and all descriptiive messaging.
-[Google Fonts](https://fonts.google.com/Catamaran) will be used on the landing page for the Animated element section and also the card heading, This font was chosen because the hero image is strong and an equally strong font needed to be applied in order to avoid straining the eyes.   
+[Google Fonts](https://fonts.google.com/poppins) 
+
+Poppins A combination of both soft and bold versions of Poppins will be used across the site. Soft Poppins will be the main font for all content across links and buttons and all descriptiive messaging. Strong Poppins will be used on the landing page for the Animated element section and also the card heading, This font was chosen because of it's playful vibe and also the hero image is strong and an equally strong font needed to be applied in order to avoid straining the eyes.   
+
+[Google Fonts](https://fonts.google.com/BioRhyme + Expanded) 
+
+BioRhyme + Expanded is being used on the card section headings to stand out from the rest of the page.
 
 
 ### Imagery
