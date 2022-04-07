@@ -687,7 +687,6 @@ From line 135, column 5; to line 135, column 35
 
 ## UNRESOLVED ISSUES
 
-Product detail CSS not picking up. Out of nowhere they have just disappeared and my brain is shutting down. It cannot process anything else before the deadline what-so-ever.
 
 ## FUTURE IMPLEMENTATION
 
@@ -704,25 +703,9 @@ A comments section for users to add comments for interactivity with the store an
 
 ## <a>Remaining Flake8 errors</a>
 
-- The linter is not figuring out the inherited model. An attempt to remedy this error was made by adding pylint Django module as an argument to Flake8 in Settings but was unsuccessful.
-
-- The automatically generated Django files came with a ton of errors but those have been ignored as they may effect efficiency.
-
-- Import env and unused django.contrib import admin have errors almost driven me to drink. I have left it be. When I remove it, the project breaks. When I leave it, I get an error. 
-
-- The Products app in views.py has a "Missing Module Docstring" error on line 1, but there is a module docstring so that's python styling for you.
-
-- Profiles app has a few errors in the models.py file:
-"Instance of 'OneToOneField' has no 'username' member"
-"UserProfile' has no 'objects' member
-
 - Several errors in the Checkout app view.py file in regards to profiles and objects that I was unable to solve. All relating to the products having no objects or not existing even though it seems like they exist because they work. An attempt was made to remedy these errors but were ultimately left ignored.
 
 - Warnings in signal.py contact file but when arguments are removed the website breaks
-
-## Site Issues
-
-At the 670 screen size, the product pictures in the bag look pixelated.
 
 
 ## HTML Validation Errors
