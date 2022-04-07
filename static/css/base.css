@@ -497,7 +497,7 @@ button.form-control.btn.rounded-0 {
 
         @media only screen and (max-width: 600px) {
             .content h1 {
-                font-size: 40px;
+                font-size: 60px;
                 font-weight: 800;
                 margin-top: 50px;
                 margin-bottom: 20px;
@@ -507,6 +507,21 @@ button.form-control.btn.rounded-0 {
 
             a.btn {
                 padding-top: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            .content h1 {
+                font-size: 40px;
+                font-weight: 800;
+                margin-top: 50%;
+                margin-bottom: 20px;
+                color: #ffffff;
+                font-family: 'Arima+Madurai';
+            }
+
+            a.btn {
+                padding-top: 20px;
             }
         }
 
