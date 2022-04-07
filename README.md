@@ -673,16 +673,9 @@ Warning: The type attribute is unnecessary for JavaScript resources.
 
 I finally learned about the HTML validator extension. After adding this extension I was able to run all HTML files easily through the validators. There are minor warnings but no errors.
 
-From line 135, column 5; to line 135, column 35
-
-    ↩↩    <script type="text/javascript">↩ 
-
 ## CSS VALIDATION
 
-- Aside from a few invalid value and parse errors, the CSS passes validation.
-
-## UNRESOLVED ISSUES
-
+ Aside from a few invalid value and parse errors, the CSS passes validation.
 
 ## FUTURE IMPLEMENTATION
 
@@ -690,14 +683,15 @@ A blog section for customers to use to create SEO friendly blog posts, in hopes 
 
 A comments section for users to add comments for interactivity with the store and leave comments on blog posts.
 
-## <a>Remaining Design Issues</a>
+## Remaining Design Issues
+
  The desktop version of the navbar is awful but I could not figure out what was blocking me from being able to get the account and cart to sit on the right side. The mobile and nav version look akay.
 
- **Navbar update**- The problem was that I had left a nav element in the base. When I tried to remove it, the navbar would disappear. This issue was FINALLY solved by adding the bg-dark class to the main-nav.html file and my navbar looks better now.
+ **Navbar update**- The problem with the navbar was that I had left a nav element in the base. When I tried to remove it, the navbar would disappear. This issue was FINALLY solved by adding the bg-dark class to the main-nav.html file and my navbar looks better now.
 
  The button on the products search bar broke on me a few days back and I have not been able to figure out what I did to break that.
 
-## <a>Remaining Flake8 errors</a>
+## Remaining Flake8 errors
 
 - Several errors in the Checkout app view.py file in regards to profiles and objects that I was unable to solve. All relating to the products having no objects or not existing even though it seems like they exist because they work. An attempt was made to remedy these errors but were ultimately left ignored.
 
@@ -837,12 +831,21 @@ python3 manage.py migrate
 5. It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
 6. When this has deployed select open app from the top bar of the *Heroku* App.
 
-## Inspiration
-The inspiration for this project and much of the code functions and styling came from Code Institute and their project, 
+<a></a>
+
+# Inspiration For this Site
+
+<a></a>
+
+The inspiration for this project and much of the code functions and styling came from Code Institute and their project.
+
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 
-[Template Design](https://www.developerdrive.com/responsive-landing-page-bootstrap-4/)
-## MEDIA
+[Landing Template Design](https://www.developerdrive.com/responsive-landing-page-bootstrap-4/)
+
+
+### MEDIA
+
 
 [Make today amazing](https://unsplash.com/photos/DXmhzif5izc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -858,7 +861,7 @@ The inspiration for this project and much of the code functions and styling came
 
 [Landing page bracelet image Brooke Cagle](https://unsplash.com/photos/kElEigko7PU)
 
-[Sweatshirt photo by Rangga Aditya Armien:]( https://www.pexels.com/photo/more-faith-less-fear-white-sweater-189199/)
+[Sweatshirt photo by Rangga Aditya Armien]( https://www.pexels.com/photo/more-faith-less-fear-white-sweater-189199/)
 
 [Howlite](https://unsplash.com/photos/Gwhtv-14miU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
@@ -881,6 +884,7 @@ The inspiration for this project and much of the code functions and styling came
 ## Acknowledgements
 
 The <strong>[TUTORS](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor)</strong>
+
 All of them:
 
 1. [@Scott_CI -U4NJFT2M6](https://code-institute-room.slack.com/)
