@@ -80,8 +80,6 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 * I want to be able to sort the items based on their price.
 
-* I want to be able to see products price and sizes if they have any.
-
 * I want to be able to add items to my shopping bag
 
 * I would like to be notified when I add items to bag or interact with the site functionality.
@@ -90,15 +88,10 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 * I want the checkout process to be quick and painless.
 
-* I want to be able to leave a review of certain products.
-
-* I want to receive confirmation of my order.
-
 * I want to be able to see previous order details.
 
 * I want my details to be saved to my account for faster purchases in future.
 
-* I want to be able to login to my account with Facebook or Google.
 
 ### Site Goals <a name="site-goals"></a>
 
@@ -627,14 +620,7 @@ _________________
 - USER STORY: "I want to be able to easily navigate throughout the site."
 - Test: Is less really more?
 - Result: In keeping the site minimal without a lot of bells and whistles, users will easily be able to navigate the site.
-- Verdict: The verdict is still out.
-_________________
-
-- USER STORY: "I want to be able to find out more information about the company and see if they have a social media presence."
-"I want to be able to contact the company."
-- Test: There is a contact page with social media links.
-- Result: The contact page did not turn out the way I wanted it to. 
-- Verdict: The contact page needs more work in order to make social media links stand out and possibly used more throughout the site.
+- Verdict: The navigation helps users easily navigate the site.
 ________________
 
 - USER STORY: "I would like to be able to search for a specific item using the search bar." "I want to be able to search the site based on the different categories."
@@ -647,46 +633,37 @@ _____________
 - Test: Product details were added in so the user could see better details before purchasing.
 - Result: Originally, there were product details.  During the AWS crisis of my project my product details were there. The product details have now vanished into thin code air and I have no clue what has happened to them nor the time or brain power left to even attempt figuring that out before the deadline.
 - Verdict: Products without details are worthless and will absolutely drive users away. Very poor user experience and mucy be addressed immediately. User stories were satisfied but not now when it counts.
-_____________
-- USER STORY: "I want to be able to sort the items based on their price.""I want to be able to see products price and sizes if they have any."
-
-- Verdict: I did not add these user stories to the project.
 ___________________
+
 - USER STORY: "I want to be able to add items to my shopping bag."
 "I would like to be notified when I add items to bag or interact with the site functionality."
 "I want to be able to edit my shopping bag."
 - TEST: The add and edit bag functions in the bag app along with Bootstrap toast messages were implemented to satisfy these user stories.
 - RESULT: The users can add and edit their bag flawlessly across all browsers. These features work properly and add a nice UX feature to the site
 - VERDICT: The user stories were satisfied.
-_________________________
+____________________
+
 - USER STORY: "I want the checkout process to be quick and painless."
 - TEST: Stripe was implemented into the project.
 - RESULT: Stripe is only in test phase for this proejct but the it work perfectly throughout all browsers.
 - VERDICT: The stripe addition satisfies this user story.
-_________________________
-- USER STORY: "I want to be able to leave a review of certain products." "I want to receive confirmation of my order."
+_____________________
 
-- VERDICT: These user stories were not imlpemented.
-_________________________
  USER STORY: "I want to be able to see previous order details." "I want my details to be saved to my account for faster purchases in future."
 - TEST: Create a profile to obtain and save order history and personal information. 
 - RESULT: As far as my testing went, the order details and customer information was saved.
 - VERDICT: These user stories were satisfied.
-_________________________
+______________________
+
  USER STORY: "I want to be able to see previous order details." "I want my details to be saved to my account for faster purchases in future."
 - TEST: Create a profile to obtain and save order history and personal information. 
 - RESULT: As far as my testing went, the order details and customer information was saved.
 - VERDICT: These user stories were satisfied.
-_________________________
- USER STORY: " I want to be able to signup or login to my account with Facebook or Google."
-- TEST: There was an attempt to add Social Media functionality.
-- RESULT: Bugs and time constraints prevented me from implementing these features all the way.
-- VERDICT: These user stories were not satisfied.
-_________________________
+______________________
 
 ## Special Note
 
-On computer, when going through tests, it seems as though the inspect tool has a lag time and must  be refreshed.Otherwise the site design gets completely skewed.
+On my computer, when going through tests, it seems as though the inspect tool has a lag time and must  be refreshed. Otherwise the site design gets completely skewed. This is likely just my computer but I wanted to note it just in case.
 
 ## HTML VALIDATION
 
@@ -694,11 +671,15 @@ The code has been passed through  [W3 Validator](https://validator.w3.org/). Whe
 When the code is passed through by URI which is what I was instructed to do via tutor support, the code only has one warning which is:
 Warning: The type attribute is unnecessary for JavaScript resources.
 
+I finally learned about the HTML validator extension. After adding this extension I was able to run all HTML files easily through the validators. There are minor warnings but no errors.
+
 From line 135, column 5; to line 135, column 35
 
     ↩↩    <script type="text/javascript">↩ 
 
-    
+## CSS VALIDATION
+
+- Aside from a few invalid value and parse errors, the CSS passes validation.
 
 ## UNRESOLVED ISSUES
 
