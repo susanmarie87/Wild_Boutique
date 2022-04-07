@@ -230,11 +230,6 @@ button.form-control.btn.rounded-0 {
     width: 70%;
 }
 
-input.form-control.rounded-0 {
-    height: 60%;
-    width: 363%;
-}
-
 /* Login Page*/
 a.socialaccount.provider.facebook {
     color: #000;
@@ -343,13 +338,6 @@ h1.display-3 {
 p.lead.pb-4 {
     color: #ffffff;
 }
-
-#div.col-12.col-lg-6 {
-    height: 100%;
-    width: 100%;
-}
-
-
 
 @media only screen and (min-width: 992px) {
     .div.col-12 {
@@ -572,11 +560,3 @@ button.form-control.btn.rounded-0 {
                 height: calc(100vh - 116px);
             }
         }
-
-        @media only screen and (max-width: 600px) {
-            #input.form-control.rounded-0 {
-                height: 363%;
-                width: 60%;
-            }
-        }
-    }
