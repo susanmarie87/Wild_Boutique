@@ -21,7 +21,7 @@ We promote whole body health and wellness. Our mindful approach to healthy and c
 
 * The website I have built is a full stack E-commerce web application for a company that my daughter and I created called Wild Boutique. I built a basic front-end website for Wild Boutique for my MS1 but with my skills advancing, I decided to remake the website and add all of the commerce features.
 
-* The application I have designed is an intuitive E-commerce store for company that sells organic tinctures, bathbombs, aromatherapy bracelets, and apparel. This website is equipped with Stripe. The user can add and delete product, and update the cart to their preference. The user can also contact the site as well.
+* The application I have designed is an intuitive E-commerce store for company that sells organic tinctures, bathbombs, aromatherapy bracelets, and apparel. This website is equipped with Stripe. The user can add and delete products, and update the cart to their preference. The user can also contact the site as well.
 
 * The Site Owner has properly working CRUD functionality. The owner can successfully create a new product. 
 
@@ -159,7 +159,17 @@ Successful actions and unsuccessful actions will be flagged with Django messages
 Authentication processes, placed orders and contact form submission will trigger emails sent to the users email address provided.
 
 ### Wireframes
-A mock-up of how the site will be laid out is available here via [Wire Frames]().
+A mock-up of how the site will be laid out is available here:
+
+- [Landing Desktop](/media/LandingDesktop.png).
+
+- [Landing Tablet](/media/LandingTablet.png).
+
+- [Landing DMobile](/media/LandingMobile.png).
+
+- [Products Mobile](/media/ProductsMobile.png).
+
+- [Products Tablet](/media/Products/Tablet).
 
 ### Database Structure
 
@@ -697,7 +707,7 @@ A comments section for users to add comments for interactivity with the store an
 ## <a>Remaining Design Issues</a>
  The desktop version of the navbar is awful but I could not figure out what was blocking me from being able to get the account and cart to sit on the right side. The mobile and nav version look akay.
 
- Navbar update- The problem was that I had left a nav element in the base. When I tried to remove it, the navbar would disappear. This issue was FINALLY solved by adding the bg-dark class to the main-nav.html file and my navbar looks better now.
+ **Navbar update**- The problem was that I had left a nav element in the base. When I tried to remove it, the navbar would disappear. This issue was FINALLY solved by adding the bg-dark class to the main-nav.html file and my navbar looks better now.
 
  The button on the products search bar broke on me a few days back and I have not been able to figure out what I did to break that.
 
@@ -710,11 +720,7 @@ A comments section for users to add comments for interactivity with the store an
 
 ## HTML Validation Errors
 
-
-
-## Lighthouse Report
-
-The Lighthouse report in regards to performance was not that impressive. In a real life website, the JSON 
+The site has been thoroughly checked for validation errors and it has passed every page. There are minor warning in relation to google fonts.
 
 ## Deployment
 
