@@ -570,8 +570,10 @@ button.form-control.btn.rounded-0 {
             .header-container {
                 padding-top: 116px;
             }
-
-            body {
-                height: calc(100vh - 116px);
-            }
         }
+
+        body {
+            height: calc(100vh - 116px);
+        }
+    }
+}
